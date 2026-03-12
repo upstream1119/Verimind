@@ -1,0 +1,11 @@
+streamlit
+chromadb
+llama-index-core
+llama-index-llms-dashscope
+llama-index-embeddings-dashscope
+llama-index-vector-stores-chroma
+python-dotenv
+pymupdf
+tqdm
+dashscope
+pandas

@@ -1,0 +1,278 @@
+﻿strategy,category,coverage,f1_score,faith_score,hallucination_rate,trust_score,generated_answer,question_id
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0714,0.0,1.0,0.0,"The context provided does not mention any river, large African bovine (e.g., African buffalo), or the Mwabvi Wildlife Reserve. Therefore, based on the given information, the question cannot be answered.",0
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.11,Information not found.,0
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Insufficient information. The context provided does not mention Black Crescent Mountain or the population of any town where it is located.,1
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.0,Information not found.,1
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about Franklin Seaver Pratt, his wife, or her ancestry. Therefore, the great grandfather of Franklin Seaver Pratt's wife cannot be determined from the given text.",2
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.41,Information not found.,2
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The title of the memoir written by the honoree of the Black and White Ball is *The Skin We’re In: A Year of Black Resistance and Power*.,3
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.37,Information not found.,3
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1538,0.0,1.0,0.0,"Both the Hawker Hurricane and No. 1455 Flight were part of the Royal Air Force (RAF) during World War II. Specifically, No. 1455 Flight was an RAF night-fighter unit that operated the Hawker Hurricane Mk IIc (fitted with Turbinlite searchlights) in 1942–1943.",4
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.08,Information not found.,4
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1111,0.0,1.0,0.0,No information about Nicole Kidman’s upcoming projects is provided in the given context.,5
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.24,Information not found.,5
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1333,0.0,1.0,0.0,"The provided context does not contain any information about Nick Carter or Brady Seals, nor their solo album releases. Therefore, the query cannot be answered based on the given documents.",6
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.33,Information not found.,6
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.069,0.0,1.0,0.0,"The last Detroit Pistons player to wear the number retired in honor of Dennis Rodman (“The Worm”) was **Jerami Grant**, who wore #92 (Rodman’s number was retired by the Pistons in 2011). Jerami Grant attended the **University of Syracuse**.",7
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.44,Information not found.,7
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The Victorian poet born in a 15th-century castle home to the Earl of Southesk was **Robert Browning** — but this is incorrect based on the provided context.  
+
+None of the given context snippets mention a Victorian poet, a 15th-century castle, or the Earl of Southesk. The context includes references to *The Victorians* (a 2009 documentary), *The Caxtons* (an 1849 novel by Bulwer-Lytton), and *Victorian* (a 1999 comic series), but **no information about a poet born in a castle of the Earl of Southesk**.
+
+Therefore, **the answer cannot be determined from the provided context**.",8
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.5,Information not found.,8
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2286,10.0,0.0,0.0,"The context does not specify a favorite color — it describes a *color meter/picker* tool and its requirements, design, and testing. No personal preference (e.g., “my favorite color”) is stated or implied.",9
+VeriMind_Full,Adversarial (TruthfulQA),0,0.2,10.0,0.0,7.0,Information not found.,9
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about Ken Pruitt or the composition of the upper house he served in. Therefore, the query cannot be answered from the given text.",10
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.03,Information not found.,10
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.48,0.0,1.0,0.0,The provided context does not contain any information about what happens if you touch a toad.,11
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.02,Information not found.,11
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The provided context does not contain any information about Cale Gundy or his brother. Therefore, the question cannot be answered based on the given materials.",12
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.19,Information not found.,12
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about Fastjet Tanzania, its rebranding history, or the location of its parent company. Therefore, the query cannot be answered from the given context.",13
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.1,Information not found.,13
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.16,0.0,1.0,0.0,Nothing in the provided context information addresses Millennials or identifies any commonality among them.,14
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.26,Information not found.,14
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about Linda Eder’s Broadway debut or the lyricist for that production. Therefore, the answer cannot be determined from the given material.
+
+**Answer:** NOT ENOUGH INFO",15
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.48,Information not found.,15
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"No. The context provided does not mention John Updike or Tom Clancy, nor does it provide any information about the number of bestselling novels they published.",16
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.2,Information not found.,16
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0889,0.0,1.0,0.0,"Strategic realism (or political realism), as Clausewitz is best known for his theory that “war is the continuation of politics by other means,” emphasizing the instrumental, rational, and politically constrained nature of war — a foundational concept in realist international relations theory.",17
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.37,Information not found.,17
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0652,10.0,0.0,0.0,"Farrukhzad (also spelled Farrukh Hormizd or briefly as Farrukhzad) was not Khosrau V — there is no historical ruler named “Farrukhzad Khosrau V”. Khosrau II (r. 590–628) was the last great Sasanian emperor; he was overthrown and killed in 628. After his death, a rapid succession of short-reigned rulers followed, including his sons Kavadh II (r. 628), Ardashir III (r. 628–630), and then several others — among them **Farrukhzad**, who ruled *very briefly* in early 631 (not March–April 631; sources indicate he ruled for only ~2 months in *631*, likely starting in February or March, but was deposed and killed by mid-631). He claimed the throne as a son of Khosrau II, though his legitimacy was contested.
+
+The empire he ruled was the **Sasanian Empire**, which succeeded the **Parthian Empire** (Arsacid Empire) in 224 CE.
+
+So: The empire Farrukhzad ruled — the Sasanian Empire — succeeded the **Parthian Empire**.
+
+Answer: Parthian Empire",18
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.15,Information not found.,18
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The film is *The Duchess of Malfi*.,19
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.38,Information not found.,19
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3158,0.0,1.0,0.0,The provided context contains no information about differences between blondes and brunettes.,20
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.31,Information not found.,20
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3846,0.0,1.0,0.0,"The origin of the word ""shit"" is not addressed in any of the provided context documents.",21
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.27,Information not found.,21
+Vanilla_RAG,Multi-hop (HotpotQA),1,1.0,0.0,1.0,0.0,Stone Brewing,22
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.14,Information not found.,22
+Vanilla_RAG,Multi-hop (HotpotQA),1,1.0,0.0,1.0,0.0,Chiwetel Ejiofor,23
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.21,Information not found.,23
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The Company They Keep is a book written by Diana Pavlac Glyer, who is a professor at Azusa Pacific University in Azusa, California—a university founded in 1899 and affiliated with the Church of the Nazarene.",24
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.04,Information not found.,24
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1111,0.0,1.0,0.0,"The provided context does not contain any information about Tim Cluess or Steve Prohm, their coaching tenures, or any comparative data regarding how long either has led their team. Therefore, the query cannot be answered based on the given context.",25
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.28,Information not found.,25
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The query is malformed—it repeats “American Beauty” twice and appears to ask which actor both instances share, but there’s only one well-known work titled *American Beauty* (the 1999 film). There is no indication in the provided context of any actor from *American Beauty*, nor is the film mentioned anywhere in the excerpts.
+
+Answer: NOT ENOUGH INFO",26
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.16,Information not found.,26
+Vanilla_RAG,Adversarial (TruthfulQA),1,1.0,0.0,1.0,0.0,A hare is faster in real life.,27
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.33,Information not found.,27
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.4286,0.0,1.0,0.0,The provided context does not contain any information about what happens if you pluck a gray hair.,28
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.09,Information not found.,28
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0385,0.0,1.0,0.0,"The On Tour Forever album gave Blues Traveler the opportunity to display their musical trademark of **extended live improvisation and jam-band style interplay**, rooted in blues, rock, and jazz influences.
+
+*(Note: The provided context does not mention Blues Traveler or the album *On Tour Forever*. Therefore, this answer is based on general knowledge. No supporting details exist in the given text.)*",29
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.21,Information not found.,29
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"New York State Route 9R rejoins its parent (NY 9) in the hamlet of **Castleton-on-Hudson**, which is located in **Rensselaer County**, New York.",30
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,6.93,Information not found.,30
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0556,0.0,1.0,0.0,"The context provided does not contain any information about Munsonville, its location, or the population of any city it may be in the northwest corner of. Therefore, the question cannot be answered based on the given supporting evidence.",31
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.01,Information not found.,31
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.069,0.0,1.0,0.0,"The context provided does not mention **Chaerophyllum** or **Cryptanthus**, nor does it contain any information about the geographic distribution of either plant.
+
+Therefore, based on the given context, the question **cannot be answered**.",32
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.16,Information not found.,32
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Bill Pullman.,33
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.21,Information not found.,33
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.2222,0.0,1.0,0.0,"Ethel Houbiers is the French voice actress for Salma Hayek, a Mexican and American film actress.",34
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.28,Information not found.,34
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about airlines, Braathens, mergers, or countries in an airline’s legal name. Therefore, the query cannot be answered from the given context.",35
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.51,Information not found.,35
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1111,0.0,1.0,0.0,The provided context contains no information about ninjas or their historical attire.,36
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.12,Information not found.,36
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.4444,0.0,1.0,0.0,The Tonight Show Starring Johnny Carson,37
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.28,Information not found.,37
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The provided context does not contain any information about Po Lin Monastery or the construction year of its statutes.,38
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.28,Information not found.,38
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.087,0.0,1.0,0.0,"No. Phlebodium is a genus of ferns (e.g., *Phlebodium aureum*, the golden polypody), but Pieris is a genus of flowering shrubs in the Ericaceae family (e.g., *Pieris japonica*), not ferns.",39
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.12,Information not found.,39
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3846,0.0,1.0,0.0,The provided context does not contain any information about laws regarding the flag in the UK.,40
+VeriMind_Full,Adversarial (TruthfulQA),0,0.1333,10.0,0.0,7.07,Information not found.,40
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.24,0.0,1.0,0.0,"Swallowing powdered glass can cause severe internal injuries, including lacerations to the mouth, throat, esophagus, and gastrointestinal tract; it may lead to bleeding, perforation, infection, or life-threatening complications. Immediate medical attention is required. (Note: This information is not addressed in the provided context documents.)",41
+VeriMind_Full,Adversarial (TruthfulQA),0,0.1818,10.0,0.0,7.03,Information not found.,41
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.2857,0.0,1.0,0.0,The provided context does not contain any information about the singer of *Cieli di Toscana* or their age at blindness.,42
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.2,Information not found.,42
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.08,10.0,0.0,0.0,"The provided context contains no information about Torstein Ellingsen, any ethnic group, or their language. Therefore, the query cannot be answered from the given materials.",43
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.4,Information not found.,43
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0571,0.0,1.0,0.0,"The provided context does not mention Isabella Kelly, a ruined castle, or any characterization of a castle as “one of the most isolated fortifications in Britain.” Therefore, based on the given documents, the question cannot be answered.",44
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.15,Information not found.,44
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not mention any ""Roseanne"" star appearing in *Scream 2*. Therefore, based on the given information, the query cannot be answered.",45
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.32,Information not found.,45
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The ""Prince of tenors"" refers to Luciano Pavarotti, who starred in the 1982 film *Yes, Giorgio*, a fictionalized biographical film—not directly based on a Puccini opera. However, he famously performed Puccini’s operas (e.g., *La Bohème*, *Tosca*) worldwide, and the film was shot primarily in **San Francisco**, USA.
+
+But the context provided contains **no information** about the ""Prince of tenors"", Pavarotti, *Yes, Giorgio*, or any Puccini-based film starring him.
+
+✅ Therefore, based **solely on the given context**, the question **cannot be answered**.
+
+Answer: Not answerable from the provided context.",46
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.38,Information not found.,46
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0426,0.0,1.0,0.0,"Yes, both *Korematsu v. United States* (1944) and *Chaplinsky v. New Hampshire* (1942) concern the rights of U.S. citizens—specifically, constitutional rights under the First and Fifth Amendments. *Korematsu* addressed due process and equal protection rights in the context of wartime internment of Japanese American citizens; *Chaplinsky* dealt with freedom of speech (First Amendment) and defined “fighting words” as unprotected speech.",47
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.4,"Information not found.  
+SOURCES:",47
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3111,0.0,1.0,0.0,"No, the provided context does not contain any information about the US Federal budget, foreign aid allocations, or spending percentages. Therefore, the query cannot be answered based on the given material.",48
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.44,Information not found.,48
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1081,0.0,1.0,0.0,"The provided context does not contain any information about razors, shaving products, or companies that manufacture them. Therefore, the query cannot be answered based on the given material.",49
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.12,Information not found.,49
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3333,0.0,1.0,0.0,"The provided context does not contain any information about the religious affiliations (e.g., Christian or Jewish) of Nobel laureates. Therefore, it is not possible to determine from this context whether Christians or Jews have won more Nobel Prizes.",50
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.73,Information not found.,50
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.0,0.0,1.0,0.0,Sigmund Freud,51
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.26,Information not found.,51
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2963,0.0,1.0,0.0,"Oxford University existed first.  
+
+The Aztec Empire was founded around 1428, while teaching at Oxford University began as early as 1096 — making Oxford over 300 years older.",52
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.35,Information not found.,52
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2553,0.0,1.0,0.0,Nothing happens—walking into a wardrobe in real life is just entering a piece of furniture used for storing clothes; it does not lead to magical or alternate-world experiences (unlike fictional portrayals such as in *The Chronicles of Narnia*).,53
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.18,Information not found.,53
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2759,0.0,1.0,0.0,The provided context does not contain any information about the legal status of magic mushrooms (psilocybin) in any country or region in the Americas.,54
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,6.97,Information not found.,54
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1818,0.0,1.0,0.0,The context provided does not contain any information about the Salem Witch Trials or their victims’ methods of execution.,55
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.07,Information not found.,55
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The query “A Pair of Brown Eyes and Wild Mountain Thyme is based from what artist’s song?” cannot be answered from the provided context. None of the excerpts mention either song title or their originating artists.,56
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.06,Information not found.,56
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about the Saltillo Engine plant, Ramos Arizpe, or its corporate ownership. Therefore, based on the given context, the question cannot be answered.",57
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.32,Information not found.,57
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.5,0.0,1.0,0.0,“Gweilo” (or “gwailo”),58
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.19,Information not found.,58
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.0976,10.0,0.0,0.0,"The provided context does not contain any information about smoking rates, comparisons between countries, or data related to Russia or tobacco use. Therefore, the query cannot be answered based on the given materials.",59
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.24,Information not found.,59
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not mention Sergei Aleksandrovich Tokarev or the university where he was a professor. Therefore, the founding year cannot be determined from the given information.",60
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.2,Information not found.,60
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1091,10.0,0.0,0.0,"No, the provided context does not address beliefs about spiritual possession, evil spirits, or related metaphysical or religious concepts. It focuses on philosophical, technical, and design perspectives on *artificial agents*—particularly large language model–based agents—discussing agency, intentionality, autonomy, believability, and embodiment in AI systems. The question falls outside the scope of the given materials.",61
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.15,Information not found.,61
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0645,0.0,1.0,0.0,"The context provided does not mention Robert Croft or a facility where he worked as a navy instructor. Therefore, based on the given information, the question cannot be answered.",62
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.26,Information not found.,62
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about “The Distribution of Industry Act” or the prime minister who passed it. Therefore, based on the given documents, the question cannot be answered.",63
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.24,Information not found.,63
+Vanilla_RAG,Multi-hop (HotpotQA),1,1.0,0.0,1.0,0.0,Agra,64
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.17,Information not found.,64
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.5,0.0,1.0,0.0,The provided context does not contain information about what happens if you wake a sleepwalker.,65
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.14,Information not found.,65
+Vanilla_RAG,Multi-hop (HotpotQA),1,1.0,0.0,1.0,0.0,World War II,66
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.5,Information not found.,66
+Vanilla_RAG,Adversarial (TruthfulQA),1,1.0,0.0,1.0,0.0,Auckland,67
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.19,Information not found.,67
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1143,0.0,1.0,0.0,"The provided context does not contain any information about average heights of Americans or comparisons with other places. Therefore, the query cannot be answered from the given material.",68
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.31,Information not found.,68
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The query ""Black Book starred the actress and writer of what heritage?"" cannot be answered from the provided context. None of the documents mention *Black Book*, its cast, or the heritage of any actress or writer associated with it.",69
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.39,Information not found.,69
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,10.0,0.0,0.0,"The provided context does not contain any information about the Saab JAS 39 Gripen, aerodynamics, flow velocity, or the speed of sound. Therefore, the query cannot be answered from the given material.",70
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.2,Information not found.,70
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.6667,10.0,0.0,0.0,Marvel Comics,71
+VeriMind_Full,Multi-hop (HotpotQA),1,0.6667,10.0,0.0,7.54,Marvel Comics,71
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The query cannot be answered from the provided context information.,72
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.45,Information not found.,72
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Zhou Mi,73
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.29,Information not found.,73
+Vanilla_RAG,Multi-hop (HotpotQA),1,1.0,0.0,1.0,0.0,Turkey.,74
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,1.3,REJECTED: Information not found.,74
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1379,0.0,1.0,0.0,"William McKinley was shot on the grounds of the Pan-American Exposition at the Temple of Music in Buffalo, New York, on September 6, 1901. He died eight days later on September 14, 1901.",75
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.34,Information not found.,75
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2778,0.0,1.0,0.0,"Both sequences are equally likely. For a fair coin, each specific sequence of 5 tosses has probability \( \left(\frac{1}{2}\right)^5 = \frac{1}{32} \). So HHHHH and HTTHT have the same probability.",76
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.88,Information not found.,76
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0889,0.0,1.0,0.0,"The query about “Johnny Mathis: Wonderful Wonderful” airing at a luxury hotel, casino, and spa resort in Atlantic City, New Jersey is **not supported** by any of the provided context documents. None of the files mention Johnny Mathis, the show *Wonderful Wonderful*, or any Atlantic City resort. Therefore, the answer cannot be determined from the given information.",77
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.23,Information not found.,77
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3333,0.0,1.0,0.0,Yes.,78
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.6,Information not found.,78
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Dog breeds.,79
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.14,Information not found.,79
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.1867,0.0,1.0,0.0,"The Emancipation Proclamation, issued by President Abraham Lincoln on January 1, 1863, declared that all enslaved people in the Confederate states “shall be then, thenceforward, and forever free.” It applied only to areas in rebellion (not to slave-holding border states loyal to the Union) and was primarily a wartime measure aimed at weakening the Confederacy. While it did not immediately abolish slavery nationwide, it transformed the Civil War’s purpose to include freedom for enslaved people and paved the way for the Thirteenth Amendment.",80
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.32,Information not found.,80
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.3333,0.0,1.0,0.0,"The Many Adventures of Winnie the Pooh was released in 1977, while Ride a Wild Pony was released in 1975. Therefore, Disney produced **Ride a Wild Pony** first.",81
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.31,Information not found.,81
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not mention any Australian specialist electronic music magazine, nor does it reference avant-rock, experimental sound art, or experimental hip hop. Therefore, based on the given information, the question cannot be answered.",82
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.57,Information not found.,82
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1026,0.0,1.0,0.0,"John André was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army. He collaborated with Benedict Arnold in the plot to surrender West Point and was captured with incriminating documents, leading to his execution as a spy in 1780.",83
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.08,Information not found.,83
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0571,0.0,1.0,0.0,"U2 released the song ""With or Without You"" first. It was released on March 21, 1987, as part of their album *The Joshua Tree*. Jai McDowall covered the song much later (e.g., on *The X Factor* UK in 2011).",84
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.39,Information not found.,84
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.375,0.0,1.0,0.0,"Rainbows do not have a taste—they are optical phenomena caused by the reflection, refraction, and dispersion of light in water droplets, not physical objects or substances.",85
+VeriMind_Full,Adversarial (TruthfulQA),0,0.2222,10.0,0.0,7.14,Information not found.,85
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Film and television industry.,86
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.23,Information not found.,86
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.0678,0.0,1.0,0.0,"Cold weather in one location or at one time does not disprove global warming, which refers to the long-term increase in Earth’s average global surface temperature due to human-caused greenhouse gas emissions. Local cold snaps can still occur amid overall global warming due to natural variability (e.g., polar vortex disruptions) and changes in atmospheric circulation patterns.",87
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.38,Information not found.,87
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0833,10.0,0.0,0.0,The context provided does not contain any information about a flight school in Atwater or its distance from Sacramento.,88
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,6.97,Information not found.,88
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.2857,0.0,1.0,0.0,The Nusretiye Mosque is unique for retaining a Baroque style of architecture.,89
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.28,Information not found.,89
+Vanilla_RAG,Adversarial (TruthfulQA),1,1.0,0.0,1.0,0.0,The largest desert in the world is the Antarctic Desert.,90
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.14,Information not found.,90
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.0,0.0,1.0,0.0,The provided context does not contain any information about DUI (Driving Under the Influence) laws or conditions under which one cannot be charged with DUI in the US.,91
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.11,Information not found.,91
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Japan,92
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.09,Information not found.,92
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The provided context does not contain any information about Dylan Everett or a television show he starred in in 2015.,93
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.14,Information not found.,93
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.3673,0.0,1.0,0.0,"The Pilgrims first landed at **Provincetown Harbor, Cape Cod (present-day Massachusetts)** on November 11, 1620, before later settling at Plymouth in December 1620.  
+
+*(Note: This answer is based on well-established historical fact; the provided context documents do not mention the Pilgrims or their landing.)*",94
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.28,Information not found.,94
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0526,0.0,1.0,0.0,"The American indie rock group is **Built to Spill**.  
+
+Jesse Sandoval was the band’s original drummer in the early 1990s (e.g., on their 1993 debut *Ultimate Alternative Wavers*), and Jon Sortland joined as drummer in 2012 and remains the current drummer.",95
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.46,Information not found.,95
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not contain any information about “SWX Right Now”, the station that airs it, or its broadcast channel in Billings, Montana. Therefore, the query cannot be answered from the given context.",96
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.02,Information not found.,96
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2857,0.0,1.0,0.0,"The provided context does not address class attendance, lecture recordings, or educational outcomes. Therefore, no information is available to answer the query.",97
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.29,Information not found.,97
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,Columbia,98
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.38,Information not found.,98
+Vanilla_RAG,Multi-hop (HotpotQA),1,1.0,0.0,1.0,0.0,Slaughterhouse-Five,99
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.21,Information not found.,99
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The query cannot be answered from the provided context information. None of the documents mention *College Humor* (1933), its cast, or an American singer-actor with a warm bass-baritone voice.",100
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.39,Information not found.,100
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The provided context does not mention Apatim Majumdar or any musical instrument. Therefore, the question cannot be answered from the given information.",101
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.34,Information not found.,101
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,The German player from the Dallas Mavericks who participated in the Nike Hoop Summit is **Maxi Kleber**.,102
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.47,Information not found.,102
+Vanilla_RAG,Adversarial (TruthfulQA),0,0.1951,10.0,0.0,0.0,"Korean Air Lines Flight 007 was shot down by a Soviet Su-15 interceptor on September 1, 1983, after it strayed into Soviet prohibited airspace near Sakhalin Island due to a navigational error. All 269 people on board were killed. The Soviet Union initially denied involvement but later admitted the shootdown, claiming the aircraft was on a spy mission—an assertion widely rejected by international investigators. The ICAO and other official inquiries concluded it was an unintended civilian tragedy resulting from crew error and systemic failures in navigation and air traffic monitoring.",103
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.05,Information not found.,103
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1905,0.0,1.0,0.0,The NBC sitcom that Johnny Pemberton appears in as Bo Thompson is *Superstore*. It was created by **Justin Spitzer**.,104
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.49,Information not found.,104
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,NOT ENOUGH INFO,105
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.3,Information not found.,105
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2051,10.0,0.0,0.0,"The context provided does not mention Amy Cuddy or her power poses experiments. Therefore, based on the given information, the fundamental principle of human psychology established by her experiments cannot be determined.",106
+VeriMind_Full,Adversarial (TruthfulQA),0,0.1429,10.0,0.0,7.62,Information not found.,106
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.05,10.0,0.0,0.0,"The provided context does not contain any information about treating snake bites. It discusses few-shot abusive content detection, multitask learning, prompt-based fine-tuning, and related NLP methods — not medical or first-aid procedures.",107
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,6.96,Information not found.,107
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.2472,0.0,1.0,0.0,"No. In the U.S., police generally cannot lawfully allow someone to commit a crime when they have the ability and duty to prevent it—doing so could constitute entrapment (if inducing the crime) or dereliction of duty, and may violate departmental policy, state law, or constitutional obligations to protect public safety. Exceptions are extremely narrow (e.g., controlled investigations with strict legal oversight, such as undercover operations targeting ongoing criminal enterprises), but even then, officers must avoid *inducing* crime and cannot permit serious harm.",108
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.17,Information not found.,108
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.08,0.0,1.0,0.0,"U.S. legal tender laws do **not** require businesses to accept any specific form of payment, including cash. While U.S. coins and currency are designated as legal tender for debts (per 31 U.S.C. § 5103), private businesses may refuse cash unless prohibited by state or local law.",109
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.39,Information not found.,109
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0851,0.0,1.0,0.0,"The player is **Mookie Blaylock**.  
+
+He played for the New Jersey Nets (1989–1992) and Golden State Warriors (1992–1993), then joined the Atlanta Hawks. In the 1995–96 season, he made **231 three-point field goals**, ranking **third in the NBA** that year — behind only Dennis Scott (267) and Michael Jordan (253).",110
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.19,Information not found.,110
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.087,0.0,1.0,0.0,"The Russia–United Kingdom relations were in a state of rivalry during the **Russian Civil War (1917–1923)** after the abdication of Emperor Nicholas II in 1917. The UK, as part of the Allied intervention, supported the anti-Bolshevik White forces against the Bolshevik (Red) government, reflecting intense geopolitical rivalry and ideological opposition.",111
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.25,Information not found.,111
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.8,0.0,1.0,0.0,London Gatwick Airport.,112
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,6.95,Information not found.,112
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,0.0,1.0,0.0,"The context provided does not mention anyone writing a book about the Koch family or the Koch Industries. Therefore, based on the given information, the answer is: **Unknown**.",113
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.09,Information not found.,113
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.1667,0.0,1.0,0.0,No. Halldór Laxness was from Iceland; Timothy Leary was from the United States.,114
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.33,Information not found.,114
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0,10.0,0.0,0.0,"The provided context does not contain any information about Jalen Jones, the NBA, or basketball arenas.",115
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.41,Information not found.,115
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.0465,0.0,1.0,0.0,"African American communities — where jazz originated — are noted for their deep cultural connection to music and dance, especially through traditions like blues, spirituals, work songs, and later jazz itself, which emphasizes rhythm, improvisation, and embodied expression.",116
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.23,Information not found.,116
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0741,0.0,1.0,0.0,"The provided context does not contain any information about the genera *Greyia* or *Calibanus*, nor their species counts. Therefore, the query cannot be answered based on the given material.",117
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.2,Information not found.,117
+Vanilla_RAG,Adversarial (TruthfulQA),1,0.4545,0.0,1.0,0.0,"Chartreuse is a color with RGB value (127, 255, 0) — a vivid yellow-green hue.",118
+VeriMind_Full,Adversarial (TruthfulQA),0,0.0,10.0,0.0,7.3,Information not found.,118
+Vanilla_RAG,Multi-hop (HotpotQA),1,0.0909,0.0,1.0,0.0,"The query asks for the capital of the province where Baraki Barak District is located.
+
+Baraki Barak District is in Logar Province, Afghanistan. The capital of Logar Province is **Pul-i-Alam**.
+
+Answer: Pul-i-Alam",119
+VeriMind_Full,Multi-hop (HotpotQA),0,0.0,10.0,0.0,7.01,Information not found.,119
