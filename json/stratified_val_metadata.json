@@ -1,0 +1,73 @@
+{
+  "seed": 42,
+  "total_questions": 150,
+  "stratum_counts": {
+    "TRUSTED": 64,
+    "WARNING": 12,
+    "REJECTED": 74
+  },
+  "stratum_definitions": {
+    "TRUSTED": "VeriMind gave substantive answer AND trust_score >= 7.0",
+    "WARNING": "VeriMind output 'Information not found' AND trust_score < 6.0",
+    "REJECTED": "VeriMind output 'Information not found' AND trust_score >= 7.0"
+  },
+  "note_on_warning_scarcity": "Only 12 WARNING samples exist in the full 300-question test set, reflecting VeriMind's deterministic gating: the system rarely operates in a low-confidence regime. This is consistent with the bimodal trust_score distribution documented in the paper.",
+  "category_distribution": {
+    "TRUSTED": {
+      "Reasoning": 33,
+      "Multi-hop": 12,
+      "Factual": 14,
+      "Adversarial": 5
+    },
+    "WARNING": {
+      "Factual": 4,
+      "Multi-hop": 2,
+      "Reasoning": 6
+    },
+    "REJECTED": {
+      "Reasoning": 22,
+      "Multi-hop": 20,
+      "Factual": 22,
+      "Adversarial": 10
+    },
+    "TOTAL": {
+      "Reasoning": 61,
+      "Multi-hop": 34,
+      "Factual": 40,
+      "Adversarial": 15
+    }
+  },
+  "difficulty_distribution": {
+    "TRUSTED": {
+      "medium": 38,
+      "hard": 12,
+      "easy": 14
+    },
+    "WARNING": {
+      "easy": 4,
+      "hard": 2,
+      "medium": 6
+    },
+    "REJECTED": {
+      "hard": 21,
+      "easy": 22,
+      "medium": 31
+    },
+    "TOTAL": {
+      "medium": 75,
+      "hard": 35,
+      "easy": 40
+    }
+  },
+  "systems_covered": [
+    "VeriMind_Full",
+    "Vanilla_RAG",
+    "Self-RAG",
+    "HyDE"
+  ],
+  "output_files": {
+    "structured_val_set": "stratified_val_set.json",
+    "blind_audit_sheet": "blind_audit_sheet.csv",
+    "metadata": "stratified_val_metadata.json"
+  }
+}
