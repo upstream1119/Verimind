@@ -1,4 +1,4 @@
-question_id,system,stratum,llama_score,qwen_score
+﻿question_id,system,stratum,llama_score,qwen_score
 0,VeriMind_Full,TRUSTED,9,10.0
 0,Vanilla_RAG,TRUSTED,9,10.0
 0,Self-RAG,TRUSTED,9,10.0
