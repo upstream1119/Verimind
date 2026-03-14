@@ -3708,7 +3708,7 @@ Yes: authors are David Nadeau and Satoshi Sekine; title is ""A survey of named e
 Therefore, the page range is 3–26.
 
 Final answer: 3–26",3–26
-245,CoT_RAG,Reasoning,7,"Let's analyze step by step:
+245,CoT_RAG,Reasoning,hard,"Let's analyze step by step:
 
 1. The statement claims: ""The first artificial intelligence to beat a professional at Go was Deep Blue, which beat Garry Kasparov in 1997.""
 
