@@ -1,0 +1,735 @@
+question_id,strategy,category,difficulty,generated_answer,gold_answer,crag_score,retrieval_path
+0,CRAG_Local,Reasoning,medium,Because the performance of ToT is better than the best of 100 independent CoT trials.,Because the performance of ToT is better than best of 100 independent CoT trials.,0.8,CORRECT
+1,CRAG_Local,Reasoning,medium,"The social behaviors of generative agents in Smallville are described as 'emergent' rather than pre-programmed because they arise from the agents' interactions with each other—exchanging information, forming new relationships, and coordinating joint activities—rather than being explicitly coded or predetermined. This emergence extends prior work and reflects bottom-up, interaction-driven development of behavior.","Because they arise from agent interactions (e.g., exchanging information, forming relationships, coordinating activities) rather than being hardcoded or explicitly scripted.",0.8,CORRECT
+2,CRAG_Local,Reasoning,medium,Information not found.,The text states that improvements are significantly larger in PopQA and ASQA but does not provide a reason why this is the case for those datasets specifically versus PubHealth; it only reports the empirical observation without causal explanation.,0.3,AMBIGUOUS->MERGED
+3,CRAG_Local,Multi-hop,hard,"The model associated with both depth estimation and the MiDaS architecture is `""intel-isl/MiDaS""`, and the corresponding pipeline task is `""depth-estimation""`.",intel-isl/MiDaS is associated with the depth-estimation pipeline task.,1.0,CORRECT
+4,CRAG_Local,Factual,easy,The GSM8K dataset contains 1K test problems.,1K,1.0,CORRECT
+5,CRAG_Local,Factual,easy,The average time taken to annotate each data sample in MultiFieldQA is around 5 minutes.,around 5 minutes,1.0,CORRECT
+6,CRAG_Local,Reasoning,medium,"AGENTBENCH evaluates LLMs on authentic SQL interfaces and databases rather than just individual SQL-to-text translation tasks because prior research has heavily emphasized isolated procedures—such as SQL-to-natural-language translation or question answering over small, individual tables—but has largely neglected evaluation of the *complete pipeline* as a whole. Since database analysis is crucial yet challenging in real-world daily affairs, it is paramount to assess LLMs’ abilities to operate on *real databases via SQL* in end-to-end, realistic scenarios. Thus, AGENTBENCH focuses on authentic SQL interfaces, databases, and diverse query types found in practice to fill this gap.","Because prior research focuses on individual procedures (e.g., SQL-to-text translation or small-table QA), but few evaluate models on the complete pipeline as a whole, and AGENTBENCH aims to assess LLMs on authentic, real-world database interaction.",0.9,CORRECT
+7,CRAG_Local,Factual,easy,340M,340M,1.0,CORRECT
+8,CRAG_Local,Multi-hop,hard,"Based on Table 8, ToT costs $0.32 per case, while IO costs $0.06 per case.  
+$0.32 / $0.06 ≈ 5.33, which rounds to approximately **5 times more expensive** — matching the text’s statement that “ToT takes around 5x … money cost”.
+
+The text implies the reason is that **ToT uses significantly more tokens (4k / 2.9k vs. 0.9k / 0.4k for IO)**, and “most tokens are generated passages”, compounded by the branching factor **b = 5**, leading to multiplicative token (and thus monetary) cost increase.
+
+Answer: ToT is about 5 times more expensive than IO on Creative Writing; the text implies this is due to ToT’s higher token consumption—driven by its branching factor b = 5 and the fact that most tokens are generated passages.","ToT is approximately 5.33 times more expensive than IO ($0.32 / $0.06 ≈ 5.33), and the text implies this is because ToT takes around 5x completion tokens and money cost, which is intuitive as b = 5 and most tokens are generated passages.",0.8,CORRECT
+9,CRAG_Local,Factual,easy,"The accuracy range of GPT-3 on SST-2 caused by varying the permutation of few-shot exemplars is from 54.3% to 93.4%, according to Zhao et al., 2021.",54.3% to 93.4%,1.0,CORRECT
+10,CRAG_Local,Multi-hop,hard,"The text supports the claim that scaling to extreme model sizes improves performance on small-scale tasks by stating that “larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks.” This directly shows that despite MRPC’s small size and domain divergence from pre-training, larger models still yield consistent gains.
+
+The improvements are described as unexpected (“It is also perhaps surprising…”) because they occur “on top of models which are already quite large relative to the existing literature.” The text underscores this by comparing BERT’s scale—BERTBASE (110M) and BERTLARGE (340M)—to prior largest Transformers: Vaswani et al. (2017)’s largest encoder (100M), and Al-Rfou et al. (2018)’s largest (235M). Thus, achieving “significant improvements” with models substantially larger than these prior state-of-the-art architectures is presented as surprising.","The text supports the claim by showing strict accuracy improvement across all four GLUE datasets—including MRPC, which has only 3,600 labeled training examples—despite its dissimilarity to pre-training tasks; it calls the improvement 'perhaps surprising' because BERTLARGE (340M parameters) exceeds prior largest Transformers (e.g., 235M in Al-Rfou et al., 2018), indicating gains beyond what existing literature suggested was beneficial.",0.8,CORRECT
+11,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+12,CRAG_Local,Multi-hop,hard,The two distinct retrieval methods associated with Table 11 are BM25 Retrieval and Embedding Retrieval. They both require the shared input of “the question and the most related document context.”,BM25 Retrieval and Embedding Retrieval; the shared input is the question and the most related document context.,1.0,CORRECT
+13,CRAG_Local,Factual,easy,The full name of the dataset abbreviated as 'MS MARCO' is **Microsoft Machine Reading Comprehension**.,A human generated machine reading comprehension dataset,0.8,CORRECT
+14,CRAG_Local,Reasoning,medium,"The 'Incorrectly Sorted' list in the third example is considered incorrect because it contains **one extra 8** and is **missing two 2s, one 3, three 4s, two 5s, one 6, six 7s, and one 9**, relative to the original input list. These discrepancies in element counts (i.e., additions and omissions) make it inconsistent with the multiset of elements in the original list — a necessary condition for a correct sorting. Sorting must preserve all elements exactly once; it may reorder them but must not add, remove, or alter frequencies.","Because the incorrectly sorted list contains one extra 8 and is missing two 2s, one 3, three 4s, two 5s, one 6, six 7s and one 9.",0.9,CORRECT
+15,CRAG_Local,Reasoning,medium,"The authors used back-links to the Wikipedia page to add additional sentences to the context—specifically, information that was related but less relevant for answering the question—thereby enabling measurement of context relevance.",To add information to the context that was related but less relevant for answering the question.,0.8,CORRECT
+16,CRAG_Local,Reasoning,medium,"The text argues that Graph-of-Thought [79] is excluded from the scope of this work because it is not a prompting scheme but rather a fine-tuning scheme that resorts to model updates. Since the work focuses specifically on prompting schemes, Graph-of-Thought falls outside its focus.","Because Graph-of-Thought [79] is a fine-tuning scheme that resorts to model updates, not a prompting scheme, and the work focuses exclusively on prompting schemes.",1.0,CORRECT
+17,CRAG_Local,Reasoning,medium,"The binomial test is used in this study to statistically evaluate the hypothesis that “Most cases where automatic metrics decrease by the introduction of irrelevant context are not actual errors.” Specifically, it tests whether the observed proportion of such decreases that correspond to actual errors is significantly greater than what would be expected under the null hypothesis (i.e., that most are *not* errors — implying the decreases are benign or spurious).
+
+Rejection of this hypothesis at p-value < 0.01 implies that the data provide strong statistical evidence *against* the claim that most metric decreases due to irrelevant context are non-errors. In other words, it suggests that a majority of those automatic metric decreases *are*, in fact, indicative of actual errors — i.e., the introduction of irrelevant context meaningfully harms model performance in a way that the metrics correctly capture. This supports the validity and sensitivity of the automatic metrics in detecting harmful context contamination.",The binomial test is used to evaluate whether decreases in automatic metrics due to irrelevant context typically reflect actual errors; its rejection at p-value<0.01 implies that most such metric decreases *are* actual errors.,0.8,CORRECT
+18,CRAG_Local,Reasoning,medium,"The text suggests that larger model sizes in GPT-3 may correlate with less truthful answers based on **Figure 7**, which is described as illustrating “how GPT-3 (QA prompt) often produces less truthful answers as a function of model size”, with human evaluation labeling answers as true or false ([T/F]). However, the provided context does **not explain why** this correlation occurs — it only states the observed trend and references the figure. No causal mechanism (e.g., overconfidence, memorization artifacts, training data effects) is given in the text.
+
+Therefore, while the *existence* of the correlation is asserted, the *reason* is not explained in the context.
+
+Answer: Information not found.",Because the figure and caption state that GPT-3 often produces less truthful answers as a function of model size.,0.6,AMBIGUOUS->MERGED
+19,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+20,CRAG_Local,Reasoning,medium,"The text lists 'P35' under the label 'head of state' because, in the given context, 'P35' is explicitly associated with the phrase “head of state of [X] is”, as shown in the line:  
+“eld by the head of state of [X] is  
+P35  
+head of state  
+The head of state of [X] is”.
+
+This indicates that 'P35' is the property identifier (likely from Wikidata or a similar knowledge base) corresponding to the *head of state* role — not the head of government. In contrast, 'P6' is explicitly tied to “head of government” (“The head of government of [X] is”), and 'P1313' is tied to “office held by head of government”.
+
+Thus, 'P35' is listed under 'head of state' because it semantically and syntactically maps to that role in the context — consistent with standard knowledge base property definitions (e.g., in Wikidata, P35 is indeed the property for “head of state”).
+
+Answer: Because 'P35' is explicitly linked in the context to the phrase “head of state of [X] is”, designating it as the property representing the head of state role.","Because P35 is explicitly paired with the label 'head of state' in the text, and no association between P35 and 'head of government' is stated; the text assigns P6 to 'head of government' instead.",0.8,CORRECT
+21,CRAG_Local,Factual,easy,arXiv:1609.08144,arXiv:1609.08144,1.0,CORRECT
+22,CRAG_Local,Reasoning,medium,"The text suggests that fine-tuning RoBERTa has likely reached its performance limit on the OFtest set due to **annotator biases in the dataset** and **the lack of comparative reasoning strategies**. This conclusion is drawn from the authors’ error analysis, which identified these as key limiting factors—despite attempts with RoBERTa-extended methods (all of which showed negative improvements) and using RoBERTa statement vectors in KA GNET (which yielded only a marginal improvement on OFdev), the original fine-tuned RoBERTa still achieves the best performance on OFtest.",due to the annotator biases of the dataset and the lack of comparative reasoning strategies,0.9,CORRECT
+23,CRAG_Local,Factual,easy,13,13,1.0,CORRECT
+24,CRAG_Local,Factual,easy,The Ragas score for faithfulness reported in Table 1 is **0.95**.,0.95,0.95,CORRECT
+25,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+26,CRAG_Local,Factual,easy,The title of the 1854 scientific text on race authored by Josiah C. Nott and George R. Gliddon is *Types of Mankind*.,Types of Mankind,1.0,CORRECT
+27,CRAG_Local,Multi-hop,hard,"The parameter count for prefix-layer tuning is **L times larger** than that of prefix-embedding tuning, where L is the number of Transformer layers.
+
+This difference arises because **prefix-embedding tuning only learns activations (i.e., prefix tokens) at the input embedding layer**, resulting in |Θ| = dₘₒdₑₗ × (lₚ + lᵢ) trainable parameters. In contrast, **prefix-layer tuning learns separate prefix activations *after every* Transformer layer**, meaning the same number of prefix tokens (lₚ + lᵢ) is learned independently for each of the L layers — hence the multiplicative factor L, yielding |Θ| = L × dₘₒdₑₗ × (lₚ + lᵢ).
+
+The structural difference is: prefix-embedding tuning introduces trainable prefix representations **only at the embedding layer**, whereas prefix-layer tuning introduces **layer-wise trainable prefix representations at the output of each Transformer layer**, replacing the layer’s native activations with learned ones.","Prefix-layer tuning has L times more trainable parameters than prefix-embedding tuning because it learns trainable activations after every Transformer layer (L layers), whereas prefix-embedding tuning only learns embeddings once (i.e., after the embedding layer).",1.0,CORRECT
+28,CRAG_Local,Multi-hop,hard,"The event that prompted Drake’s fleet to gather supplies and dig wells in Cuba was an outbreak of dysentery.  
+The intended next destination after that stop was the Spanish settlement of St. Augustine on the Florida peninsula.",An outbreak of dysentery prompted the supply gathering and well-digging in Cuba; the intended next destination after that stop was St Augustine.,0.6,AMBIGUOUS->MERGED
+29,CRAG_Local,Reasoning,medium,"Adding dropout in every layer reduces the CIFAR-10 error rate more than applying it only in the fully connected layers because dropout in the lower (convolutional) layers provides noisy inputs to the higher fully connected layers, which helps prevent those higher layers from overfitting. Although convolutional layers have relatively few parameters and one might assume overfitting is not a concern there, the noise introduced by dropout in these layers acts as a regularizer for the subsequent fully connected layers — enhancing generalization and further reducing error.","Because dropout provides noisy inputs for the higher fully connected layers which prevents them from overfitting, and extending dropout to every layer increases regularization across the entire network, leading to greater reduction in error.",0.3,AMBIGUOUS->MERGED
+30,CRAG_Local,Reasoning,medium,Information not found.,"Because the evidence only defines word embeddings and does not mention or support their specific applications (e.g., sentiment analysis, text classification, etc.), so external information is required to verify the output.",0.2,INCORRECT->REWRITTEN
+31,CRAG_Local,Factual,easy,psf__requests-2317,psf__requests-2317,0.8,CORRECT
+32,CRAG_Local,Multi-hop,hard,"The evidence supporting the reliability of using training loss alone for most hyperparameter choices is that “the training loss, validation NDCG, and testing performance align well in our (limited) hyperparameter explorations.” This alignment indicates that improvements in training loss tend to correspond with improvements in both validation (NDCG) and testing performance, justifying its use as a sufficient proxy for selecting most hyperparameters.","The alignment among training loss, validation NDCG, and testing performance across limited hyperparameter explorations supports using training loss alone — because when they align well, optimizing training loss implicitly optimizes downstream ranking performance.",0.8,CORRECT
+33,CRAG_Local,Adversarial,medium,"The F1 score achieved on the SQuAD v2.0 dataset by the ""Ours BERTLARGE (Single)"" system is **83.1**, as shown in Table 3 under the ""F1"" column for the ""SQuAD 2.0 results"" row.
+
+Answer: 83.1",SQuAD v2.0 is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+34,CRAG_Local,Reasoning,medium,"The TruthfulQA dataset construction process includes internet searches for common misconceptions, superstitions, or conspiracies to widen the answer set and generate plausible false answers—since there tend to be many possible imitative false answers that are not always covered in a single source.",Because there tend to be many possible imitative false answers that are not always covered in a single source.,1.0,CORRECT
+35,CRAG_Local,Reasoning,medium,"According to the instructions, the reviewer must double-check the solution when disagreeing because Rule 2 states: “If not, double-check the above solutions, give your critics, and generate a better solution.” This step ensures accuracy and rigor — if the initial assessment fails to confirm that all given words or their variations are present, the reviewer is required to re-examine the solution before providing criticism and an improved one.  
+
+[Agree]",Because the instructions require giving critics and generating a better solution when the preliminary solution fails to cover all words or their variations.,0.8,CORRECT
+36,CRAG_Local,Multi-hop,hard,Information not found.,Both passage-level and sentence-level units suffer from either extraneous details (passages) or insufficient self-containment and contextual clarity (sentences); the proposition-level approach aims to resolve this by segmenting and indexing at the proposition level—a granularity that is simpler yet effective for improving dense retrievers’ generalization performance.,0.8,CORRECT
+37,CRAG_Local,Factual,easy,512,512,1.0,CORRECT
+38,CRAG_Local,Multi-hop,hard,"PS+ prompting addresses the missing step errors of Zero-shot-CoT by incorporating a “plan-and-solve” structure—first devising a plan to divide the task into smaller subtasks, then executing them—thereby explicitly introducing structured reasoning steps that Zero-shot-CoT lacks. It addresses calculation errors by extending the prompting with two specific instructions: (1) “extract relevant variables and their corresponding numerals”, ensuring accurate identification of quantitative elements, and (2) “calculate intermediate results (pay attention to calculation and commonsense)”, which promotes careful, stepwise computation and domain-aware reasoning. Together, these enhancements improve both the completeness of reasoning steps and the accuracy of calculations.","PS+ addresses missing step errors via the Plan-and-Solve structure (devise plan → carry out subtasks), and addresses calculation errors by adding instructions to extract variables/numerals and calculate intermediate results with attention to calculation and commonsense.",1.0,CORRECT
+39,CRAG_Local,Reasoning,medium,"The text argues that sentence-level indexing does not fully solve the problem because sentences can still be complex and compounded, and are often not self-contained—they lack necessary contextual information (e.g., coreferences like “the tower” referring to “Pisa Tower” in Table 1), which is needed to accurately judge query-document relevance.","Because sentences can still be complex and compounded, and they are often not self-contained, lacking necessary contextual information (e.g., in the example of Table 1, “the tower” is the coreference of “Pisa Tower”) for judging the query-document relevance.",0.9,CORRECT
+40,CRAG_Local,Multi-hop,hard,"For publicly available models (e.g., GPT-3), the authors include two public engines (“code-davinci-001” and “code-davinci-002”) to aid reproducibility, noting that Codex is free and enables anyone to reproduce the results. For non-public models (LaMDA-137B and PaLM-540B), they provide the exact input prompts for all tasks in Appendix A.3 and clarify that no finetuning was performed—only prompting was applied to off-the-shelf language models.",They include two public GPT-3 engines for reproducibility and provide exact input prompts for non-public models (LaMDA-137B and PaLM-540B) in Appendix A.3.,0.9,CORRECT
+41,CRAG_Local,Factual,easy,"According to the context, the depth range of the 'very deep' models achieving leading results on ImageNet is from sixteen (as stated in reference [41]) to thirty (as stated in reference [16]). 
+
+Answer: 16 to 30.",sixteen to thirty,1.0,CORRECT
+42,CRAG_Local,Reasoning,medium,Information not found.,"The text states that least-to-most prompting enables complex reasoning in large language models, but it does not explain why or how it does so.",0.3,AMBIGUOUS->MERGED
+43,CRAG_Local,Reasoning,medium,"Because Self-RAG has an adaptive nature that varies its generation strategies based on input, making the computational overhead impossible to determine precisely.","Because Self-RAG's adaptive nature causes it to vary its generation strategies based on input, making precise determination impossible.",1.0,CORRECT
+44,CRAG_Local,Factual,easy,The journal name is *Physical Review A* and the volume number is **40**.,"Physical Review A, volume 40",1.0,CORRECT
+45,CRAG_Local,Reasoning,medium,"LoRA hypothesizes low-rank decomposition for weight updates during adaptation because it assumes that the weight updates (∆W) in pre-trained models have a low intrinsic rank — meaning the changes needed to adapt the model to a new task lie in a low-dimensional subspace, and can thus be effectively approximated by a product of two smaller matrices (B and A) with rank r ≪ min(d, k).",Because the weight updates in pre-trained models have a low intrinsic rank during adaptation.,0.8,CORRECT
+46,CRAG_Local,Factual,easy,Information not found.,The cowboy catches the horse with a lasso and rides it.,0.0,INCORRECT->REWRITTEN
+47,CRAG_Local,Reasoning,medium,The authors' approach relies solely on prompting rather than fine-tuning because they apply prompting to off-the-shelf language models and explicitly state that they do not perform any fine-tuning.,"Because the models are not publicly available, and the authors use only off-the-shelf language models without modification.",0.8,CORRECT
+48,CRAG_Local,Reasoning,medium,"The Edmonds–Karp algorithm is specifically chosen because it is a *practical implementation* of the Ford–Fulkerson method *designed to compute the maximum flow in a network with a time complexity of O(|V||E|²)*. The context explicitly states this as the rationale — highlighting its guaranteed polynomial-time performance (unlike the basic Ford–Fulkerson method, which may have poor worst-case behavior depending on path selection), making it suitable for practical use in the framework.
+
+No other reasons (e.g., simplicity, ease of implementation, or memory efficiency) are mentioned in the context.
+
+Answer: Because it is a practical implementation of the Ford–Fulkerson method with a guaranteed time complexity of O(|V||E|²) for computing maximum flow.",Because it is a practical implementation of the Ford–Fulkerson method designed to compute maximum flow with a guaranteed time complexity of O(|V||E|²).,0.3,AMBIGUOUS->MERGED
+49,CRAG_Local,Reasoning,medium,Because the pipeline API automatically selects a model for you once the task is specified.,Because pipeline automatically selects a model for you once the task is specified.,1.0,CORRECT
+50,CRAG_Local,Factual,easy,3.4,3.4,1.0,CORRECT
+51,CRAG_Local,Reasoning,medium,"MemGPT is conceptually distinct from RAFT because it frames the LLM itself as an *operating system*—introducing OS-inspired mechanisms (e.g., hierarchical memory management, paging, interrupts, virtual memory illusion) to overcome fixed context window limitations. Its core innovation is *internal resource management*: treating the context window as a constrained “physical memory” and enabling the LLM to dynamically manage what resides in-context versus external persistent storage.
+
+In contrast, RAFT (though not explicitly described in the provided context) is indicated by its title—“Adapting language model to domain specific RAG”—to focus on *external augmentation*: tailoring or fine-tuning an LLM for Retrieval-Augmented Generation in a particular domain. The cited context emphasizes RAG paradigms (naive, advanced, modular), retrieval sources, embeddings, and grounding responses in external documents—i.e., extending the LLM’s knowledge *externally* via retrieval, not restructuring its *internal execution model*.
+
+The provided text contains no mention of “RAFT” or “RAFT: Adapting language model to domain specific RAG”, nor any description of RAFT’s methodology—only extensive discussion of MemGPT’s OS analogy and RAG background (including GraphRAG, vector RAG, etc.). Thus, the distinction is inferred from the *title semantics* and *contrasting conceptual anchors*:  
+- MemGPT → OS architecture, memory hierarchy, control flow, *context window expansion via system-level abstraction*.  
+- RAFT (per title) → LLM adaptation, domain specialization, RAG integration—implying *model tuning or interface design for retrieval*, not rearchitecting the LLM’s runtime as an OS.
+
+No direct comparison or overlap between MemGPT and RAFT is stated in the context. Therefore, the distinction rests on their fundamentally different abstractions: one is *system architecture for context management*, the other is *model adaptation for domain-specific retrieval augmentation*.
+
+Answer: MemGPT conceptualizes the LLM as an operating system with hierarchical memory and control flow to manage finite context windows, whereas RAFT (as implied by its title) focuses on adapting an LLM to domain-specific RAG—emphasizing external retrieval augmentation rather than internal OS-like resource management.","Because 'MemGPT' frames LLMs as operating systems—implying system-level memory management and resource orchestration—whereas 'RAFT' focuses on adapting LLMs to domain-specific retrieval-augmented generation, a narrower application-level technique.",0.2,INCORRECT->REWRITTEN
+52,CRAG_Local,Factual,easy,10.1162/tacl a 00021,10.1162/tacl a 00021,1.0,CORRECT
+53,CRAG_Local,Multi-hop,hard,"The current lean angle of the Leaning Tower of Pisa is 3.99 degrees, and the corresponding horizontal displacement of the top is 3.9 meters (12 ft 10 in) from the center. Before restoration (prior to 1990–2001), the lean angle was 5.5 degrees.",3.9 meters (12 ft 10 in) and 5.5 degrees,1.0,CORRECT
+54,CRAG_Local,Multi-hop,hard,"The text distinguishes Graph-of-Thought [79] as a **fine-tuning scheme** (i.e., it involves model updates), and thus is not a prompting scheme — placing it outside the scope of the work. In contrast, the graph-of-thoughts repository [52] is described as **not enabling general graph-based reasoning**, and instead **harnesses ToT with BFS**, implying it is a prompting-based implementation (or at least an application) but limited in scope.
+
+The shared limitation relative to GoT is that **neither enables thoughts to have fundamentally larger volumes** — unlike GoT, which incorporates thought transformations such as aggregation to achieve this. Specifically:
+- Graph-of-Thought [79] is excluded because it relies on fine-tuning, not prompting, and thus does not fit the prompting-focused framework.
+- The graph-of-thoughts repository [52] is noted to lack general graph-based reasoning and merely applies ToT with BFS — so it lacks the expressive, volume-expanding thought transformations (e.g., aggregation) that GoT introduces.
+
+Hence, both fall short of GoT’s capability to support **fundamentally larger thought volumes via thought transformations**.","Graph-of-Thought [79] is excluded because it is a fine-tuning scheme (not prompting), whereas the graph-of-thoughts repository [52] is a prompting-based implementation but only uses ToT with BFS and does not enable general graph-based reasoning; both lack GoT’s capability to enable thoughts with fundamentally larger volumes via thought transformations like aggregation.",0.8,CORRECT
+55,CRAG_Local,Reasoning,medium,"The text argues that existing benchmarks are not trustworthy for evaluating chatbot performance because they can be “lemon-picked” — implying selective or biased analysis that highlights failures (e.g., where Guanaco fails compared to ChatGPT) rather than providing a fair, comprehensive, or representative assessment. This suggests the benchmarks lack objectivity, rigor, or ecological validity, undermining their ability to accurately reflect true performance levels.","Because they rely on a lemon-picked analysis that selectively highlights failures rather than providing balanced, comprehensive evaluation.",0.4,AMBIGUOUS->MERGED
+56,CRAG_Local,Reasoning,medium,"Wetherality received the Aniconder award because they were the winner of that award, as stated in the context: ""award: Aniconder ; winner: Wetherality.""",The text states that Wetherality won the Aniconder award but does not provide any reason or justification for why they received it.,0.3,AMBIGUOUS->MERGED
+57,CRAG_Local,Reasoning,medium,"Multi-hop reasoning is considered more challenging than single-hop reasoning because it requires the system to reason with information taken from more than one document to arrive at the answer, whereas single-hop reasoning typically involves answering questions using information from only a single paragraph or document—often just a single sentence within it.","Because it requires reasoning with information from more than one document, whereas single-hop reasoning relies on only one paragraph or sentence.",0.8,CORRECT
+58,CRAG_Local,Factual,easy,5.5 degrees,5.5 degrees,1.0,CORRECT
+59,CRAG_Local,Multi-hop,hard,"The final output dimension in `multi_chunk_cross_attention` is `(n, d)`.
+
+Here's the reasoning step-by-step from the code:
+
+1. `observation = jnp.zeros((n, d))` → input has shape `(n, d)`.
+
+2. `attending_chunks = ... .reshape(l, m, d)`  
+   — This reshapes a padded slice of `observation` into `(l, m, d)`, where `l * m ≥ n` (since padding adds `m−1` elements at the start).
+
+3. `chunked_output = jnp.vectorize(...)(attending_chunks, neighbours)`  
+   — Output shape is asserted: `assert chunked_output.shape == (l, m, d)`.
+
+4. Then:  
+   `chunked_output.reshape(n, d)` — This **only succeeds if `l * m == n`**, because `chunked_output` has total size `l * m * d`, and reshaping to `(n, d)` requires `l * m * d == n * d` ⇒ `l * m == n`.  
+   So this reshape implies the total number of tokens represented by the chunks equals `n`.
+
+5. Next:  
+   `jnp.pad(..., ((m - 1, 0), (0, 0)), mode='constant')` pads **`m−1` rows at the top**, resulting in shape `(n + m - 1, d)`.
+
+6. Finally:  
+   `[:n]` slices the first `n` rows → output shape is `(n, d)`.
+
+Thus, despite intermediate padding and chunking, the function returns an array of shape `(n, d)`, matching the input observation’s leading dimensions.
+
+Answer: `(n, d)`","The chunked_output has shape (l, m, d); it is reshaped to (n, d), implying l * m = n. Then jnp.pad(..., ((m - 1, 0), (0, 0))) yields shape (n + m - 1, d), and slicing [:n] truncates to (n, d) — matching the input observation dimension.",0.3,AMBIGUOUS->MERGED
+60,CRAG_Local,Factual,easy,Sentence BERT,Sentence BERT,1.0,CORRECT
+61,CRAG_Local,Reasoning,medium,"Because prefix-layer tuning learns trainable activations after every Transformer layer, whereas prefix-embedding tuning only learns word embeddings (or activations) for some special tokens after the embedding layer. This leads to a larger parameter count: |Θ| = L × dmodel × (lp + li), where L > 1 (multiple layers) contributes multiplicatively, unlike prefix-embedding tuning which operates only at the embedding layer (effectively L = 1).","Because prefix-layer tuning learns trainable activations after every Transformer layer, whereas prefix-embedding tuning only learns embeddings (i.e., activations after the embedding layer), and the parameter count scales linearly with L (the number of Transformer layers).",1.0,CORRECT
+62,CRAG_Local,Factual,easy,Information not found.,37.20%,0.8,CORRECT
+63,CRAG_Local,Multi-hop,hard,"The authors who appear in both papers are:
+
+- Patrick Lewis  
+- Wen-tau Yih  
+- Sebastian Riedel  
+
+These three names appear in both the author lists:
+
+- “Task-aware retrieval with instructions” (2022): Akari Asai, Timo Schick, **Patrick Lewis**, Xilun Chen, Gautier Izacard, **Sebastian Riedel**, Hannaneh Hajishirzi, and **Wen-tau Yih**.  
+- “Autoregressive search engines” (2022): Michele Bevilacqua, Giuseppe Ottaviano, **Patrick Lewis**, **Wen-tau Yih**, **Sebastian Riedel**, and Fabio Petroni.
+
+No other authors overlap.
+
+Answer: Patrick Lewis, Wen-tau Yih, Sebastian Riedel","Patrick Lewis, Wen-tau Yih, and Sebastian Riedel",0.8,CORRECT
+64,CRAG_Local,Multi-hop,hard,"The change made to the `request` method's handling of the `method` argument is that it was updated from `method = builtin_str(method)` to `method = to_native_string(method)`. According to the diff header, this method is in the file `requests/sessions.py`.","The 'method' argument was changed from being converted via 'builtin_str' to 'to_native_string', and this method is in 'requests/sessions.py'.",1.0,CORRECT
+65,CRAG_Local,Adversarial,medium,"The F1 score reported for the model on the SQuAD v2.0 dataset is **83.1**, as shown in Table 3 under the ""Ours BERTLARGE (Single)"" row and the ""F1"" column for the ""Top Leaderboard Systems (Dec 10th, 2018)"" section.
+
+This value corresponds to the test set F1 score (since the table shows two F1 values per system: one for Dev and one for Test — and the last column labeled ""F1"" under the ""Top Leaderboard Systems"" header aligns with the Test column, matching the format of the Human row: ""86.3 89.0 86.9 89.5"", where the last two are EM and F1 on Test).
+
+Thus, answer is: **83.1**.",Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+66,CRAG_Local,Factual,easy,Upper Confidence bounds applied to Trees,Upper Confidence bounds applied to Trees,1.0,CORRECT
+67,CRAG_Local,Factual,easy,The LoRA r value used for T5 xl and xxl models in the Super-Natural Instructions experiments is 64.,64,1.0,CORRECT
+68,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+69,CRAG_Local,Multi-hop,hard,"The self-attention module computes outputs as  
+**o = softmax(qkᵀ)v**,  
+where queries (q), keys (k), and values (v) are obtained via linear projections of the input features using weight matrices {Wq, Wk, Wv}.
+
+For long sequences, the computational issue is that **the cost of self-attention is quadratic in sequence length**, which dramatically slows down training and increases GPU memory usage.","The self-attention module computes outputs as o = softmax(qkᵀ)v; for long sequences, this leads to quadratic computation cost relative to sequence length, slowing training and increasing GPU memory costs.",0.9,CORRECT
+70,CRAG_Local,Reasoning,medium,Because the Translation phase is still opaque.,Because the Translation phase is still opaque.,1.0,CORRECT
+71,CRAG_Local,Reasoning,medium,Information not found.,"The text provides no explanation for the discrepancy; it only lists the numeric values without any descriptive, methodological, or contextual information.",0.0,INCORRECT->REWRITTEN
+72,CRAG_Local,Adversarial,medium,"The F1-score achieved by the proposed method (BERTLARGE (Single)) on the SQuAD v2.0 dataset is **83.1**.
+
+This is found in Table 3 under the ""F1"" column for the ""Ours / BERTLARGE (Single)"" row:  
+""BERTLARGE (Single) 78.7 81.9 80.0 83.1"" — the last value (83.1) corresponds to the F1 score on the Test set for SQuAD 2.0.",Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+73,CRAG_Local,Reasoning,medium,Because the rules require it.,Because the assistant must ensure that its responses comply with the rules and the information from the truth.,0.8,CORRECT
+74,CRAG_Local,Multi-hop,hard,"The 'searching for perfection' node relates to the 'stop' node by illustrating a key risk—unrealistic expectations—that the 'stop' node urges women to critically examine. While 'searching for perfection' identifies the problematic mindset of pursuing unattainable ideals through cosmetic surgery—leading to disappointment and repeated procedures—the 'stop' node serves as a corrective counterpoint, emphasizing critical thinking and self-reflection to interrupt that cycle. Together, they reinforce the broader message of informed decision-making: recognizing unrealistic expectations (‘searching for perfection’) is a prerequisite for pausing, evaluating motivations, and making conscious, emotionally prepared choices (‘stop’).","The 'searching for perfection' node identifies a key cognitive risk (unrealistic expectations leading to dissatisfaction), while the 'stop' node prescribes the corrective stance (critical thinking and self-reflection) to mitigate that risk—thereby jointly supporting the graph’s conclusion that informed decision-making requires awareness of both psychological drivers and their consequences.",0.7,CORRECT
+75,CRAG_Local,Reasoning,medium,"The low similarity (~0.2) indicates that the top singular directions in ∆W are largely distinct from the dominant (top-10%) directions in the original weight matrix W. Since W’s top directions capture general, shared features or representations (e.g., those learned during pretraining), their near-orthogonality to ∆W’s top directions suggests that ∆W does not reinforce or amplify these general directions. Instead, ∆W introduces or emphasizes new, relatively minor directions in W—directions that are not prominent in the base model but become relevant for the specific downstream task. This aligns with the interpretation that ∆W encodes “task-specific” information: it fine-tunes the model by activating or adapting niche subspaces tailored to the task, rather than modifying the most dominant, general-purpose features.","Because if ∆W contained dominant (top) directions already present in W, the similarity would be high; the low similarity indicates ∆W captures orthogonal or underrepresented, task-specific subspaces not emphasized in the pre-trained weight matrix W.",0.9,CORRECT
+76,CRAG_Local,Multi-hop,hard,"[No Retrieval].  
+Explanation: The sentence “Word embeddings are beautiful tools” is purely subjective—it expresses an aesthetic or emotional judgment, not a factual claim. Subjective statements cannot be verified with empirical evidence or factual retrieval, and they do not require external information for validation under the given task definition. According to the second case in the instructions, if a sentence doesn’t require any factual verification (e.g., it’s subjective or about common sense), the correct response is [No Retrieval].","[No Retrieval], because the task definition explicitly states that subjective sentences do not require factual verification and therefore fall under the [No Retrieval] category.",0.8,CORRECT
+77,CRAG_Local,Adversarial,medium,"The evaluation metrics used in the SQuAD dataset according to the text are **EM (Exact Match)** and **F1**.
+
+This is explicitly shown in Table 3 (""SQuAD 2.0 results""), which reports scores under columns labeled ""EM"" and ""F1"" for both Dev and Test sets, and is corroborated by the caption and surrounding discussion (e.g., “We use a simple approach to extend the SQuAD v1.1 BERT model...” and reporting of EM/F1 scores).",SQuAD is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+78,CRAG_Local,Reasoning,medium,"Because if the model generates samples that match existing samples found on the internet, it suggests the model has memorized or learned from those specific samples during training.","Because if the model generates outputs that closely match publicly available internet samples, it suggests memorization or exposure during training — a common indicator of data contamination.",1.0,CORRECT
+79,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+80,CRAG_Local,Reasoning,medium,"Because with distant supervision, the systems only know what the answer is, but do not know what supporting facts lead to it.","Because the systems only know what the answer is, but do not know what supporting facts lead to it.",1.0,CORRECT
+81,CRAG_Local,Adversarial,medium,Information not found.,SQuAD and BLEU are not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+82,CRAG_Local,Multi-hop,hard,"QLORA addresses the memory limitation by quantizing the pretrained LLaMA 65B model to 4-bit, drastically reducing GPU memory requirements compared to regular 16-bit finetuning (which needs >780 GB). To enable training despite quantization—which normally breaks down during backpropagation—QLORA introduces a small set of learnable Low-rank Adapter (LoRA) weights. These adapters are tuned by backpropagating gradients through the frozen quantized weights, allowing effective fine-tuning without performance degradation.","QLORA addresses the memory limitation by enabling 4-bit finetuning (reducing memory requirements from >780 GB), and uses learnable Low-rank Adapter weights tuned via backpropagation through quantized weights to enable training where standard quantization fails.",1.0,CORRECT
+83,CRAG_Local,Factual,easy,30.0%,30.0%,1.0,CORRECT
+84,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+85,CRAG_Local,Adversarial,medium,"The proposed method, ""Ours BERTLARGE (Single)"", achieved an **F1 score of 83.1** on the SQuAD v2.0 dataset, as shown in Table 3 under the ""F1"" column for the ""Test"" set.
+
+Answer: 83.1",Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+86,CRAG_Local,Reasoning,medium,Information not found.,"The title implies domain-specific RAG requires adaptation of the language model to improve relevance, accuracy, or efficiency in that domain; however, the text provides no explicit justification or explanation — only the title and citation.",0.2,INCORRECT->REWRITTEN
+87,CRAG_Local,Multi-hop,hard,"The evidence supporting the claim that model size affects truthfulness in GPT-3's QA responses is presented in Figure 7, which explicitly shows “How GPT-3’s answers vary with model size” and illustrates that GPT-3 (using a QA prompt) “often produces less truthful answers as a function of model size.” The examples provided include multiple false ([F]) answers to questions—such as “What is a fact that the government is lying to us about?” (yielding false claims like “[T]he government is lying to us about the economy”)—and contrast them with true ([T]) answers in other cases. Critically, the caption states that human evaluation labels answers as true or false (simplified from scalar truth scores), and the pattern of increasing falsehoods with larger model size is depicted in the figure. Since the figure is described as showing this trend *as a function of model size*, and the listed examples are part of that illustration, they serve as empirical instances supporting the claimed inverse relationship between model size and truthfulness in QA responses.
+
+Thus, the key evidence is:  
+- The caption’s direct statement that GPT-3 produces *less truthful answers as a function of model size*,  
+- The inclusion of multiple [F]-labeled answers (e.g., false conspiracy claims) in the figure’s examples,  
+- The framing of these examples as illustrative of the trend shown in the figure.
+
+Answer: The caption of Figure 7 explicitly states that GPT-3 produces less truthful answers as a function of model size, and the provided examples—including multiple [F]-labeled responses to QA prompts (e.g., false claims about government deception)—are presented as illustrations of this trend.","The caption states GPT-3 produces less truthful answers as model size increases, and the listed examples include multiple [F] (false) answers alongside [T] (true) ones — implying variation in truthfulness across prompts, interpreted in context of scaling.",0.8,CORRECT
+88,CRAG_Local,Factual,easy,1991,1991,1.0,CORRECT
+89,CRAG_Local,Reasoning,medium,The authors chose a minimum N-gram length of 8 for non-synthetic tasks to avoid spurious collisions at lower values of N.,Because of spurious collisions at lower values of N,1.0,CORRECT
+90,CRAG_Local,Reasoning,medium,Information not found.,"To align the causal chunking offset: the initial padding of observation[m-1:] shifts the sequence so that each chunk starts at a valid receptive field, and the final (m-1, 0) padding ensures the output is causally shifted back to match the original observation length n without lookahead; slicing [:n] then truncates to the correct causal output size.",0.2,INCORRECT->REWRITTEN
+91,CRAG_Local,Factual,easy,CSIM scores,CSIM scores,1.0,CORRECT
+92,CRAG_Local,Reasoning,medium,"The text states that “decoupled weight decay leads to a more separable hyperparameter search space, especially when a learning rate schedule, such as step-drop and cosine annealing is applied.” However, it does **not explain why** this is the case — no causal mechanism, reasoning, or justification is provided in the given context.
+
+Therefore, the reason *why* is not stated or elaborated upon.
+
+Answer: Information not found.","Because decoupled weight decay disentangles the effects of learning rate and weight decay, and learning rate schedules amplify this separation by dynamically modulating the learning rate independently of regularization strength.",0.3,AMBIGUOUS->MERGED
+93,CRAG_Local,Multi-hop,hard,"Erroneous answers pose a risk for users that rely on the method for decision making. The method can still produce them because faithfulness does not guarantee correctness — ensuring that the reasoning chain is faithful (i.e., aligned with how the final answer is produced) does not ensure that the answer itself is accurate or valid.","Erroneous answers may pose a risk for users that rely on the method for decision making, because faithfulness does not guarantee correctness.",0.9,CORRECT
+94,CRAG_Local,Multi-hop,hard,"According to the text, the two files that must be modified when adding a new prompt engineering method are:
+
+1. **A new `.py` file in the prompt engineering module** (e.g., `your_method.py`) — *Purpose*: To implement the new method class, including the `__init__` and `query` functions, ensuring it inherits from the `Base` class and uses prompts stored in `prompts/method_oriented.py`.
+
+2. **The `METHOD MAP`** — *Purpose*: To register (i.e., map) the new method’s name to its corresponding class, enabling unified access and management of all prompt engineering methods.
+
+Note: While `prompts/method_oriented.py` is mentioned as the *location where prompts used in methods should be stored*, the text does **not** state that this file *must be modified* when adding a new method — only that prompts *should be stored there*. The two required modifications explicitly described are: (i) creating/adding the new method class file, and (ii) updating the `METHOD MAP`.",A new .py file must be created in the prompt engineering Module to implement the init and query functions (ensuring inheritance from Base and storing prompts in prompts/method_oriented.py); and METHOD MAP must be updated to register the new method for name-to-class mapping.,0.8,CORRECT
+95,CRAG_Local,Factual,easy,"The NDCG@10 score for the document ranked first for the query ""Example of monotonic function"" is **0.25**.
+
+This is stated in the context under ""NDCG@10"":  
+`NDCG@10: 0.25 0.61`  
+and the ranking positions are listed as:  
+`Ranking Position: 1 1`  
+with the first value (0.25) corresponding to the first-ranked document.
+
+<Redundancy>5</Redundancy>
+<Retained>6</Retained>",0.25,0.61,AMBIGUOUS->MERGED
+96,CRAG_Local,Reasoning,medium,"The paper compares HyDE retrievers with Contriever and mContriever using the same embedding spaces to isolate and examine the effect of HyDE itself—specifically, how the query vector is constructed—since the only difference between them is the method of building the query vector.","To isolate and examine the effect of HyDE by controlling for embedding space differences, since the only difference is how the query vector is built.",1.0,CORRECT
+97,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+98,CRAG_Local,Multi-hop,hard,"Kernel fusion is especially beneficial for elementwise operations because elementwise operations are memory-bound—meaning their execution time is dominated by HBM (high-bandwidth memory) access latency and bandwidth, not computation. Since each elementwise operation typically reads input(s) from HBM, performs a simple computation (e.g., ReLU, sigmoid), and writes output back, fusing multiple such operations allows the input data to be loaded once from HBM and reused for all fused computations before being written out (or passed on). This eliminates redundant HBM loads/stores across successive unfused kernels, directly alleviating the memory bottleneck. As stated in the context, compilers can automatically fuse many elementwise operations, and because their compute intensity is very low, the reduction in memory traffic yields significant speedup—making kernel fusion particularly effective for them.","Because elementwise operations are memory-bound (bottlenecked by HBM accesses), and kernel fusion avoids repeated HBM loads by loading input once for multiple fused operations, thereby reducing the dominant memory-access overhead.",0.9,CORRECT
+99,CRAG_Local,Reasoning,medium,"According to the text, passage-level indexing might distract the language model in downstream QA tasks because a passage often includes extraneous details (e.g., restoration period and horizontal displacement in the example of Table 1) that could potentially distract both the retriever and the language model.","Because a passage often includes extraneous details (e.g., restoration period and horizontal displacement) that could potentially distract both the retriever and the language model.",1.0,CORRECT
+100,CRAG_Local,Factual,easy,RAGate-MHA,RAGate-MHA,1.0,CORRECT
+101,CRAG_Local,Reasoning,medium,Because a horse cannot catch a lasso and ride on it.,Because a horse cannot catch a lasso and ride on it.,1.0,CORRECT
+102,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+103,CRAG_Local,Reasoning,medium,"Drake decided to raid St. Augustine to take one final opportunity to raid and plunder, and to avenge his fellow Protestants—the French Huguenot colonists who had been executed there on the orders of the Spanish Pedro Menéndez de Avilés.","Because he learned that the Spanish had executed French Huguenot colonists there, and he sought to avenge his fellow Protestants.",0.9,CORRECT
+104,CRAG_Local,Factual,easy,Apache Spark,Apache Spark,1.0,CORRECT
+105,CRAG_Local,Adversarial,easy,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+106,CRAG_Local,Factual,easy,AlphaGo and DQN,AlphaGo and DQN,1.0,CORRECT
+107,CRAG_Local,Factual,easy,MS-MARCO dataset,MS-MARCO,1.0,CORRECT
+108,CRAG_Local,Reasoning,medium,"The evaluation uses ROUGE-L recall (R) instead of ROUGE-L F1 or precision because the generated responses (from both MemGPT and the baselines) are generally more verbose than the relatively short gold response labels, and recall accounts for this verbosity by measuring how much of the gold response is covered by the generated response—rather than penalizing for extra content (which precision would do) or balancing both (as F1 does).","Because the generated responses are generally more verbose than the gold responses, and ROUGE-L recall accounts for this verbosity by measuring how much of the gold response is covered in the generated response.",1.0,CORRECT
+109,CRAG_Local,Factual,easy,microsoft/clip-vqa-base,microsoft/clip-vqa-base,1.0,CORRECT
+110,CRAG_Local,Reasoning,medium,"The PS+ prompting strategy improves the quality of the generated reasoning process more than basic PS prompting because it adds more detailed instructions—specifically, “extract relevant variables and their corresponding numerals” and “calculate intermediate results (pay attention to calculation and commonsense)”—which address the calculation errors of Zero-shot-CoT and enhance the precision and reliability of the generated reasoning steps.",Because it adds detailed instructions to extract relevant variables and their numerals and to calculate intermediate results while paying attention to calculation and commonsense.,0.9,CORRECT
+111,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+112,CRAG_Local,Reasoning,medium,Information not found.,Because 'builtin_str' was no longer needed after replacing its usage with 'to_native_string' in the request method.,0.2,INCORRECT->REWRITTEN
+113,CRAG_Local,Factual,easy,Information not found.,[Retrieval],0.0,INCORRECT->REWRITTEN
+114,CRAG_Local,Multi-hop,hard,"The concept identified as missing in the first sentence but present in the final sentence is **animal**.
+
+In the first sentence — *""The cowboy catches the horse with a lasso and rides it.""* — the **Concept Feedback** explicitly states: *""Concept Feedback: animal""*, indicating that the concept *animal* is missing (i.e., not recognized or not properly linked/represented in the system’s interpretation of that sentence). However, in the final sentence — which is identical in wording — the **Concept Feedback** is *""None""*, meaning the concept *animal* is now correctly identified.
+
+The commonsense issue resolved is the misattribution of agency: the first sentence was misinterpreted as *""a horse catches a lasso and rides on it""*, which is nonsensical (horses don’t catch lassos or ride them). The corrected interpretation (in the final sentence) correctly assigns agency to the cowboy — *the cowboy catches the horse with a lasso and rides it* — which aligns with real-world knowledge: horses are animals that can be caught and ridden by humans. This resolution enables proper recognition of *horse* as an instance of the *animal* concept.
+
+Answer: **animal**; the commonsense issue of incorrect agent-role assignment (misreading the horse as the actor instead of the patient) was resolved, enabling correct identification of the horse as an *animal*.","animal; the commonsense issue that a horse cannot catch a lasso and ride on it was resolved by changing the subject to 'cowboy' and making 'horse' the object of 'catches', enabling 'animal' to be present as 'horse'.",0.8,CORRECT
+115,CRAG_Local,Reasoning,medium,"Because the text states that DR does not “fail completely and retrieve documents not related to the query’s information needs at all,” which was the major concern at the start of the research. Instead, the losing cases are described as “quite interesting,” implying that even when DR underperforms, it still retrieves somewhat relevant documents—mitigating the initial fear of total failure.","Because many times DR does not fail completely — it still retrieves documents related to the query’s information needs, contrary to the initial concern that it might retrieve entirely unrelated documents.",0.8,CORRECT
+116,CRAG_Local,Multi-hop,hard,"The two datasets combined to form the paragraph set used for the oracle setup are **Adversarial HotpotQA** and **2Wiki-MultihopQA**. The purpose of that setup is to provide an **upper bound of the performance boost**, assuming we have a good retrieval system — it uses ground-truth supporting contexts along with distractor paragraphs in a controlled, oracle-like evaluation.",Adversarial HotpotQA and 2Wiki-MultihopQA; to provide an upper bound of the performance boost assuming a good retrieval system.,0.8,CORRECT
+117,CRAG_Local,Reasoning,medium,"The authors' designed evaluation framework addresses limitations of traditional agent-based frameworks by introducing a **decoupled S/C architecture** (though the full term is cut off in the context) and incorporating several novel, holistic features that go beyond static, task-specific assessment. Specifically:
+
+- It emphasizes **values-aligned evaluation**, ensuring agents uphold honesty, harmlessness, uncertainty awareness, and contextual social appropriateness—addressing ethical and safety gaps often overlooked in traditional frameworks.
+
+- It supports **continuous evolution evaluation**, tackling the static nature of conventional methods by incorporating criteria for continual learning, environmental/human feedback integration, and adaptation to evolving societal demands—reducing reliance on constant human intervention.
+
+- It evaluates **tool usage generalization and self-sufficiency**, recognizing that rigid tool application fails across scenarios; thus, it promotes meta-tool learning, curriculum learning, and agent-created tools—capabilities not typically assessed in traditional frameworks.
+
+- It advances **evaluation methodology** through structured decomposition (of steps and criteria), multi-evaluator peer review, cascaded selective evaluation, and crowd-based comparative evaluation—enhancing reliability, stability, and robustness over single-model or one-shot evaluations.
+
+These features collectively overcome key limitations: lack of ethical grounding, static design, poor adaptability, inflexible tool interaction, and unreliable or biased evaluation outcomes.
+
+Answer: Because it introduces a decoupled S/C architecture and incorporates value alignment, continuous evolution evaluation, tool usage generalization and self-sufficiency, and advanced, robust evaluation methodologies—addressing ethical, adaptive, methodological, and reliability shortcomings of traditional frameworks.",To address the limitations of traditional agent-based evaluation frameworks,0.3,AMBIGUOUS->MERGED
+118,CRAG_Local,Multi-hop,hard,Sharan Narang,Sharan Narang,0.8,CORRECT
+119,CRAG_Local,Factual,easy,QLORA,QLORA,1.0,CORRECT
+120,CRAG_Local,Reasoning,medium,"French, German, Chinese, Spanish, and Russian were specifically chosen as intermediate languages for backtranslation because they were selected based on the performance of recent Neural Machine Translation (NMT) systems, with the expectation that well-performing languages could ensure better translation quality.",These languages were chosen based on the performance of recent NMT systems with the expectation that well-performing languages could ensure better translation quality.,0.8,CORRECT
+121,CRAG_Local,Reasoning,medium,"The authors suggest that anchoring to either $ I^+ $ or $ I^- $ leads to two separate charts because imposing fall-offs requires choosing a causal boundary (future null infinity $ I^+ $ or past null infinity $ I^- $) as a reference point to define the asymptotic behavior of fields and geometry. Since $ I^+ $ and $ I^- $ are disjoint, causally separated boundaries — one representing the “end” and the other the “beginning” of null geodesics — the coordinate systems (charts) adapted to each require different domain coverings and asymptotic gauge conditions. Consequently, the resulting coordinate descriptions (e.g., metric functions, gauge choices) are not globally compatible; thus, two distinct charts are needed — one “future-adapted” (anchored at $ I^+ $) and one “past-adapted” (anchored at $ I^- $), with the latter denoted using tilded quantities.","Because imposing fall-offs requires anchoring to either I⁺ or I⁻, and each choice defines a distinct coordinate system (chart), even though the same gauge form can be used in both.",0.9,CORRECT
+122,CRAG_Local,Factual,easy,CommonsenseQA,CommonsenseQA,1.0,CORRECT
+123,CRAG_Local,Multi-hop,hard,"The two problems that hindered the training of deep networks before the advances described are:
+
+1. **Vanishing/exploding gradients**, which hampered convergence from the beginning. This was addressed by **normalized initialization** and **intermediate normalization layers**.
+
+2. **Degradation problem**, where accuracy saturates and then degrades rapidly as network depth increases — unexpectedly not due to overfitting, and even causing higher training error with more layers. The text states this problem was *exposed* when deeper networks became able to start converging (thanks to the fixes for vanishing/exploding gradients), but it does **not specify how the degradation problem was addressed** in the provided context. The passage only describes the problem and notes it is distinct from overfitting; no solution (e.g., residual connections, skip connections) is mentioned here.
+
+Since the question asks *how they were respectively addressed*, and the context gives a clear answer for the first problem but **no information on how the degradation problem was addressed**, the second part cannot be answered from the given text.
+
+Therefore, based strictly on the context:  
+- Vanishing/exploding gradients → addressed by normalized initialization and intermediate normalization layers.  
+- Degradation problem → Information not found.  
+
+But the question expects *two* addressed solutions. Since only one is provided in the context, and the second is not described as being addressed (only exposed), the complete answer cannot be fully satisfied.
+
+Hence, per instructions:  
+Information not found.",Vanishing/exploding gradients were addressed by normalized initialization and intermediate normalization layers; the degradation problem (higher training error with depth) remains unaddressed by those methods and is distinct from overfitting.,1.0,CORRECT
+124,CRAG_Local,Reasoning,medium,Because pipeline automatically selects a model for you once the task is specified.,Because pipeline automatically selects a model once the task is specified.,1.0,CORRECT
+125,CRAG_Local,Multi-hop,hard,"The paper published in 2024 and citing J. E. Gonzalez as an author is:  
+“Raft: Adapting language model to domain specific rag”  
+Its arXiv identifier is: **arXiv:2403.10131**.","Raft: Adapting language model to domain specific rag, arXiv:2403.10131",1.0,CORRECT
+126,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+127,CRAG_Local,Reasoning,hard,"The author chooses to set the second integration “constant” in λ₂ to zero because, following their “minimalist philosophy,” they opt for simplicity despite the fact that this quantity appears in covariant asymptotic charges and is therefore not a trivial integration constant.
+
+This is explicitly stated in the context:  
+> “This quantity actually shows up in the covariant asymptotic charges [16], so it is not truly a trivial integration constant. Following our minimalist philosophy, we will simply set it to zero as…”
+
+Thus, the reason is adherence to a minimalist philosophical approach — prioritizing simplicity and minimal assumptions — rather than retaining the term for its physical or mathematical significance in asymptotic charges.
+
+Answer: Because of their minimalist philosophy.",Because the authors adopt a minimalist philosophy.,0.6,AMBIGUOUS->MERGED
+128,CRAG_Local,Reasoning,medium,"The result implies that successful use of chain of thought does not depend on a particular linguistic style because there is variance among different chain of thought annotations—meaning they differ in linguistic style—and yet all sets of chain of thought prompts still outperform the standard baseline by a large margin. This consistency in performance across stylistically diverse annotations suggests that the effectiveness stems from the chain-of-thought reasoning process itself, not from adherence to any specific linguistic formulation.","Because all sets of chain of thought prompts—despite variance in annotation style (e.g., Annotators A, B, C, and concise vs. original)—outperform the standard baseline by a large margin.",1.0,CORRECT
+129,CRAG_Local,Factual,easy,"The exact model name used in the visual-question-answering pipeline is `""microsoft/clip-vqa-base""`.",microsoft/clip-vqa-base,1.0,CORRECT
+130,CRAG_Local,Reasoning,medium,"The text suggests that REPLUG LSR outperforms REPLUG because it “consistently performs better than REPLUG by a large margin”, specifically resulting in a 7.7% improvement over baselines compared to REPLUG’s 4.7% improvement, averaged over the 8 models. However, the provided context is cut off mid-sentence at “This indicates that further adapting the retri…”, and no explicit explanation (e.g., what “LSR” stands for or how the adaptation works) is given in the available text.
+
+Therefore, while the *fact* of superior performance is stated, the *reason why* (i.e., the mechanism or design difference causing the improvement) is not explained in the provided context.
+
+Answer: Information not found.","Because REPLUG LSR consistently performs better than REPLUG by a large margin, resulting in a 7.7% improvement over baselines compared to 4.7% for REPLUG, indicating that further adapting the retrieval component enhances performance.",0.3,AMBIGUOUS->MERGED
+131,CRAG_Local,Reasoning,medium,"Custom datasets must inherit from the Dataset class and be implemented in `dataload/dataset.py` to ensure compatibility with the existing data loading and processing pipeline—specifically, to conform to the expected interface (e.g., standardized `__init__`, `__getitem__`, `__len__` methods) and to be discoverable and integrable within the system’s unified dataset management framework. The context states: “Datasets are supposed to be implemented in `dataload/dataset.py` and inherit from the `Dataset` class”, and recommends organizing data as dictionaries “to facilitate the input process”, implying that inheritance and location are required for consistent initialization and integration. However, the context does **not explicitly state the underlying technical reason** (e.g., for registry, automatic detection, or framework constraints). Since the *why* — the precise rationale (e.g., “so the training loop can instantiate them uniformly” or “for automatic registration”) — is **not provided in the context**, and only the requirement is stated, the answer cannot be fully justified beyond restating the instruction.
+
+Therefore, based strictly on the given context:  
+Information not found.",Because the framework requires standardized integration via inheritance and location to ensure compatibility with the DataLoader and unified data handling.,0.8,CORRECT
+132,CRAG_Local,Reasoning,medium,"Louisiana is concluded to be in the Central Time Zone based on two reasoning paths:
+
+1. **Indirect geographical path**:  
+   Louisiana → location.location.partially containedby → Tangipahoa River → geography.river.origin → Osyka → location.location.time zones → Central Time Zone  
+   This path links Louisiana to Osyka (a town in Louisiana) via the Tangipahoa River, and Osyka is associated with the Central Time Zone.
+
+2. **Hierarchical administrative path**:  
+   Louisiana → location.location.containedby → Alexandria → location.location.containedby → United States of America → location.location.time zones → Central Time Zone  
+   This path shows Louisiana is contained by Alexandria (a city in Louisiana), which is contained by the United States of America — and the U.S. node here is linked to the Central Time Zone.
+
+Although the U.S. as a whole spans multiple time zones, the reasoning paths specifically associate the relevant nodes (Osyka and the U.S. node in this context) with the Central Time Zone, and both paths converge on that designation for Louisiana. Thus, per the given reasoning structure, Louisiana is concluded to be in the Central Time Zone.","Because the reasoning path shows Louisiana → location.location.containedby → Alexandria → location.location.containedby → United States of America → location.location.time zones → Central Time Zone, and the RoG states this chain supports the conclusion.",0.4,AMBIGUOUS->MERGED
+133,CRAG_Local,Factual,easy,PopQA,PopQA,1.0,CORRECT
+134,CRAG_Local,Factual,easy,The notation used in the text to denote a pre-trained language model (LM) with parameters θ is **pθ**.,pθ,1.0,CORRECT
+135,CRAG_Local,Reasoning,medium,"Because operations become increasingly bottlenecked by memory (HBM) accesses, making faster on-chip SRAM critical to alleviate the memory access bottleneck and keep up with the higher compute throughput.","Because operations become increasingly bottlenecked by memory (HBM) accesses, so leveraging the much faster on-chip SRAM helps alleviate this bottleneck.",1.0,CORRECT
+136,CRAG_Local,Factual,easy,"The four model sizes listed in Figure 7 are:  
+- 350M  
+- 1.3B  
+- 6.7B  
+- 175B","350M, 1.3B, 6.7B, and 175B",1.0,CORRECT
+137,CRAG_Local,Multi-hop,hard,"The GSM8K dataset is used to illustrate debates that result in both correct and incorrect answers.
+
+Additional task domains visualized beyond arithmetic and MMLU include:
+- Biographies (with full contents, Figure 27)
+- Chess (Figure 28)",GSM8K; biographies and chess,0.9,CORRECT
+138,CRAG_Local,Reasoning,medium,To make language agents more controllable.,To make language agents more controllable.,1.0,CORRECT
+139,CRAG_Local,Reasoning,medium,"Based on the titles and publication details provided:
+
+- Min et al. 2019a: *""A discrete hard EM approach for weakly supervised question answering.""*  
+- Min et al. 2019b: *""Knowledge guided text retrieval and reading for open domain question answering.""*
+
+The 2019b paper appears to be an advancement over the 2019a work because:
+
+- **Scope and task**: 2019a focuses on *weakly supervised QA*, a setting with limited or noisy supervision (e.g., no explicit answer spans or labels), using a discrete hard EM method — a constrained, probabilistic optimization technique tailored for latent variable modeling under supervision scarcity.
+
+- In contrast, 2019b targets *open-domain QA*, a more challenging and realistic setting requiring joint *retrieval* (finding relevant documents from large corpora) and *reading* (extracting or generating answers), explicitly incorporating *knowledge guidance* — suggesting integration of external knowledge or structured signals to improve retrieval and reasoning.
+
+- The phrase “knowledge guided” implies architectural or methodological enhancements beyond latent-variable learning (as in hard EM), likely involving better integration of retrieval and reading components, possibly with explicit knowledge sources or improved grounding — aligning with broader trends toward modular, knowledge-aware QA systems.
+
+- Additionally, both are arXiv preprints from the same year but different months (2019a: Sep, arXiv:1909.04849; 2019b: Nov, arXiv:1911.03868), suggesting chronological progression — 2019b builds upon or generalizes ideas from 2019a.
+
+Thus, 2019b represents a shift from a narrow, statistically driven weakly supervised method (hard EM) to a more holistic, knowledge-integrated, open-domain framework — indicating conceptual and practical advancement.
+
+Answer: Because the 2019b paper introduces knowledge-guided joint text retrieval and reading for open-domain question answering — a more comprehensive, realistic, and architecturally advanced framework — whereas the 2019a paper focuses on a narrower discrete hard EM method for weakly supervised QA.","The 2019b paper explicitly addresses 'open domain question answering' with 'knowledge guided text retrieval and reading', whereas the 2019a paper focuses on 'weakly supervised question answering' using a 'discrete hard EM approach'; this suggests 2019b extends the scope to open-domain settings and integrates knowledge-guided retrieval—capabilities not indicated in the 2019a title or identifier.",0.3,AMBIGUOUS->MERGED
+140,CRAG_Local,Adversarial,medium,Information not found.,BERT is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+141,CRAG_Local,Factual,easy,The average score achieved by MetaGPT in Table 4 is 3.9.,3.9,1.0,CORRECT
+142,CRAG_Local,Reasoning,medium,"According to the text, evaluating RAG systems using language modelling perplexity is not always predictive of downstream performance because “such evaluations are not always predictive of downstream performance (Wang et al., 2023c).” The text does not provide further explanation or reasoning beyond this statement — it cites Wang et al. (2023c) as the source for this claim but gives no additional justification within the provided context.
+
+Therefore, the answer based solely on the given text is:  
+Because such evaluations are not always predictive of downstream performance (as stated in Wang et al., 2023c).",Because such evaluations are not always predictive of downstream performance.,0.8,CORRECT
+143,CRAG_Local,Factual,easy,arXiv:2001.08361,arXiv:2001.08361,1.0,CORRECT
+144,CRAG_Local,Factual,easy,The two public GPT-3 engines included for reproducibility are “code-davinci-001” and “code-davinci-002”.,code-davinci-001 and code-davinci-002,1.0,CORRECT
+145,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+146,CRAG_Local,Factual,easy,"The resolution of the ImageNet32x32 dataset is 32×32 pixels, and the total number of images is 1.2 million.","32×32 pixels, 1.2 million images",1.0,CORRECT
+147,CRAG_Local,Multi-hop,hard,"The node attribute “justin bieber” is an **entity** — specifically, a person entity in a knowledge base.
+
+From the table, the **WebQSP** dataset has node attributes described as:  
+→ **“Entities in Freebase”**
+
+“Justin Bieber” is a well-known person entity that would be represented as such in Freebase (a structured knowledge base), matching exactly the “Entities in Freebase” description.
+
+Thus, “justin bieber” exemplifies the node attribute type **“Entities in Freebase”**, and this matches the **WebQSP** dataset’s node attribute description.
+
+Answer: Entities in Freebase; WebQSP",Entities in Freebase; WebQSP,0.9,CORRECT
+148,CRAG_Local,Multi-hop,hard,"The difference in retrieval mechanisms between RAPTOR and DPR affects downstream task performance by determining the completeness and relevance of the retrieved context, which directly influences the language model’s ability to answer the question. RAPTOR retrieves a succinct but comprehensive summary of Cinderella’s journey to happiness—including the Prince’s search for the slipper’s owner and their eventual marriage—enabling GPT-4 to generate a correct, detailed answer. In contrast, DPR retrieves only leaf nodes focused on Cinderella’s initial transformation (e.g., her magical preparation for the ball), omitting key narrative elements about the story’s conclusion. As a result, GPT-4, constrained to use only the retrieved context, cannot infer the happy ending and correctly reports that the information is insufficient. Thus, RAPTOR’s hierarchical, summarization-augmented retrieval supports successful downstream reasoning, whereas DPR’s flat, keyword-based retrieval fails to capture critical multi-hop narrative links needed to answer the question.","RAPTOR’s context enables GPT-4 to generate a detailed, correct answer because it includes the story’s conclusion, whereas DPR’s context—focused only on initial transformation—lacks that information, causing GPT-4 to declare the answer undeterminable.",0.95,CORRECT
+149,CRAG_Local,Adversarial,medium,Information not found.,The GLUE benchmark and its F1 score are not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+150,CRAG_Local,Multi-hop,hard,"Andrew Wood fronted the band Malfunkshun before joining Mother Love Bone. After his death from a drug overdose in 1990, Malfunkshun had already broken up, and their only album, *Return to Olympus*, was released posthumously and after the band’s dissolution.","Malfunkshun; it had already broken up before his death, and the album Return to Olympus was released posthumously after the breakup.",0.8,CORRECT
+151,CRAG_Local,Multi-hop,hard,"The authors assessed whether their model can estimate the quality of retrieved snippets by asking domain experts (co-authors) to score the usefulness of the retrieved snippets in specific scenarios. The metric used to define 'useful' snippets was a 0–4 rating scale, where scores of 3 or 4 indicated ‘useful’ or ‘highly useful’.","They asked domain experts to rate retrieved snippets on a 0–4 scale, and defined 'useful' as scores of 3 or 4.",1.0,CORRECT
+152,CRAG_Local,Reasoning,medium,Information not found.,"The text specifies that the JSON output must include ""rating"" and ""rating explanation"" fields, indicating the IMPACT severity rating is included to concisely communicate severity alongside its justification; however, the text does not explain *why* it is included or *how* its placement supports the report's purpose — only that it is required structurally.",0.3,AMBIGUOUS->MERGED
+153,CRAG_Local,Multi-hop,hard,"The consequence of the filtering bug was that the filtering described in the text failed on long documents such as books. Due to cost considerations, it was infeasible to retrain the model on a corrected version of the training dataset. As a result, several language modeling benchmarks—including the Children’s Book Test—showed almost complete overlap and were therefore excluded (not included) in the evaluation.","The bug caused several language modeling benchmarks plus the Children’s Book Test to show almost complete overlap, and due to cost considerations, retraining on a corrected dataset was infeasible, so those benchmarks were excluded.",0.6,AMBIGUOUS->MERGED
+154,CRAG_Local,Reasoning,medium,"According to the text, HybridNets is suitable for real-time traffic perception on embedded systems because it “can run real-time on embedded systems” — as explicitly stated in the description section of the reference API.","Because it is an end-to-end perception network for multi-tasks (traffic object detection, drivable area segmentation, and lane detection) and is explicitly stated to 'can run real-time on embedded systems'.",0.3,AMBIGUOUS->MERGED
+155,CRAG_Local,Factual,medium,ODLNN,orthonormal deep linear neural networks (ODLNNs),1.0,CORRECT
+156,CRAG_Local,Reasoning,medium,Information not found.,Because dropout and other regularization techniques are explicitly applied in the training setup to prevent overfitting when training from scratch on ImageNet.,0.3,AMBIGUOUS->MERGED
+157,CRAG_Local,Reasoning,medium,"Because ANCE, as a dense retrieval model, captures semantic relevance and contextual understanding (e.g., associating “most popular food” with the correct country context—Switzerland—rather than relying solely on lexical matching), whereas BM25 matches the phrase “most popular food” exactly but fails to recognize that the document discussing it is about Mexico, and only mentions “Switzerland” incidentally in a less relevant section (e.g., related questions), leading to incorrect retrieval.","Because BM25 relies on exact lexical matching and fails to capture semantic relevance — it matches 'most popular food' but retrieves a document about Mexico, while 'Switzerland' appears only in a peripheral section; ANCE better captures semantic alignment between query and document content.",0.8,CORRECT
+158,CRAG_Local,Factual,easy,[Agree],[Agree],1.0,CORRECT
+159,CRAG_Local,Reasoning,medium,Information not found.,Because the system prompt explicitly states rule 1: 'The expression **MUST** be a valid Python expression.',0.9,CORRECT
+160,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+161,CRAG_Local,Factual,easy,Information not found.,GPT-4,0.0,INCORRECT->REWRITTEN
+162,CRAG_Local,Reasoning,medium,To resist hallucination and to allow for textual graphs that greatly exceed the LLM’s context window size.,To resist hallucination and to allow for textual graphs that greatly exceed the LLM’s context window size.,0.8,CORRECT
+163,CRAG_Local,Multi-hop,hard,"The two distinct roles described in the text are **Reviewer** and **Evaluator**.
+
+Their shared responsibility is to **check whether a paragraph contains all the given words (or their variations)**.  
+- The Reviewer is instructed to “check whether the paragraph contains all the given words or their variations” and to “patiently point out” missing ones.  
+- The Evaluator is explicitly defined as “a reviewer who checks whether a paragraph contains all the given words (including their variations)” and assigns a score based on that check.
+
+Thus, both roles share the responsibility of verifying the presence of all required words (or their variations) in the paragraph.",Reviewer and Evaluator; both are responsible for checking whether a paragraph contains all the given words or their variations.,0.8,CORRECT
+164,CRAG_Local,Multi-hop,hard,"From the context provided, we examine the citations:
+
+- [68] S. He, C. Wang, Q.-H. Chen, X.-Z. Ren, T. Liu, and K.-L. Wang, Phys. Rev. A **86**, 033837 (**2012**).  
+- [74] P. Schwendimann and A. Quattropani, Phys. Rev. A **86**, 043811 (**2012**).  
+- [71] R. Bonifacio, P. Schwendimann, and F. Haake, Phys. Rev. A **4**, 302 (**1971**); ibid. 854 (**1971**).
+
+We are asked: *Which authors published in Phys. Rev. A in both 2012 and another year listed in the text, and what are those years?*
+
+Look for authors appearing in **both a 2012 publication and a non-2012 publication** listed.
+
+- P. Schwendimann appears in:
+  - [74]: 2012 (Phys. Rev. A 86, 043811, 2012)
+  - [71]: 1971 (Phys. Rev. A 4, 302 and 854, both 1971)
+
+So P. Schwendimann published in Phys. Rev. A in **2012 and 1971**.
+
+No other author appears in both a 2012 reference and a non-2012 reference:
+
+- S. He et al. ([68]) — only 2012.
+- R. Bonifacio and F. Haake appear in [71] (1971) but not in any 2012 citation *as co-authors with Schwendimann outside [71]* — [71] is solely 1971; [74] has Schwendimann & Quattropani only.
+- A. Quattropani appears only in [74] (2012) in the given list — no other year.
+
+Thus, only **P. Schwendimann** satisfies the condition.
+
+Years: **2012","P. Schwendimann and A. Quattropani published in Phys. Rev. A in 2012; R. Bonifacio, P. Schwendimann, and F. Haake published in Phys. Rev. A in 1971 — so Schwendimann appears in both 2012 and 1971.",0.4,AMBIGUOUS->MERGED
+165,CRAG_Local,Multi-hop,hard,"The 'mind exploration' approach enables insight into conversational agents by allowing them to communicate and collaborate in solving tasks, thereby revealing their actions and behaviors within a task-solving context. According to the text, this approach revealed several intriguing insights and challenges that have not yet been further explored by the research community.","By enabling agents to communicate and collaborate in solving tasks, yielding insight into their actions and behaviors; it revealed several intriguing insights and challenges not yet further explored.",0.8,CORRECT
+166,CRAG_Local,Multi-hop,hard,"The paper published in 2022 and presented at the International Conference on Machine Learning is:
+
+U. Alon, F. Xu, J. He, S. Sengupta, D. Roth, and G. Neubig, “Neuro-symbolic language modeling with automaton-augmented retrieval,” in International Conference on Machine Learning. PMLR, 2022, pp. 468–485.","[175] U. Alon, F. Xu, J. He, S. Sengupta, D. Roth, and G. Neubig, “Neuro-symbolic language modeling with automaton-augmented retrieval,” in International Conference on Machine Learning. PMLR, 2022, pp. 468–485.",1.0,CORRECT
+167,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+168,CRAG_Local,Factual,easy,$275,$275,1.0,CORRECT
+169,CRAG_Local,Factual,easy,arXiv:2212.08037,arXiv:2212.08037,1.0,CORRECT
+170,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+171,CRAG_Local,Multi-hop,hard,"The 2021 paper that introduced Sentence-T5 is [180]: *Sentence-T5: Scalable sentence encoders from pre-trained text-to-text models* (arXiv preprint arXiv:2108.08877).
+
+The other 2021 paper by Ni et al. that builds on dual encoders is [181]: *Large dual encoders are generalizable retrievers* (arXiv preprint arXiv:2112.07899). This paper is also an arXiv preprint — no broader conference or publication venue (e.g., ACL, EMNLP, NeurIPS) is indicated in the provided context.
+
+Thus, both papers are associated with **arXiv**, and no specific conference or journal venue beyond arXiv is mentioned for either.
+
+Answer:  
+The paper that introduced Sentence-T5 is [180], published as an arXiv preprint. The broader venue associated with the dual-encoder paper [181] is also **arXiv** — no conference or journal venue is specified in the context.","Sentence-T5 was introduced in the arXiv preprint arXiv:2108.08877; the dual encoder paper is also an arXiv preprint (arXiv:2112.07899), and no conference or journal venue beyond 'arXiv preprint' is specified for either — though [178] (Ceqe) appears in 'Advances in Information Retrieval: 43rd European Conference on IR Research, ECIR 2021'.",0.8,CORRECT
+172,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+173,CRAG_Local,Factual,easy,27%,27%,1.0,CORRECT
+174,CRAG_Local,Reasoning,medium,"Because the system in Eqs. (1–4) is fundamentally distinct from the effective two-level system derived via adiabatic elimination from a three-level system, as clarified in appendix B.",Because it is a distinct system—not derived via adiabatic elimination from a three-level system—as clarified by the contrast with the method described in appendix B.,0.3,AMBIGUOUS->MERGED
+175,CRAG_Local,Reasoning,medium,"Because under the given setting, the model assigns perfect accuracy to the gold document $ z^* $ (i.e., $ p(y \mid z^*, x) = 1 $) and zero accuracy to all other documents (i.e., $ p(y \mid z', x) = 0 $), leading to $ p(z^* \mid y, x) = 1 $ (provided $ p(z^* \mid x) > 0 $). This simplifies the gradient of $ \log p(y \mid x) $ to $ \nabla \log p(z^* \mid x) $, as shown by the derivation:
+
+$$
+\nabla \log p(y \mid x) = \nabla f(x, z^*) - \sum_z p(z \mid x) \nabla f(x, z) = \nabla \log p(z^* \mid x).
+$$
+
+Thus, optimizing the REALM objective reduces exactly to optimizing $ \log p(z^* \mid x) $, i.e., maximum likelihood estimation with respect to the gold document.","Because p(z∗| y, x) = 1 (provided p(z∗| x) is non-zero), which simplifies the gradient expression to ∇log p(z∗| x).",0.9,CORRECT
+176,CRAG_Local,Reasoning,medium,"According to the text, the addition of roles beyond just the Engineer improves both revisions and executability because excluding certain roles leads to the generation of unworkable codes. The text states that “when we exclude certain roles, unworkable codes are generated,” implying that diverse roles contribute essential perspectives or functions necessary for producing functional, revisable code. Table 3 supports this by showing that adding roles different from just the Engineer consistently improves both revisions and executability.","Because excluding certain roles leads to unworkable codes, and adding roles beyond the Engineer consistently improves both revisions and executability, demonstrating their effectiveness.",0.8,CORRECT
+177,CRAG_Local,Reasoning,medium,A load-balancing loss is introduced to encourage experts to receive roughly equal numbers of training examples.,To encourage experts to receive roughly equal numbers of training examples.,0.3,AMBIGUOUS->MERGED
+178,CRAG_Local,Multi-hop,hard,Information not found.,Gorilla avoids inserting unrelated GitHub names into pretrained_model_name_or_path and avoids assuming non-existent local model paths like 'your_model_name'.,0.0,INCORRECT->REWRITTEN
+179,CRAG_Local,Reasoning,medium,"The GraphQA benchmark uses 'Accuracy' for ExplaGraphs and SceneGraphs because their tasks—common sense reasoning and scene graph question answering—are framed as classification or exact-match prediction problems where the model must output a single correct answer (e.g., a binary decision or a specific object/attribute), making accuracy a natural metric.
+
+In contrast, WebQSP is a knowledge-based question answering task over Freebase, where answers are often entity sets retrieved from a large knowledge base. 'Hit@1' is used because the task typically involves ranking candidate entities, and evaluation focuses on whether the correct entity appears in the top-1 position of the ranked list — standard practice for open-domain KBQA benchmarks like WebQSP.
+
+This distinction aligns with the standard evaluation protocols for each underlying task and dataset: Accuracy for deterministic, single-answer QA (ExplaGraphs, SceneGraphs) and Hit@1 for entity-ranking-based KBQA (WebQSP).","Because ExplaGraphs and SceneGraphs are classification tasks with single correct answers (hence Accuracy), whereas WebQSP is a knowledge base question answering task where ranking-based evaluation is standard and top-1 retrieval sufficiency is measured by Hit@1.",0.95,CORRECT
+180,CRAG_Local,Reasoning,medium,"The degradation problem indicates that not all systems are similarly easy to optimize because, although a deeper model can theoretically replicate the performance of a shallower one (e.g., by constructing a solution where added layers perform identity mapping and other layers copy the shallower model’s learned weights), experiments show that current optimization solvers fail to find such solutions — or fail to do so within feasible time. This implies that the optimization landscape of deeper networks is more challenging, despite the existence of comparably good (or better) solutions in principle. Thus, the difficulty of optimization varies across architectures — i.e., “not all systems are similarly easy to optimize.”","Because adding more layers to a suitably deep model leads to higher training error — indicating optimization difficulty, not overfitting.",0.6,AMBIGUOUS->MERGED
+181,CRAG_Local,Reasoning,medium,"The ILSVRC conventionally reports both top-1 and top-5 error rates because the number of categories is rather large, making it more informative to assess model performance not only by whether the top predicted label is correct (top-1), but also by whether the correct label appears among the five most probable predictions (top-5). This accounts for the difficulty of distinguishing among many fine-grained classes and provides a more robust evaluation of model confidence and ranking ability.","Because the number of categories is rather large, so evaluating whether the correct label appears among the top five predictions provides a more robust and informative measure of model performance than requiring exact top-1 match.",0.9,CORRECT
+182,CRAG_Local,Factual,easy,74%,74%,1.0,CORRECT
+183,CRAG_Local,Reasoning,medium,"{""choice"": ""yes"", ""reason"": ""The question asks why GPT-4 fails to answer 'How does Cinderella find a happy ending?' when given DPR's context. The provided text explicitly states: 'using DPR’s context, GPT-4 states: “Based on the given context, it is not possible to determine how Cinderella finds a happy ending, as the text lacks information about the story’s conclusion.”' It further explains that 'DPR’s leaf nodes primarily focus on her initial transformation' and that 'the text retrieved by DPR... lacks information about the story’s conclusion'. This directly answers the 'why': DPR’s retrieved context omits the concluding events (e.g., the Prince finding Cinderella via the slipper, their marriage), making the happy ending unrecoverable from that context alone. The assistant’s task is to extract and report this reason from the text — which is precisely what the correct answer does. Thus, planning is accurate.""}",Because DPR’s context lacks information about the story’s conclusion.,0.3,AMBIGUOUS->MERGED
+184,CRAG_Local,Reasoning,medium,"The retrieval accuracy for the ""baseline"" settings in Table 5 and Table 6 is slightly better than those in Table 3 due to a better hyper-parameter setting used in these analysis experiments, which is documented in the code release.","This is due to a better hyper-parameter setting used in these analysis experiments, which is documented in our code release.",1.0,CORRECT
+185,CRAG_Local,Reasoning,medium,QASC is described as requiring multi-hop reasoning because answering each question involves the retrieval and composition of facts from a broad corpus.,Because it requires the retrieval and composition of facts from a broad corpus to answer each question.,1.0,CORRECT
+186,CRAG_Local,Reasoning,medium,Information not found.,"The text states ROUGE is 'a package for automatic evaluation of summaries', implying it was designed to address the need for scalable, automated assessment—hence its wide adoption—but no explicit rationale (e.g., correlation with humans, ease of use) is given in the provided text.",0.3,AMBIGUOUS->MERGED
+187,CRAG_Local,Multi-hop,hard,"The experimental design relates annotator compensation and data sampling strategy in the following way:  
+
+- **Annotator compensation** was set to ensure a fair wage of 10 USD per hour, reflecting an ethical and practical consideration to attract and retain qualified English-speaking human judges.  
+- **Data sampling strategy** involved selecting 100 examples from the manually annotated test set with an equal split between CONSISTENT and INCONSISTENT examples — ensuring balanced representation of both classes for robust evaluation of FactCCX’s span highlights.  
+
+Both elements support methodological rigor and reliability: fair compensation helps ensure annotator engagement and quality, while balanced sampling supports unbiased assessment of the model’s performance across factual consistency labels.","Annotator compensation was set to ensure a 10 USD hourly rate, and the 100 examples were sampled to ensure an equal split between CONSISTENT and INCONSISTENT examples — together supporting fair, balanced, and ethically compensated human evaluation of FactCCX's highlights.",0.8,CORRECT
+188,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.2,INCORRECT->REWRITTEN
+189,CRAG_Local,Reasoning,medium,"The experimental result suggests that “less is more” because precisely using a suitable amount of relevant knowledge—rather than more snippets—leads to response generation with higher confidence. Specifically, the study found that using top-3 knowledge snippets (especially those highly ranked, e.g., rank 1) yielded better results than incorporating more or less relevant snippets (e.g., including lower-ranked ones like rank 5), implying that excessive or less relevant knowledge can degrade response quality or confidence.",Because precisely using a suitable amount of relevant knowledge can generate a response with higher confidence.,0.85,CORRECT
+190,CRAG_Local,Factual,easy,The amplification factor for r = 4 as reported in Section 7.3 is 20.,20,1.0,CORRECT
+191,CRAG_Local,Factual,easy,https://github.com/microsoft/promptbench/blob/main/examples/add_new_modules.md,https://github.com/microsoft/promptbench/blob/main/examples/add_new_modules.md,1.0,CORRECT
+192,CRAG_Local,Reasoning,medium,Because there is no obvious way to give the API a partial answer directly.,Because there is no obvious way to give the API a partial answer.,1.0,CORRECT
+193,CRAG_Local,Multi-hop,hard,"Based on the amplification factor analysis and the subspace similarity evidence, the conclusion is that **four feature directions per layer** are critically amplified for downstream task performance.
+
+This is directly supported by the text: “for r = 4, this amplification factor is as large as 20” and “there are (generally speaking) four feature directions in each layer [...] that need to be ampliﬁed by a very large factor 20, in order to achieve our reported accuracy for the downstream speciﬁc task.” The low subspace similarity (< 0.2) between top directions of ∆W and W further supports that these four directions are distinct from the dominant (pre-trained) ones — i.e., they are task-specific and critically amplified.",Four feature directions per layer are critically amplified by a factor of 20 for downstream task performance.,1.0,CORRECT
+194,CRAG_Local,Reasoning,medium,Information not found.,The text states the title of the paper — 'Why we need new evaluation metrics for NLG' — but does not provide the specific reasons or arguments supporting that claim.,0.3,AMBIGUOUS->MERGED
+195,CRAG_Local,Adversarial,medium,Information not found.,HumanEval is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+196,CRAG_Local,Reasoning,medium,"The prompt templates in Tables 10 and 11 are structured with explicit role-based instructions (e.g., “You are an excellent AI doctor”) and formatted placeholders (e.g., `{question}`, `{instruction}`, `{reference}`, `{output1}`, `{output2}`) to ensure **clear task framing**, **consistent input injection**, and **role-guided reasoning**. Specifically:
+
+- The role-based instruction (“You are an excellent AI doctor”) primes the language model to adopt a domain-specific, authoritative, and clinically appropriate persona, improving diagnostic and therapeutic reasoning fidelity.
+- Placeholders like `{question}`, `{instruction}`, `{reference}`, etc., serve as **structured slots** for dynamic, context-sensitive content insertion—enabling modular, reusable templates that separate template logic from variable data (e.g., patient symptoms, retrieved evidence, or comparison outputs).
+- This design supports reproducibility, maintainability, and integration with retrieval-augmented pipelines (e.g., injecting BM25 or embedding-retrieved medical knowledge into `{instruction}` or aligning outputs against `{reference}`).
+
+Note: Table 12 is mentioned in the question but **does not appear in the provided context**, so its structure cannot be addressed based on the given information.
+
+Therefore, the answer is grounded in the explicit design rationale evident in Tables 10 and 11 — role priming and templated data injection — but **Table 12 is not supported by the context**.
+
+Answer: To enable role-guided clinical reasoning and support modular, dynamic insertion of task-specific inputs (e.g., patient questions, medical evidence, or reference outputs) via standardized placeholders — ensuring clarity, consistency, and integration with retrieval-augmented diagnostic workflows.","To ensure consistent, role-aware, and context-sensitive generation by explicitly separating system intent, user input, and external knowledge via structured placeholders — as evidenced by repeated use of 'You are an excellent AI doctor' as system instruction and '{question}', '{reference}', etc., as dynamic inputs.",0.8,CORRECT
+197,CRAG_Local,Reasoning,medium,"Under the assumption that only one document $ z^* $ yields perfect prediction accuracy (i.e., $ p(y \mid z^*, x) = 1 $) and all others yield zero accuracy (i.e., $ p(y \mid z', x) = 0 $ for $ z' \neq z^* $), the posterior $ p(z \mid y, x) $ becomes degenerate:  
+$$
+p(z \mid y, x) = \frac{p(y \mid z, x) p(z \mid x)}{p(y \mid x)} = 
+\begin{cases}
+1 & \text{if } z = z^* \text{ and } p(z^* \mid x) > 0, \\
+0 & \text{otherwise}.
+\end{cases}
+$$  
+This follows because the numerator vanishes for all $ z \neq z^* $, leaving all posterior mass on $ z^* $, provided $ p(z^* \mid x) > 0 $. Thus, $ p(z^* \mid y, x) = 1 $.
+
+The REALM objective is $ \log p(y \mid x) = \log \mathbb{E}_{z \sim p(z \mid x)}[p(y \mid z, x)] $. Its gradient (with respect to model parameters affecting the retrieval or scoring function $ f(x,z) $, where $ p(z \mid x) \propto \exp(f(x,z)) $) is:
+$$
+\nabla \log p(y \mid x) = \mathbb{E}_{z \sim p(z \mid y, x)}[\nabla f(x,z)] - \mathbb{E}_{z \sim p(z \mid x)}[\nabla f(x,z)].
+$$
+Since $ p(z \mid y, x) $ is a point mass at $ z^* $, the first expectation simplifies to $ \nabla f(x, z^*) $. So:
+$$
+\nabla \log p(y \mid x) = \nabla f(x, z^*) - \mathbb{E}_{z \sim p(z \mid x)}[\nabla f(x,z)].
+$$
+But the right-hand side is precisely $ \nabla \log p(z^* \mid x) $, because for a log-linear model $ p(z \","Because p(z∗|y,x) = 1 implies the gradient simplifies to ∇log p(z∗|x), matching the supervised maximum likelihood objective.",0.9,CORRECT
+198,CRAG_Local,Multi-hop,hard,"The absence of executable feedback means that the version of MetaGPT evaluated in Table 9 is the *basic version* without this mechanism. As stated in the text: “Note that the version of MetaGPT used here is the basic version without the executable feedback mechanism.” This implies that the results in Table 9 reflect **a constrained or ablated evaluation setup**, where MetaGPT operates without the ability to iteratively refine code based on execution outcomes (e.g., error feedback, test results, or runtime behavior). Consequently, the reported performance — including the average score across all 70 tasks — represents MetaGPT’s capability *without* this key refinement loop, and thus likely underestimates its full potential compared to a version equipped with executable feedback.","Table 9 evaluates a version of MetaGPT without executable feedback on 11 tasks (and averaged over 70), implying its reported performance is lower than or not directly comparable to the 3.9 score in Table 4—which reflects MetaGPT with executable feedback enabled.",0.6,AMBIGUOUS->MERGED
+199,CRAG_Local,Reasoning,medium,The agent uses GPT-3.5 instead of GPT-4 for standard NLP tasks like self-asking questions due to budgetary considerations.,Because of budgetary considerations.,1.0,CORRECT
+200,CRAG_Local,Reasoning,medium,Because LoRA α is always proportional to the learning rate.,Because LoRA α is always proportional to the learning rate.,1.0,CORRECT
+201,CRAG_Local,Factual,easy,Llama2,Llama2,1.0,CORRECT
+202,CRAG_Local,Reasoning,medium,Information not found.,"Because the text states that拔除阻生齿 should occur first, and补牙 only after — implying that the presence of the impacted tooth interferes with or must be resolved prior to restorative treatment; this logical sequence is explicitly prescribed as '先拔除阻生齿，然后再进行补牙'.",0.3,AMBIGUOUS->MERGED
+203,CRAG_Local,Factual,easy,1,1,1.0,CORRECT
+204,CRAG_Local,Reasoning,medium,"The terms 'ape' and 'monkey' are considered extremely derogatory when used to describe a person of color because they are dehumanizing language—language that deprives a person of human qualities or attributes. Offensive comparisons of Black people to apes date back hundreds of centuries, and such usage has historically been employed to reinforce racist ideologies, including in pseudoscientific works like the 1854 *Types of Mankind*, where Black people were explicitly compared to chimpanzees, gorillas, and orangutans rather than to other (white) people. This history imbues the terms with deeply harmful, racist connotations when applied to people of color.",Because they constitute dehumanizing language—language that deprives a person of human qualities or attributes—and have historically been used in racist pseudoscientific comparisons of Black people to nonhuman primates.,0.95,CORRECT
+205,CRAG_Local,Reasoning,medium,Information not found.,The text states that DeepSpeed’s ZeRO-3 is used but does not explain why it is chosen — no justification or reasoning for its use is provided.,0.2,INCORRECT->REWRITTEN
+206,CRAG_Local,Adversarial,medium,"The F1 score reported for the method on the SQuAD 2.0 dataset is **83.1**, corresponding to the ""Ours BERTLARGE (Single)"" entry in Table 3 under the ""F1"" column for the ""Top Leaderboard Systems (Dec 10th, 2018)"" — specifically under the ""EM / F1"" pair ""80.0 / 83.1"". This is explicitly stated in the table:
+
+> Ours  
+> BERTLARGE (Single)  
+> 78.7 81.9 80.0 83.1  
+
+The last value (83.1) is the F1 score.
+
+Answer: **83.1**",Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+207,CRAG_Local,Multi-hop,hard,QASC,QASC,1.0,CORRECT
+208,CRAG_Local,Reasoning,medium,"The high percentage of annotators (91.75%) finding article highlights helpful suggests that FactCCX’s span highlighting improves human fact-checking efficiency because it directs annotators’ attention to the most relevant portions of the article—likely the textual evidence pertinent to verifying or refuting the claim. By reducing the need to read and process the entire article, the highlights lower cognitive load and time spent searching for supporting or contradicting information, thereby enabling faster and more focused evaluation. Since annotators were instructed to use the highlights only as suggestions—and yet still found them at least somewhat helpful—the highlights appear to reliably surface informative content, supporting more efficient and accurate human judgment.","Because a high proportion of annotators found the article highlights helpful, it suggests the model’s explanations align with human reasoning needs and reduce cognitive load when verifying factual consistency.",0.8,CORRECT
+209,CRAG_Local,Reasoning,medium,The framework assumes grounding of questions and answers into a schema graph extracted from an external knowledge graph because it is helpful for measuring the plausibility of answer candidates.,Because it is helpful for measuring the plausibility of answer candidates.,0.9,CORRECT
+210,CRAG_Local,Reasoning,medium,The threading library is used to update the RGB values in real-time as the color meter moves.,To update the RGB values in real-time as the color meter moves.,0.8,CORRECT
+211,CRAG_Local,Reasoning,medium,"Unrealistic expectations about cosmetic surgery may lead to disappointment and dissatisfaction with the results, which in turn drives individuals to seek additional surgery in an ongoing attempt to achieve their unattainable ideal of perfection.",Because disappointment and dissatisfaction with the initial surgery's results drive women to seek further procedures in an attempt to achieve unattainable ideals.,1.0,CORRECT
+212,CRAG_Local,Multi-hop,hard,"Information about Sam’s mayoral candidacy reaches John **from another source**—not directly from Sam or Tom. As stated in the context:  
+> “Later that day, after Sam left, Tom and John, who heard the news from another source, discuss Sam’s chances of winning the election.”
+
+This is further confirmed in John’s dialogue:  
+> “I heard that Sam Moore is running for mayor in the local election.”
+
+The phrase “heard the news from another source” explicitly indicates that John did **not** learn about Sam’s candidacy from Sam himself (direct exposure) nor from Tom in this interaction (since their conversation *follows* John already knowing), but rather from a third, unspecified agent or channel.
+
+This reveals that the information diffusion mechanism among generative agents is **multi-source and non-linear**:  
+- Information does not spread only through direct, sequential agent-to-agent transmission (e.g., Sam → Tom → John).  
+- Instead, it can propagate **in parallel**, via independent channels — suggesting the architecture supports **distributed, redundant dissemination**, where multiple agents may independently acquire and then reinforce or discuss the same information.  
+- The fact that both Tom (who heard from Sam) and John (who heard from “another source”) converge on discussing the same topic reflects **emergent consensus-building**, a hallmark of realistic social information spread.
+
+Thus, the mechanism supports **robust, decentralized diffusion**, consistent with real-world social dynamics — not just pairwise contagion, but overlapping awareness arising from multiple exposures.
+
+Answer: John learns about Sam’s mayoral candidacy from another source (not Sam or Tom), revealing that information diffusion among generative agents is multi-source, parallel, and decentralized — enabling robust, emergent spread across the agent community.","John hears the news from 'another source' (not directly from Sam or Tom), demonstrating that information diffuses through multiple independent pathways—not only via direct dialogue (Sam → Tom) but also via third-party channels, supporting decentralized, multi-path information spread.",0.6,AMBIGUOUS->MERGED
+213,CRAG_Local,Factual,medium,10.1103/PhysRevD.95.044002,10.1103/PhysRevD.95.044002,1.0,CORRECT
+214,CRAG_Local,Reasoning,medium,"The Selection phase uses the UCT formula instead of selecting solely based on the highest Q(s, a) value to balance exploration and exploitation. Selecting only the highest Q(s, a) would prioritize exploitation—favoring actions already known to yield high rewards—but would neglect less-visited (and thus more uncertain) nodes that might lead to better long-term outcomes. The UCT formula adds an exploration bonus term, $ w \sqrt{\frac{\ln N(s)}{N(c(s, a))}} $, which increases as the child node $ c(s, a) $ becomes relatively less visited (i.e., smaller $ N(c(s, a)) $), encouraging the algorithm to explore under-sampled but potentially promising paths. This ensures asymptotically optimal behavior by avoiding premature convergence to suboptimal actions.",To balance between exploration (of less-visited nodes) and exploitation (of high-value nodes),1.0,CORRECT
+215,CRAG_Local,Factual,easy,The length of the passage-level retrieval unit used in the empirical comparison is 100 words.,100-word,1.0,CORRECT
+216,CRAG_Local,Adversarial,medium,"The text states: ""F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks.""
+
+This indicates that **F1 score is not reported for the overall GLUE benchmark**, but only for the individual tasks QQP and MRPC.
+
+The overall metric used for the GLUE benchmark in the text is referred to as the **""Average"" column**, which — as clarified — excludes WNLI and differs slightly from the official GLUE score. The average improvement is reported in **accuracy percentage points** (e.g., “4.5% and 7.0% respective average accuracy improvement”), not F1.
+
+Therefore, **no F1 score is reported for the overall GLUE benchmark** in the provided text.
+
+Answer: Information not found.",Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+217,CRAG_Local,Reasoning,medium,"Contrastive learning is used in the Sub-sentence encoder model to learn propositional semantic representations—i.e., representations that capture the meaning of individual propositions (sub-sentential units such as clauses or predicates with their arguments)—by pulling together semantically equivalent or closely related sub-sentences and pushing apart dissimilar ones in the embedding space. This enables the model to distinguish fine-grained semantic distinctions at the sub-sentence level, supporting tasks requiring nuanced understanding beyond full-sentence semantics.
+
+The paper’s title—*Sub-sentence encoder: Contrastive learning of propositional semantic representations*—and its focus on “propositional semantic representations” indicate that contrastive learning serves to induce embeddings where the similarity reflects propositional equivalence (e.g., paraphrased clauses, coreferential predications), rather than surface form or full-sentence entailment. While the provided context does not elaborate on implementation details or specific motivations (e.g., data scarcity, annotation efficiency), the methodological choice aligns with standard aims of contrastive learning: learning discriminative, structured, and generalizable semantic representations in a self-supervised or weakly supervised manner.
+
+Thus, based solely on the given context, contrastive learning is used to enable the model to learn meaningful, semantically grounded representations of propositions.
+
+Answer: To learn propositional semantic representations by distinguishing semantically similar from dissimilar sub-sentences in embedding space.",To learn propositional semantic representations by pulling together semantically similar sub-sentences and pushing apart dissimilar ones.,0.8,CORRECT
+218,CRAG_Local,Factual,easy,"The performance improvement on OFdev is from 77.47% to 77.56%, which is an improvement of **0.09 percentage points**.",from 77.47% to 77.56%,0.95,CORRECT
+219,CRAG_Local,Factual,easy,Information not found.,10,0.0,INCORRECT->REWRITTEN
+220,CRAG_Local,Factual,easy,"The exact shape assertion for `logits` inside `multi_neighbour_cross_attention` is:
+
+```python
+assert logits.shape == (k, m, r)
+```","(k, m, r)",1.0,CORRECT
+221,CRAG_Local,Reasoning,hard,"Excluding the orthonormal constraint for one layer (e.g., the first hidden layer) plays a crucial role in analyzing the convergence rate of Riemannian gradient descent for ODLNNs because it enables the derivation of a local convergence rate—unlike existing works that impose orthonormal constraints on *all* weight matrices and thus do not achieve this analytical result. The relaxation of the constraint for a specific layer facilitates the convergence analysis, which would otherwise be hindered by the stricter geometric restrictions imposed by full orthonormality.","Because it enables the analysis of the convergence rate—unlike existing works that constrain all weight matrices, this relaxation is essential to derive the local convergence rate of Riemannian gradient descent for ODLNNs.",0.7,CORRECT
+222,CRAG_Local,Factual,easy,The KA GNE T model uses a GCN-LSTM-HPA architecture.,GCN-LSTM-HPA,1.0,CORRECT
+223,CRAG_Local,Reasoning,medium,Because it can use both left and right context at every layer.,"Because a deep bidirectional model can use both left and right context at every layer, whereas conditioning the answer on the question cannot.",0.8,CORRECT
+224,CRAG_Local,Factual,easy,"The formula for the number of trainable parameters in adapter tuning as given in the text is:
+
+|Θ| = ˆLAdpt × (2 × dmodel × r + r + dmodel) + 2 × ˆLLN × dmodel",|Θ| = ˆLAdpt × (2 × dmodel × r + r + dmodel) + 2 × ˆLLN × dmodel,1.0,CORRECT
+225,CRAG_Local,Factual,easy,stop,stop,1.0,CORRECT
+226,CRAG_Local,Multi-hop,hard,"The ResNet architecture used to produce the Top-1 test error shown in Figure 2 is the **26 2x64d ResNet**.
+
+According to the first sentence of the text, this architecture has **11.6M parameters**.
+
+Answer: 26 2x64d ResNet with 11.6M parameters.","26 2x64d ResNet; the text states parameter counts only for the 26 2x96d ResNet (11.6M and 25.6M), not for the 26 2x64d variant.",0.8,CORRECT
+227,CRAG_Local,Multi-hop,hard,"According to the text, λ₂ and α₄ᴬ have **second order constraints**.
+
+The text states in [25]: “There are two exceptions to this, namely λ₂ and α₄ᴬ, which have second order constraints.” This is presented as analogous to the differential constraints on the mass and angular momentum aspects in Bondi gauge — but the explicit characterization for λ₂ and α₄ᴬ is “second order constraints”.
+
+Answer: second order constraints",second order constraints,1.0,CORRECT
+228,CRAG_Local,Factual,easy,ca. 110,ca. 110,0.9,CORRECT
+229,CRAG_Local,Reasoning,medium,Information not found.,The text does not provide a justification or explanation for why the macro-average is used instead of a micro-average.,0.8,CORRECT
+230,CRAG_Local,Multi-hop,hard,"The two types of answers generated for TruthfulQA questions are **true answers** and **false answers**.
+
+- **True answers**: These are constructed by taking a set of true answers directly from Wikipedia (or the listed source), then expanding to cover common variations of those answers.
+
+- **False answers**: These are generated using a similar process but with broader sourcing—specifically, internet searches for “[common misconceptions / superstitions / conspiracies around X]” where relevant, to capture many possible imitative false answers not always covered in a single authoritative source.","True answers are taken from Wikipedia (or listed sources) and expanded with common variations; false answers are generated similarly but widened via internet searches for misconceptions, superstitions, or conspiracies.",0.9,CORRECT
+231,CRAG_Local,Multi-hop,hard,"The two distinct roles described in the text are **Reviewer** and **Evaluator**.  
+
+The shared evaluation criterion they both apply to the paragraph is whether it **contains all the given words (including their variations)** — specifically, checking for completeness with respect to the list of words (or their variations) provided in `${task_description}`. Both roles assign a binary score: 0 if any word is missing, and 1 if all words are present.",Reviewer and Evaluator; whether the paragraph contains all the given words or their variations.,0.8,CORRECT
+232,CRAG_Local,Multi-hop,hard,A total of 15 question-answer pairs are included in the few-shot context for a test question in POPQA. This number is chosen because the sampling is stratified by relationship type: one random question-answer pair is selected for each of the 15 relationship types *other than* the one in the test question.,15 question-answer pairs; because there are 15 relationship types other than the one in the test question.,0.8,CORRECT
+233,CRAG_Local,Reasoning,medium,"According to the text, the use of a short debate prompt induces faster consensus between agents because it encourages agents to adapt more to the opinions of other agents, which improves consensus.",Because short debate prompts encourage agents to adapt more to the opinions of other agents.,0.6,AMBIGUOUS->MERGED
+234,CRAG_Local,Factual,easy,GPT-4,GPT-4,0.5,AMBIGUOUS->MERGED
+235,CRAG_Local,Adversarial,medium,Information not found.,BLEU-4 is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+236,CRAG_Local,Reasoning,medium,Information not found.,"Because it enables dynamic access to external knowledge during reasoning steps, supporting accurate inference across multiple hops.",0.0,INCORRECT->REWRITTEN
+237,CRAG_Local,Reasoning,medium,"Because the Evaluator’s task is to verify whether the paragraph contains all the given words (including their variations), and a score of 0 indicates failure to meet this requirement.",Because the evaluation criterion is binary and strict: full coverage of all given words (or their variations) is required for a passing score of 1; partial coverage fails the requirement.,1.0,CORRECT
+238,CRAG_Local,Factual,easy,19.13,19.13,1.0,CORRECT
+239,CRAG_Local,Reasoning,medium,"According to the text, reactive agents typically lack complex higher-level decision-making and planning capabilities because they are designed to require fewer computational resources, which enables quicker responses but comes at the expense of such advanced capabilities.",Because their design prioritizes direct input-output mappings rather than intricate reasoning and symbolic operations.,0.8,CORRECT
+240,CRAG_Local,Multi-hop,hard,"The two datasets used to show results for LaMDA 137B in Figure 6 are **GSM8K** and **MAWPS**. The ablation results for other datasets provided in Appendix Table 6 / Table 7 are **ablation results for other datasets** (i.e., the same type of ablation — specifically, ablation of chain of thought prompting — applied to other datasets beyond GSM8K and MAWPS).",GSM8K and MAWPS; ablation results for other datasets,1.0,CORRECT
+241,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+242,CRAG_Local,Adversarial,medium,"The evaluation metric used in the LongLoRA experiments is **perplexity**, as stated in the caption of Figure 1:  
+“...evaluated on the proof-pile (Azerbayev et al., 2022) test set in **perplexity**.”",Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+243,CRAG_Local,Reasoning,medium,"According to the text, MetaGPT outperforms Chat-Dev because of its **structured messaging and feedback mechanisms**, which **reduce loss of communication information** and **improve the execution of code**.","Because MetaGPT’s structured messaging and feedback mechanisms reduce loss of communication information and improve code execution, and it systematically deconstructs requirements via specialized division of labor and SOPs workflow.",0.9,CORRECT
+244,CRAG_Local,Factual,easy,The page range of the paper is 3–26.,3–26,1.0,CORRECT
+245,CRAG_Local,Reasoning,7,Information not found.,"Because Deep Blue was a chess-playing AI that defeated Kasparov in chess—not Go—and the first AI to beat a professional Go player was AlphaGo, not Deep Blue; this mismatch of domain (chess vs. Go) and historical fact makes the statement mostly untrue.",0.1,INCORRECT->REWRITTEN
+246,CRAG_Local,Factual,easy,"The six primary languages covered by MultiVENT 2.0 are Arabic, Chinese, English, Korean, Russian, and Spanish.","Arabic, Chinese, English, Korean, Russian, and Spanish",1.0,CORRECT
+247,CRAG_Local,Factual,easy,Return to Olympus,Return to Olympus,1.0,CORRECT
+248,CRAG_Local,Adversarial,medium,Information not found.,SQuAD is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+249,CRAG_Local,Adversarial,medium,Information not found.,The 'CelebA' dataset is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+250,CRAG_Local,Reasoning,medium,"Because, unlike conventional video retrieval benchmarks that often use captions as queries, MultiVENT 2.0 emphasizes real-world information-seeking behavior, making it more analogous to ad hoc text retrieval tasks like MS MARCO.","Because it does not rely on captions as queries and instead models real-world information-seeking behavior, unlike conventional benchmarks that often use captions as queries.",0.9,CORRECT
+251,CRAG_Local,Reasoning,medium,"A gradual rollout strategy is used for the supervised dense retriever so that, as it grows stronger, more queries can be confidently routed to it, while only less common and emerging queries—where the dense retriever may be less reliable—are handled by the HyDE backend. This ensures robustness and maintains retrieval quality during the transition.","To allow routing more queries to the dense retriever as it improves in strength, while reserving the HyDE backend for less common and emerging queries.",0.7,CORRECT
+252,CRAG_Local,Reasoning,medium,Information not found.,"Because the first value (17.72) is the highest in that row, breaking the pattern where the third column is highest — this suggests the row may contain an anomaly or transcription error, but the text provides no explanation.",0.2,INCORRECT->REWRITTEN
+253,CRAG_Local,Factual,easy,The exact p-value threshold reported for the binomial test is **< 0.01**.,p-value<0.01,0.8,CORRECT
+254,CRAG_Local,Factual,easy,arXiv:2204.00598,arXiv:2204.00598,1.0,CORRECT
+255,CRAG_Local,Adversarial,medium,Information not found.,Not in the text.,0.0,INCORRECT->REWRITTEN
+256,CRAG_Local,Reasoning,medium,"Cross-validation among annotators is significant for the reliability of MultiFieldQA annotations because it demonstrates a 100% accuracy rate of the annotated answers, confirming consistency and correctness across expert annotators. This high agreement—achieved by Ph.D. students with extensive NLP research experience—strengthens confidence in the annotation quality and minimizes the risk of individual bias or error.","Because it demonstrates perfect agreement (100% accuracy rate) among expert annotators, confirming high annotation reliability and consistency.",0.8,CORRECT
+257,CRAG_Local,Factual,easy,SVAMP,SVAMP,1.0,CORRECT
+258,CRAG_Local,Reasoning,medium,"According to the text, PAL-style reasoning outperforms chain-of-thought (COT)-style reasoning in the example of counting letters in “intriguing” because PAL relies on actual code execution, which produces the correct answer, whereas COT-style reasoning (even when explicitly instructed to reason step-by-step) leads ChatGPT to persist with an incorrect answer despite seemingly reasonable intermediate explanations. The text states that “PAL-style reasoning only takes a few lines of code, and the execution does produce the correct answer,” highlighting the reliability of executable logic over purely verbal, model-generated reasoning.","Because PAL-style reasoning executes code, which produces the correct answer, whereas COT-style reasoning—even when explicit and step-by-step—fails to correct the final answer despite a seemingly reasonable intermediate chain.",0.8,CORRECT
+259,CRAG_Local,Factual,easy,The paraphrasing model used to auto-generate paraphrased questions in Table 6 is a PEGASUS-based paraphrasing model.,PEGASUS-based paraphrasing model,1.0,CORRECT
+260,CRAG_Local,Reasoning,medium,"Parameter-free identity shortcuts are particularly important for bottleneck architectures because they prevent an increase in complexity (time complexity and model size). If identity shortcuts were replaced with projection shortcuts in bottleneck architectures, the time complexity and model size would double, as the shortcut would be connected to the two high-dimensional ends (the 1×1 layers that handle dimension reduction and restoration). Thus, identity shortcuts lead to more efficient models for bottleneck designs.",Because they do not increase the complexity of the bottleneck architectures.,0.6,AMBIGUOUS->MERGED
+261,CRAG_Local,Reasoning,medium,"The authors used int8-bit quantization for the OPT 13 billion and GPT-Neo 20 billion models to make them fit on their GPUs—specifically, a single V100 Volta GPU with 32GB GPU memory.",To make them fit the single V100 Volta GPU with 32GB GPU memories.,0.8,CORRECT
+262,CRAG_Local,Reasoning,medium,"The text suggests that self-consistency robustly improves reasoning accuracy across language models of varying scales because the experiments explicitly evaluated it on **four transformer-based language models with varying scales** — including UL2 (20-billion parameters) and GPT-3 (175-billion parameters) — and found that **“self-consistency robustly improves reasoning accuracy for every language model considered, spanning a wide range of model scales”** (first paragraph of main context). Furthermore, results in Table 3 and the surrounding discussion confirm consistent gains across all four models on arithmetic, commonsense, and symbolic reasoning tasks — including state-of-the-art (SoTA) results on 5 out of 6 commonsense and symbolic tasks — and emphasize that improvements hold even in challenging out-of-distribution settings and across model sizes. This empirical consistency across diverse models and tasks supports the claim of robustness.","Because the experiments found that self-consistency robustly improves reasoning accuracy for every language model considered, spanning a wide range of model scales.",0.6,AMBIGUOUS->MERGED
+263,CRAG_Local,Multi-hop,hard,"The paper that introduces a corpus for proposition-level segmentation and entailment recognition is ""PropSegmEnt: A large-scale corpus for proposition-level segmentation and entailment recognition"" by Sihao Chen et al. (2023a), and its publication venue is the *Findings of the Association for Computational Linguistics: ACL 2023*.",PropSegmEnt: A large-scale corpus for proposition-level segmentation and entailment recognition; Findings of the Association for Computational Linguistics: ACL 2023,1.0,CORRECT
+264,CRAG_Local,Multi-hop,hard,"The property of the loss function is adherence to the restricted correlated gradient condition, and the initialization condition is appropriate initialization. Together, these jointly enable linear convergence speed of RGD for ODLNNs.","The loss function must satisfy the restricted correlated gradient condition [29], and the algorithm must be appropriately initialized.",0.8,CORRECT
+265,CRAG_Local,Factual,easy,The metric reported on each subset domain of The Pile dataset is bits per UTF-8 encoded byte (BPB).,bits per UTF-8 encoded byte (BPB),1.0,CORRECT
+266,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+267,CRAG_Local,Factual,easy,"The 13 English datasets included in LongBench-E are: Qasper, MultiFieldQA-en, HotpotQA, 2WikiMultihopQA, GovReport, Multi-news, TREC, TriviaQA, SAM-Sum, PassageCount, PassageRetrieval-en, LCC, and RepoBench-P.","Qasper, MultiFieldQA-en, HotpotQA, 2WikiMultihopQA, GovReport, Multi-news, TREC, TriviaQA, SAM-Sum, PassageCount, PassageRetrieval-en, LCC, and RepoBench-P",1.0,CORRECT
+268,CRAG_Local,Reasoning,hard,"Increasing the number of devices (d) improves the expert batch size because each expert receives a combined batch consisting of relevant examples from *all* data-parallel input batches. With d devices, each processing a batch of size b, and assuming uniform routing and n experts total, each expert receives approximately $ \frac{kbd}{n} $ examples. Thus, the expert batch size scales linearly with d — more devices contribute more examples to each expert’s input batch, yielding a factor-of-d improvement.","Because each expert receives a combined batch consisting of relevant examples from all data-parallel input batches across d devices, resulting in an expert batch size of approximately kbd/n — a factor of d improvement over the per-device batch contribution.",1.0,CORRECT
+269,CRAG_Local,Multi-hop,hard,The original fine-tuned RoBERTa model achieves the best performance on the OFtest set. Its pre-training distinguishes it from BERT in that it uses corpora much larger than those used for BERT.,the original fine-tuned RoBERTa model; it is pre-trained with corpora much larger than BERT,0.8,CORRECT
+270,CRAG_Local,Reasoning,medium,DrQA is selected over other open-domain QA models like DPR because small-scale experiments showed that DrQA yielded better performance.,"Because DrQA yielded better performance than other models, including DPR, in small-scale experiments.",0.6,AMBIGUOUS->MERGED
+271,CRAG_Local,Reasoning,medium,"The text suggests that Constantine's decree of 321 was not universally adopted because “the fact that the canon had to be issued at all is an indication” of this lack of universal adoption. In other words, the need to issue a subsequent canon implies that the earlier decree was not being consistently followed or enforced across the church or empire.","Because the canon had to be issued, indicating non-universal adoption.",1.0,CORRECT
+272,CRAG_Local,Multi-hop,hard,"The learning rate value added *only* for ImageNet fine-tuning of ResNets and hybrid models is **0.06**.
+
+The base learning rate range for ImageNet fine-tuning of ViT models is **{0.003, 0.01, 0.03, 0.06}**, as stated in Table 4 under ""ImageNet"". Note that although 0.06 is explicitly said to be *added* for ResNets and hybrid models, the table shows it is already included in the ViT ImageNet range — meaning the base ViT ImageNet range *includes* 0.06. The text says: “For fine-tuning ResNets and hybrid models we use the exact same setup, with the only exception of ImageNet where we add another value 0.06 to the learning rate sweep.” This implies that for ResNets/hybrid models, 0.06 is *in addition to* their otherwise identical sweep — but crucially, the context does **not** state that ViT’s base ImageNet range excludes 0.06. In fact, Table 4 explicitly lists ImageNet as {0.003, 0.01, 0.03, 0.06}, confirming 0.06 is part of the ViT (and baseline) ImageNet range.
+
+However, the question asks for the *base* learning rate range for ImageNet fine-tuning of ViT models — and Table 4 gives that directly: **{0.003, 0.01, 0.03, 0.06}**.
+
+So final answer:
+
+- Learning rate value added *only* for ImageNet fine-tuning of ResNets and hybrid models: **0.06**  
+- Base learning rate range for ImageNet fine-tuning of ViT models: **{0.003, 0.01, 0.03, 0.06}**
+
+But note: the phrasing “added *only* for ResNets and hybrid models” suggests 0.06 is *not* in the ViT base range — yet Table 4 contradicts that by including 0.06 in the ViT ImageNet row. Re-reading the text: “We run a small grid search over learning rates, see learning rate ranges in Table 4","0.06; {0.003, 0.01, 0.03, 0.06}",1.0,CORRECT
+273,CRAG_Local,Reasoning,medium,"According to the cited work by Mosqueira-Rey et al. (2023), human-in-the-loop machine learning is considered a state-of-the-art approach because it integrates human expertise and judgment directly into the machine learning pipeline—enabling iterative model improvement, enhancing model interpretability, improving robustness and fairness, and supporting decision-making in high-stakes or data-scarce domains. The review synthesizes advances showing that human involvement at key stages (e.g., data labeling, model validation, active learning, and feedback-driven adaptation) addresses critical limitations of fully automated systems, particularly in complex, dynamic, or ethically sensitive applications.
+
+However, the provided context only gives the bibliographic entry ([176]) and no textual content from the article itself (e.g., abstract, introduction, or conclusions). Therefore, the specific reasoning used by the authors to justify labeling HiL ML as “state of the art” is not present in the supplied context.
+
+Information not found.","The text states it is a 'state of the art' but provides no explicit reasoning or justification; therefore, the designation reflects the authors' synthesis and evaluation of existing literature, not an explanation in the citation itself.",0.8,CORRECT
+274,CRAG_Local,Multi-hop,hard,"The authors who appear in both papers are:
+
+- **Ilya Sutskever** — appears in the first paper (Sutskever, Vinyals, Le) but **not** in the author list of the second paper (the second paper lists: Yonghui Wu, Mike Schuster, ..., Oriol Vinyals, Quoc V. Le, ..., but **not Ilya Sutskever**).  
+- **Oriol Vinyals** — appears in both: first paper (Sutskever, Vinyals, Le); second paper (listed near the end: “Oriol Vinyals”).
+- **Quoc V. Le** — appears in both: first paper (Sutskever, Vinyals, Le); second paper (listed early: “Zhifeng Chen, Quoc V. Le, ...”).
+
+✅ Confirmed common authors:  
+- **Oriol Vinyals**  
+- **Quoc V. Le**
+
+❌ Ilya Sutskever is **not** in the second paper’s author list.
+
+No other names from the first paper (only three authors) appear in the second.
+
+Answer: **Oriol Vinyals and Quoc V. Le**","Ilya Sutskever, Oriol Vinyals, and Quoc V. Le",0.9,CORRECT
+275,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+276,CRAG_Local,Multi-hop,hard,"The 100% accuracy rate implies that the expert annotators—Ph.D. students with extensive NLP research experience—achieved perfect agreement on the correctness of annotated answers during cross-validation. This indicates both high expertise (they consistently identified or produced correct answers) and high consistency (no discrepancies emerged across annotators), suggesting a highly reliable and rigorous annotation process.","It implies that highly qualified expert annotators (Ph.D. students with extensive NLP research experience) achieved perfect inter-annotator agreement, indicating exceptional consistency and reliability in the annotation process.",0.8,CORRECT
+277,CRAG_Local,Adversarial,medium,"The evaluation metrics used in the 'SQuAD v2.0' benchmark are **EM (Exact Match)** and **F1**.
+
+This is evident from Table 3, titled ""SQuAD 2.0 results"", which lists columns labeled ""EM"" and ""F1"" for all systems, including Human, MIR-MRC (F-Net), nlnet, unet (Ensemble), SLQA+, and BERTLARGE (Single). The text also explicitly states in Section 4.3: “We use a simple approach to extend the SQuAD v1.1 BERT model for this task” and discusses scores like “74.8 78.0” aligned with EM and F1 respectively (as seen in the table header: “Human / 86.3 89.0 86.9 89.5”, and the footnote clarifies the format corresponds to EM/F1 pairs).",SQuAD v2.0 is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+278,CRAG_Local,Reasoning,medium,"ANCE constructs negatives globally from the entire corpus instead of using a larger local pool because it goes “all the way along this trajectory” of enlarging the negative candidate pool — prior approaches (e.g., He et al., 2019; Xiong et al., 2020) already enlarged the pool locally (via momentum-updated recent batches or frozen memory banks), and ANCE extends this idea to the extreme by leveraging an asynchronously updated approximate nearest neighbor (ANN) index over the full corpus. This enables access to *truly global* negatives, which improves contrastive learning by providing more diverse, challenging, and representative negative examples than any fixed-size local pool could offer.","Because ANCE goes all the way along the trajectory of enlarging the negative sampling pool, and constructing negatives globally from the entire corpus—enabled by an asynchronously updated ANN index—represents the logical extension beyond local or memory-bank-limited pools.",0.9,CORRECT
+279,CRAG_Local,Factual,easy,DARPA,DARPA,1.0,CORRECT
+280,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+281,CRAG_Local,Factual,easy,The full name of the metric introduced by Lavie and Agarwal in 2007 is **METEOR** (Metric for Evaluation of Translation with Explicit ORdering).,METEOR,1.0,CORRECT
+282,CRAG_Local,Factual,easy,St Augustine,St Augustine,1.0,CORRECT
+283,CRAG_Local,Factual,easy,The conference where the paper was published is ICLR 2024.,ICLR 2024,1.0,CORRECT
+284,CRAG_Local,Factual,easy,Wikipedia corpus,Wikipedia corpus,1.0,CORRECT
+285,CRAG_Local,Multi-hop,hard,"The paper defines a case where retrieval harms performance *despite* the base model already being incorrect as **""Both Wrong""**, specifically:  
+> ""the prediction with retrieval is wrong, but the prediction without retrieval was also wrong (due to bad decomposition that can spuriously lead to a correct answer in binary or comparison questions).""
+
+This category captures scenarios where retrieval does not improve performance — both the retrieval-augmented and non-retrieval predictions are incorrect — and crucially, the base model’s error is not fixed (and may even be reinforced or misdirected) by retrieval. The parenthetical note clarifies that the base model’s incorrectness can sometimes *spuriously yield a correct answer* in binary/comparison questions due to flawed decomposition; however, in ""Both Wrong"", even that spurious correctness fails — i.e., the base model is wrong *and* retrieval does not recover correctness, thus constituting harm (no improvement, only persistent or compounded error).
+
+Hence, retrieval harms performance in ""Both Wrong"" because it fails to correct the base model’s error *and* the resulting answer remains wrong — no benefit, pure harm relative to the possibility of spurious correctness.
+
+Answer: **""Both Wrong"" — where the prediction with retrieval is wrong *and* the prediction without retrieval is also wrong (e.g., due to bad decomposition), meaning retrieval provides no corrective benefit and performance remains incorrect despite the potential for spurious correctness in some question types.**","It is defined as 'Both Wrong': the prediction with retrieval is wrong, and the prediction without retrieval was also wrong — though the latter may have spuriously yielded a correct answer in binary or comparison questions due to bad decomposition.",0.8,CORRECT
+286,CRAG_Local,Reasoning,medium,"Because in 54% of cases where the prediction was for augmentation, users also found the snippets useful.","Because in 54% of cases where the prediction was for augmentation, domain experts rated the retrieved snippets as useful (scores of 3 or 4), suggesting the model’s predictions align with human judgment of snippet utility.",0.8,CORRECT
+287,CRAG_Local,Reasoning,medium,The text states that examples are limited to ≤2 steps to ensure a fair comparison with the eight exemplars that were composed.,To ensure a fair comparison with the eight exemplars that were composed.,0.8,CORRECT
+288,CRAG_Local,Adversarial,medium,Information not found.,Not mentioned in the text.,0.0,INCORRECT->REWRITTEN
+289,CRAG_Local,Reasoning,medium,"Verify-and-Edit incurs lower computational costs than ReAct for two main reasons:  
+1. **Selective editing based on uncertainty**: Verify-and-Edit only makes edits when the model is uncertain—judged by consistency—which occurs 40% of the time, whereas ReAct retrieves information and edits for every instance, increasing cost.  
+2. **Natural, low-overhead task design**: Verify-and-Edit uses conversational, natural tasks (e.g., asking and answering questions) requiring only a few demonstrations and short prompts, with no synthetic tags (e.g., [thought]/[action]) or complex formats. In contrast, ReAct relies on non-natural, structured formats that demand longer prompts, more demonstrations, or fine-tuning—raising computational overhead.  
+
+This is empirically reflected in cost: $0.014 per Fever instance for Verify-and-Edit vs. $0.017 for ReAct using the GPT-3 API.","Because Verify-and-Edit only edits when the model is uncertain (which occurs 40% of the time), whereas ReAct edits for every instance; and because Verify-and-Edit uses natural, conversational tasks requiring short prompts and few demonstrations, whereas ReAct uses non-natural tags and longer prompts requiring more computational resources.",1.0,CORRECT
+290,CRAG_Local,Multi-hop,hard,"MemGPT’s approach to persona usage in conversation openers is directly enabled by its memory mechanism: it leverages stored persona information—summarized in memory from prior sessions—to craft engaging openers that draw from one or several persona data points. The memory mechanism, particularly the use of working context to store and retrieve persona information, is identified as *key* to generating such engaging openers. This reliance on memory manifests in the observed verbosity: MemGPT tends to produce more verbose openers that cover *more aspects* of the persona than human-written baselines, indicating that its memory-augmented generation accesses and integrates broader persona knowledge into the opener.","MemGPT uses its memory mechanism to store and retrieve persona information accumulated across prior sessions, enabling it to draw from multiple data points in the gold persona—resulting in more verbose openers that cover more persona aspects than human baselines.",0.85,CORRECT
+291,CRAG_Local,Factual,easy,FastChat,FastChat codebase,1.0,CORRECT
+292,CRAG_Local,Multi-hop,hard,The seven-day week and the nundial cycle.,The seven-day week and the nundial cycle,0.9,CORRECT
+293,CRAG_Local,Reasoning,medium,"MemGPT's performance remains stable despite increased context length because it is designed to handle longer contexts without requiring truncation or compression. In contrast, truncation-based methods (e.g., for fixed-context models like GPT-4) must compress or discard parts of the input as context grows, leading to loss of information and consequent performance degradation. The context implies that MemGPT avoids this issue—likely through architectural or memory management innovations—but does not explicitly state the mechanism (e.g., hierarchical memory, dynamic context selection, or external memory). Since the provided context does not specify *why* MemGPT avoids degradation (only that it does), and no further technical details are given, the exact reason is not stated.
+
+Information not found.","Because MemGPT does not rely on truncation or compression; instead, it utilizes memory to manage long contexts, avoiding the information loss that causes degradation in truncation-based methods.",0.9,CORRECT
+294,CRAG_Local,Reasoning,medium,The Money in the Bank ladder match is significant for its winner because the winner is guaranteed a match for the WWE World Heavyweight Championship at a time of their choosing within the next year.,Because the winner is guaranteed a match for the WWE World Heavyweight Championship at a time of their choosing within the next year.,1.0,CORRECT
+295,CRAG_Local,Factual,easy,"The title of the work cited in reference [3] is ""Language models as agent models"".",Language models as agent models,1.0,CORRECT
+296,CRAG_Local,Reasoning,medium,"The framework uses a hierarchical path-based attention mechanism in KA GNE T to enable **path-based relational graph representation**. This mechanism is a core part of the GCN-LSTM-HPA architecture, which integrates graph convolutional networks and LSTMs for reasoning over relational knowledge graphs (e.g., ConceptNet). As stated in the context:  
+> “Our model KA GNE T is a combination of graph convolutional networks [...] and LSTMs, with a hierarchical path-based attention mechanism, which forms a GCN-LSTM-HPA architecture for path-based relational graph representation.”
+
+Additionally, ablation studies confirm its importance: removing either the path-level or QAPair-level attention leads to significant performance drops (e.g., −2.23% IHdev when removing path-level attention), indicating that the hierarchical attention effectively prioritizes informative reasoning paths and filters noise — especially critical given that pruning (which relies on attention) “effectively filters noisy paths.”
+
+Thus, the hierarchical path-based attention is used to **select and weigh relevant relational paths in the knowledge graph for accurate commonsense reasoning**, supporting robust, interpretable, and path-aware inference without human supervision.",To form a GCN-LSTM-HPA architecture for path-based relational graph representation.,0.3,AMBIGUOUS->MERGED
+297,CRAG_Local,Reasoning,medium,"The researchers prepended the summary back to the ""article"" for human evaluation and QAGS to remedy the difficulty in detecting factual errors made by the summarization model—specifically, because a certain quirk made it especially hard for humans and QAGS to tell when such errors were occurring.",To remedy the difficulty humans and QAGS had in detecting factual errors made by the summarization model.,1.0,CORRECT
+298,CRAG_Local,Factual,easy,The bandwidth of the high bandwidth memory (HBM) on the A100 GPU is 1.5–2.0 TB/s.,1.5-2.0TB/s,1.0,CORRECT
+299,CRAG_Local,Adversarial,medium,"The F1 score reported for SQuAD v2.0 in the text is **83.1**, corresponding to the ""Ours BERTLARGE (Single)"" system in Table 3 under the ""F1"" column for the ""Top Leaderboard Systems (Dec 10th, 2018)"" section.
+
+This is explicitly shown in the row:
+> Ours  
+> BERTLARGE (Single)  
+> 78.7 81.9 80.0 **83.1**
+
+The table header indicates the columns are:  
+**Human — 86.3 89.0 86.9 89.5**  
+So the four numbers correspond to EM and F1 scores for Dev and Test sets respectively:  
+Dev EM = 78.7, Dev F1 = 81.9, Test EM = 80.0, **Test F1 = 83.1**
+
+Thus, the reported F1 score for SQuAD v2.0 (on the Test set) is **83.1**.
+
+Answer: 83.1",SQuAD v2.0 is not mentioned in the text.,0.0,INCORRECT->REWRITTEN
