@@ -1,85 +1,109 @@
-# 🛡️ VeriMind Pro: Trustworthy Academic Agentic RAG
+# VeriMind
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
-[![LlamaIndex](https://img.shields.io/badge/Framework-LlamaIndex-orange.svg)](https://www.llamaindex.ai/)
-[![DashScope](https://img.shields.io/badge/LLM-Qwen--Plus-green.svg)](https://help.aliyun.com/zh/dashscope/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+VeriMind 是一个面向学术知识库的可信 Agentic RAG 原型系统，重点探索多粒度检索、意图感知路由、回答忠实度审计和证据不足时的保守拒答机制。
 
-**VeriMind Pro** 是一款专为学术研究与专业知识库设计的 **Agentic RAG (代理式检索增强生成)** 系统。通过多粒度索引技术、意图感知路由以及实时信任评分机制，VeriMind Pro 为国内专业用户提供了一个高效、透明且极低幻觉的智能问答解决方案。
+项目关注的问题不是“如何让模型总能回答”，而是“如何让系统在证据不足、检索不可靠或回答超出上下文时及时暴露风险”。
 
----
+## 1. Research Motivation
 
-## ✨ 核心竞争力：为什么选择 VeriMind Pro？
+标准 RAG 系统常能召回看似相关的文本片段，但仍可能生成证据不支持的结论。对于学术研究、专业知识库和低容错问答场景，仅仅把文档切块后交给大模型并不够。
 
-1.  **🧠 意图感知的动态路由 (Intent-Aware Routing)**
-    不同于传统的固定切片检索，VeriMind 会实时分析用户的提问意图：
-    -   **DETAIL (128 Tokens)**: 针对参数、年份、具体定义等精确细节。
-    -   **CONCEPT (512 Tokens)**: 针对概念原理、方法论解释。
-    -   **CONTEXT (1024 Tokens)**: 针对论文总结、多文档对比、优缺点分析。
-    系统自动匹配最佳检索粒度，确保“找得准且看得全”。
+VeriMind 尝试通过多粒度索引、意图感知路由和回答后置审计，将普通检索问答推进到 evidence-aware generation：
 
-2.  **⚖️ 实时双重审计机制 (Dual-Verify Logic)**
-    每一条生成的答案都会经过“质检员”的审查：
-    -   **检索相关性评分**: 评估检索到的片段与问题的契合度。
-    -   **忠实度审计 (Faithfulness)**: 采用 **LLM-as-a-Judge** 模式，严格对比生成的答案是否包含上下文之外的“私货”。
-    最终生成 **Trust-Score (信任分)**，可视化展示结果的可信度。
+- 用户问题先被路由到合适的检索粒度。
+- 系统从不同粒度的知识索引中召回证据。
+- 回答生成后再通过忠实度审计进行风险检查。
+- 当证据不足时，系统优先输出保守说明，而不是强行生成。
 
-3.  **🛡️ 幻觉“短路”拦截策略**
-    在处理国内论文或特定技术文档时，如果检索内容不足，系统会触发“短路”机制：优先承认“未找到对应证据”并解释原因，而非强行回答。
+## 2. Core Ideas
 
-4.  **💎 极致交互深度美学**
-    界面基于 **Streamlit** 深度定制，通过 Frosted Glass (毛玻璃) 效果、霓虹状态灯和动态推理链条展示，让 RAG 的黑盒过程完全透明化。
+### Multi-granularity Retrieval
 
----
+系统围绕不同问题类型建立多粒度索引：
 
-## 🛠️ 技术栈与架构 (Tech Stack)
+- `DETAIL`：面向参数、年份、定义等细节问题。
+- `CONCEPT`：面向概念、方法、机制解释。
+- `CONTEXT`：面向论文总结、多文档对比和长上下文问题。
 
--   **核心框架**: [LlamaIndex](https://github.com/run-llama/llama_index) (数据编排与 Agent 流程控制)
--   **后端大模型**: [Alibaba DashScope](https://help.aliyun.com/zh/dashscope/) (主力模型: `qwen-plus`)
--   **向量数据库**: [ChromaDB](https://www.trychroma.com/) (本地持久化向量存储)
--   **UI 框架**: [Streamlit](https://streamlit.io/) (带高级 CSS 注入的 UI)
--   **环境配置**: 支持 Conda 虚拟环境隔离，确保依赖一致性。
+这种设计用于缓解固定切块带来的语义截断和上下文不足问题。
 
----
+### Intent-aware Routing
 
-## 🚀 快速上手 (Quick Start)
+系统根据用户问题的意图选择更合适的检索粒度，而不是对所有问题使用同一种 chunk 大小和同一套召回策略。
 
-### 1. 环境准备
+### Answer Auditing
+
+回答生成后，系统通过 LLM-as-a-Judge 的方式检查回答是否忠实于检索证据，并结合检索相关性形成 Trust-Score。
+
+### Conservative Refusal
+
+当检索证据不足或回答可能超出上下文时，系统倾向于说明证据不足，而不是生成没有来源支撑的结论。
+
+## 3. Tech Stack
+
+- Python
+- LlamaIndex
+- Alibaba DashScope / Qwen
+- ChromaDB
+- Streamlit
+- Conda
+
+## 4. Quick Start
+
+### 1. Create environment
+
 ```bash
-# 创建并激活 Conda 环境
 conda create -n verimind python=3.10
 conda activate verimind
+```
 
-# 安装依赖
+### 2. Install dependencies
+
+```bash
 pip install streamlit llama-index llama-index-llms-dashscope llama-index-embeddings-dashscope chromadb python-dotenv tqdm
 ```
 
-### 2. 配置 API Key
-在项目根目录创建 `.env` 文件，并填入您的通义千问 Key：
+### 3. Configure API key
+
+Create a `.env` file in the project root:
+
 ```env
-DASHSCOPE_API_KEY=sk-xxxx...
+DASHSCOPE_API_KEY=sk-xxxx
 ```
 
-### 3. 构建索引
-将您的 Markdown 论文放入 `./knowledge_mds` 文件夹，然后运行：
+### 4. Build index
+
+Put Markdown documents into `./knowledge_mds`, then run:
+
 ```bash
 python build_index.py
 ```
 
-### 4. 启动应用
+### 5. Start app
+
 ```bash
 streamlit run rag_app_final.py
 ```
 
----
+## 5. Repository Scope
 
-## 📈 未来规划 (Roadmap)
+This repository focuses on text-based academic knowledge bases. It is not intended to solve all document intelligence problems.
 
-- [ ] **多路召回 (Hybrid Search)**: 引入 BM25 算法平衡关键词与向量的匹配权重。
-- [ ] **重排序 (Reranker)**: 集成 BGE-Reranker 以进一步优化由于 Top-K 噪声引起的精度损失。
-- [ ] **多模态解析**: 支持直接对 PDF 图片内容进行结构化理解。
+In particular:
 
----
+- Multimodal chart/table understanding is not included in this repository.
+- Production-grade access control, monitoring, and replay systems are not included yet.
+- Evaluation results should be interpreted together with raw logs, benchmark files, and manuscript materials when available.
 
-## 📄 许可证
-本项目采用 MIT 许可证。
+## 6. Roadmap
+
+- Hybrid retrieval with sparse + dense search.
+- Reranking for noisy top-k results.
+- Claim-evidence alignment for key answer statements.
+- Structured audit logs and replayable traces.
+- Failure taxonomy for retrieval miss, unsupported claim, over-refusal and under-refusal.
+- MM-RAG / VeriSight extension for chart-text evidence alignment.
+
+## 7. License
+
+This project is released under the MIT License.
