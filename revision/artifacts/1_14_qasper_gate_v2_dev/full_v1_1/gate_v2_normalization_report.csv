@@ -1,0 +1,23 @@
+﻿item_id,judge,original_status,original_error_message,resolution,repair_codes,normalized_label
+29,glm,parse_error,JSONDecodeError: Invalid \escape: line 19 column 136 (char 1209),offline_repair,invalid_json_escape,supported
+32,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+36,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+42,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+47,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+61,deepseek,parse_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),retry,retry_truncated_response,supported
+61,glm,parse_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),retry,retry_truncated_response,supported
+90,glm,parse_error,JSONDecodeError: Invalid \escape: line 19 column 125 (char 1202),offline_repair,invalid_json_escape,supported
+100,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+103,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+125,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+131,deepseek,parse_error,JSONDecodeError: Unterminated string starting at: line 85 column 7 (char 4053),retry,retry_truncated_response,supported
+131,qwen,parse_error,JSONDecodeError: Unterminated string starting at: line 83 column 7 (char 4164),retry,retry_truncated_response,unsupported
+131,glm,parse_error,JSONDecodeError: Expecting value: line 1 column 1 (char 0),retry,retry_truncated_response,unsupported
+149,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+171,qwen,parse_error,"ValueError: claim 3 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,unsupported
+190,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+201,qwen,parse_error,JSONDecodeError: Unterminated string starting at: line 60 column 21 (char 5242),retry_offline_repair,retry_truncated_response;attribution_from_evidence_owner,supported
+207,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,unsupported
+210,deepseek,parse_error,"ValueError: claim 1 evidence_owner must be one of ['CURRENT_PAPER', 'MIXED', 'PRIOR_WORK', 'UNRESOLVED']",offline_repair,evidence_owner_multi_value;attribution_from_evidence_owner,unsupported
+237,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+248,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported

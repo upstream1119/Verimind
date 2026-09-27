@@ -1,0 +1,8 @@
+Cross-Architecture Fleiss Kappa (E1-E5, common100)
+Input: E1/E2/E3/E4 full 300 each strategy; E5 sampled 100 questions (3 strategies).
+Binary label: hallucination_rate >= 0.5
+
+scope=common100 unit=all_strategy N_items=300 n_raters=5 p_non_hall=0.609333 p_hall=0.390667 Pbar=0.772000 Pe=0.523908 kappa=0.521101
+scope=common100 unit=Vanilla_RAG N_items=100 n_raters=5 p_non_hall=0.414000 p_hall=0.586000 Pbar=0.646000 Pe=0.514792 kappa=0.270416
+scope=common100 unit=HyDE N_items=100 n_raters=5 p_non_hall=0.416000 p_hall=0.584000 Pbar=0.674000 Pe=0.514112 kappa=0.329063
+scope=common100 unit=VeriMind_Full N_items=100 n_raters=5 p_non_hall=0.998000 p_hall=0.002000 Pbar=0.996000 Pe=0.996008 kappa=-0.002004

@@ -1,0 +1,3 @@
+﻿dataset,n,candidate_n,retrieval_threshold,retrieval_below_threshold_all,retrieval_gate_rejections,vs_no_gate_decision_differences,score_min,score_max
+QASPER,300,144,0.5,4,0,0,0.4527535880871302,1.0
+SciFact+NEI,514,450,0.5,0,0,0,0.6107343465694287,1.0

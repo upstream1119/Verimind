@@ -1,0 +1,8 @@
+{
+  "validation": "passed",
+  "input_count": 814,
+  "answer_rows": 1628,
+  "policy_rows": 4070,
+  "unmapped_qasper_question_strategy_rows": 98,
+  "successful_unique_generation_records": 900
+}

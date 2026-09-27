@@ -1,0 +1,14 @@
+{
+  "decision": "FAIL",
+  "author_certain_n": 49,
+  "author_unsupported_n": 4,
+  "required_majority_true_positives": 3,
+  "maximum_majority_false_positives": 3,
+  "observed_majority_true_positives": 2,
+  "observed_majority_false_positives": 2,
+  "observed_majority_recall": 0.5,
+  "observed_majority_agreement": 0.9183673469387755,
+  "observed_majority_kappa": 0.45555555555555555,
+  "normalized_repaired_labels": 7,
+  "full_802_run_authorized_by_rule": false
+}

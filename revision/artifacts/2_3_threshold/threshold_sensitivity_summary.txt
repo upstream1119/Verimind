@@ -1,0 +1,8 @@
+Threshold Sensitivity (VeriMind trust gating)
+Input: revision/artifacts/2_1_bertscore/experiment_results_sci_v3_with_bertscore.csv
+Paired samples: 300 (VeriMind_Full x VeriMind_No_Gating)
+Threshold range: 0.0 .. 10.0 (step=0.5)
+
+Best F1 threshold: t=0.00, f1=0.144875, hal=0.030000, accept_rate=1.000000
+Best Hallucination threshold: t=4.00, hal=0.000000, f1=0.133966, accept_rate=0.966667
+Current threshold t=5.00: hal=0.000000, f1=0.133966, faith=10.000000, accept_rate=0.966667

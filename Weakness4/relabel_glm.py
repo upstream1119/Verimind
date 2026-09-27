@@ -3,11 +3,14 @@ relabel_glm_v2.py
 修复版：先测试模型可用性，再批量标注
 """
 import csv
+import os
 import time
 from collections import Counter
 from zhipuai import ZhipuAI
 
-API_KEY = "884369fcc8744d59b490c8d3989f7153.4Pr3tJoXMET2woB9"
+API_KEY = os.environ.get("ZHIPUAI_API_KEY", "")
+if not API_KEY:
+    raise RuntimeError("ZHIPUAI_API_KEY is required")
 INPUT   = "blind_audit_sheet_to_annotate.csv"
 OUTPUT  = "relabeled_audit_sheet.csv"
 

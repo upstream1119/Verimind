@@ -1,0 +1,25 @@
+QASPER Gate V2 held-out 96-case author blind audit
+==================================================
+
+Open only qasper_heldout_author_audit_96_blind.csv.
+Do not open the key file until all 96 labels are complete.
+
+Allowed author_label values:
+- supported: every material claim is supported by the retrieved context
+- unsupported: at least one material claim lacks support, conflicts
+  with the context, or is attributed to the wrong method or study
+- uncertain: the question or evidence is genuinely ambiguous
+
+Use only the retrieved context. Do not use outside knowledge.
+Do not penalize an answer merely for being incomplete.
+Check numerical metrics, method attribution, comparison relations,
+and whether prior work is incorrectly described as the current
+paper's own method, result, dataset, or contribution.
+
+Fill author_label and author_notes without renaming columns or
+reordering rows. Save as UTF-8 CSV.
+
+Blindness boundary:
+The blind sheet intentionally excludes Gate V2 decisions, judge
+labels, trust scores, item IDs, paper IDs, and gold answers.
+Open the key only after all labels are complete.

@@ -1,0 +1,18 @@
+﻿3.1 数据标注流程与一致性审计摘要
+================================================
+
+[流程规模]
+- 复标审计总样本: 600
+- 参与系统分布: {'HyDE': 150, 'Self_RAG': 150, 'Vanilla_RAG': 150, 'VeriMind_Full': 150}
+- 分层分布: {'REJECTED': 296, 'TRUSTED': 256, 'WARNING': 48}
+
+[一致性统计]
+- LLM vs Human (n=50): agreement=0.9600, kappa=0.9151
+- Annotator A vs B overall (n=600): agreement=0.9033, kappa=0.7767
+- Annotator A vs B TRUSTED (n=256): agreement=0.9844, kappa=0.9686
+- Annotator A vs B WARNING (n=48): agreement=1.0000, kappa=1.0000
+- Annotator A vs B REJECTED (n=296): agreement=0.8176, kappa=0.0000
+
+[写作建议边界]
+- 可表述为“标注一致性达到高水平（overall kappa≈0.78）”。
+- 对 REJECTED 分层需单独说明标签分布极不均衡，kappa 对边际分布敏感。

@@ -1,0 +1,16 @@
+QASPER 50-case author blind audit
+=================================
+
+Open only qasper_author_audit_50_blind.csv while labeling.
+Do not open the key file until all 50 labels are complete.
+
+Allowed author_label values:
+- supported: every material claim is supported by the context
+- unsupported: at least one material claim lacks context support
+- uncertain: the evidence is genuinely ambiguous
+
+Judge faithfulness only. Do not use the gold answer or outside facts.
+Save the completed CSV without renaming columns.
+
+Important: this challenge-enriched sample validates label agreement;
+it must not be used to estimate the population hallucination rate.

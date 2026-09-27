@@ -1,0 +1,38 @@
+QASPER held-out author-audit scoring
+===================================
+
+Audited No-Gating answered held-out items: 96
+Total held-out questions: 150
+No-Gating answered coverage: 64.00%
+
+Author label counts:
+author_label
+supported      95
+unsupported     1
+
+Gate V2 decision counts:
+gate_v2_decision
+ANSWER     75
+REJECT      5
+WARNING    16
+
+Main policy metrics:
+current_gate: TP=1, FP=12, FN=0, TN=83, recall=100.00%, FPR=12.63%, passed risk=0.00%, coverage(total)=55.33%, Fisher p=0.1354
+gate_v2_reject_only: TP=1, FP=4, FN=0, TN=91, recall=100.00%, FPR=4.21%, passed risk=0.00%, coverage(total)=60.67%, Fisher p=0.05208
+gate_v2_intervention: TP=1, FP=20, FN=0, TN=75, recall=100.00%, FPR=21.05%, passed risk=0.00%, coverage(total)=50.00%, Fisher p=0.2188
+deepseek_unsupported: TP=1, FP=16, FN=0, TN=79, recall=100.00%, FPR=16.84%, passed risk=0.00%, coverage(total)=52.67%, Fisher p=0.1771
+qwen_unsupported: TP=1, FP=5, FN=0, TN=90, recall=100.00%, FPR=5.26%, passed risk=0.00%, coverage(total)=60.00%, Fisher p=0.0625
+glm_unsupported: TP=1, FP=3, FN=0, TN=92, recall=100.00%, FPR=3.16%, passed risk=0.00%, coverage(total)=61.33%, Fisher p=0.04167
+
+Non-supported author-audit cases:
+HOB-096 / item_id=1050 / Gate V2=REJECT / votes=3 unsupported
+question: Which deep learning architecture do they use for sentence segmentation?
+answer: Bi-LSTM-CRF
+author_note: The answer attributes Bi-LSTM-CRF as the sentence segmentation architecture used by the paper, but the context describes Bi-LSTM-CRF as a baseline/state-of-the-art sequence tagging approach. The proposed model instead uses n-gram embeddings, self-attention distant representations, and CVT.
+
+Interpretation boundary:
+The random held-out answered audit contains only one author-unsupported case. This supports a sanity check that the observed unsupported case was caught, but it is too sparse to support a strong standalone significance claim.
+Gate V2 reject-only catches the only unsupported case with 4.21% false rejection among supported cases and 60.67% overall answered coverage.
+Treating WARNING as intervention is more conservative but lowers overall answered coverage to 50.00%.
+The current scalar gate also catches the unsupported case but has higher false rejection than reject-only Gate V2 (12.63%).
+Labels are author-conducted blind evidence audits, not independent expert annotations.

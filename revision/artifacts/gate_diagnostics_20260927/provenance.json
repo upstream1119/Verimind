@@ -1,0 +1,13 @@
+{
+  "input_files": {
+    "items.json": "be3f2e4a6107c450d04d07754d2e9bb5fe4e6b5c6e2adb19a020275424f5ff0f",
+    "answers.jsonl": "870cf8b1d316f9062855b3ae6c866ef44681e1f416630fcd748d4fb839718b00",
+    "manifest.json": "6d02532105aeb7f4713664b4536adbbf2bbec5c226181f3e3405f4e768121071"
+  },
+  "script_sha256": "941f6578ef860ded0a07452771acf66690b26e53e087074f8ac675c95da9c9ce",
+  "result_counts": {
+    "score_rows": 12,
+    "sweep_rows": 18,
+    "debug_rows": 50
+  }
+}

@@ -1,0 +1,2 @@
+﻿strategy,n,raw_hallucination_rate,passed_hallucination_rate,answer_coverage,answerable_coverage,unanswerable_abstention_rate,evidence_recall,rouge_l_f1,latency_sec
+VeriMind_No_Gating,150,0.08666666666666667,0.13541666666666666,0.64,0.64,,0.5226500000000001,0.2763966666666667,2.9044666666666665

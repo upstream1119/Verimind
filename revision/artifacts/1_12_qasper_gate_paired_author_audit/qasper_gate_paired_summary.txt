@@ -1,0 +1,19 @@
+QASPER gate-paired author-audit summary
+=======================================
+
+Paired pool: 111 cases with identical generated answers and retrieved contexts.
+No-Gating accepted all cases; the Full gate decision was hidden during author labeling.
+
+no_gating_unsupported_rate: 5/109 (4.59%; 95% Wilson CI 1.98%-10.29%)
+full_gate_sensitivity_for_unsupported: 1/5 (20.00%; 95% Wilson CI 3.62%-62.45%)
+full_gate_false_rejection_rate: 14/104 (13.46%; 95% Wilson CI 8.19%-21.34%)
+full_passed_unsupported_rate: 4/94 (4.26%; 95% Wilson CI 1.67%-10.44%)
+conservative_no_gating_risk: 7/111 (6.31%; 95% Wilson CI 3.09%-12.45%)
+conservative_full_passed_risk: 5/95 (5.26%; 95% Wilson CI 2.27%-11.74%)
+
+Fisher exact test for unsupported-answer enrichment among Full rejections: odds ratio=1.61, two-sided p=0.5302.
+
+Interpretation boundary:
+This is a finite paired-pool diagnostic, not an independent population sample or a claim of zero residual risk.
+Primary rates exclude uncertain labels; conservative rates count uncertain labels as unsupported.
+Labels are author-conducted blind evidence audits, not independent expert annotations.

@@ -8,7 +8,9 @@ import re
 import os
 
 # ================= 配置区 =================
-dashscope.api_key = "sk-01bcaa48e91445c2bdeeed0aaeff8855"  # ⚠️ 填入你的阿里云 API Key
+dashscope.api_key = os.environ.get("DASHSCOPE_API_KEY", "")
+if not dashscope.api_key:
+    raise RuntimeError("DASHSCOPE_API_KEY is required")
 JSON_FILE  = "../json/verimind_bench_v3.json"
 COT_CSV    = "../csv/w3_cot_rag_results.csv"
 CRAG_CSV   = "../csv/w3_crag_local_results.csv"

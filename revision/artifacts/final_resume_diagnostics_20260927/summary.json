@@ -1,0 +1,273 @@
+{
+  "generated_utc": "2026-09-27T02:33:54.256847+00:00",
+  "execution": "Offline only; no LLM/API calls; no answer or retrieval generation",
+  "commands": [
+    "python -B run_router.py",
+    "python -B run_fusion.py",
+    "python -B run_tie_sensitivity.py",
+    "python -B run_scifact.py",
+    "python -B run_report.py"
+  ],
+  "task1_router": {
+    "all": {
+      "evaluable_n": 237,
+      "mean_regret_at3": 0.05464135021097046,
+      "median_regret_at3": 0.0,
+      "regret_positive_n_at3": 20,
+      "regret_positive_rate_at3": 0.08438818565400844,
+      "router_optimal_n_at3": 217,
+      "router_optimal_rate_at3": 0.9156118143459916,
+      "router_unique_best_n_at3": 1,
+      "router_unique_best_rate_at3": 0.004219409282700422,
+      "all_three_equal_n_at3": 178,
+      "unique_best_counts_at3": {
+        "128": 16,
+        "512": 0,
+        "1024": 0
+      },
+      "optimal_including_ties_counts_at3": {
+        "128": 195,
+        "512": 221,
+        "1024": 220
+      },
+      "best_set_counts_at3": {
+        "128": 16,
+        "128|512|1024": 178,
+        "512|1024": 42,
+        "128|512": 1
+      },
+      "regret_sum_at3": 12.95,
+      "top_10_regret_share_at3": 0.7078507078507078,
+      "mean_regret_at5": 0.07819971870604782,
+      "median_regret_at5": 0.0,
+      "regret_positive_n_at5": 26,
+      "regret_positive_rate_at5": 0.10970464135021098,
+      "router_optimal_n_at5": 211,
+      "router_optimal_rate_at5": 0.890295358649789,
+      "router_unique_best_n_at5": 0,
+      "router_unique_best_rate_at5": 0.0,
+      "all_three_equal_n_at5": 183,
+      "unique_best_counts_at5": {
+        "128": 22,
+        "512": 0,
+        "1024": 0
+      },
+      "optimal_including_ties_counts_at5": {
+        "128": 206,
+        "512": 215,
+        "1024": 214
+      },
+      "best_set_counts_at5": {
+        "128": 22,
+        "128|512|1024": 183,
+        "512|1024": 31,
+        "128|512": 1
+      },
+      "regret_sum_at5": 18.53333333333333,
+      "top_10_regret_share_at5": 0.5395683453237411,
+      "router_choice_counts": {
+        "512": 210,
+        "1024": 10,
+        "128": 17
+      }
+    },
+    "text_retrievable": {
+      "evaluable_n": 188,
+      "mean_regret_at3": 0.060904255319148934,
+      "median_regret_at3": 0.0,
+      "regret_positive_n_at3": 16,
+      "regret_positive_rate_at3": 0.0851063829787234,
+      "router_optimal_n_at3": 172,
+      "router_optimal_rate_at3": 0.9148936170212766,
+      "router_unique_best_n_at3": 1,
+      "router_unique_best_rate_at3": 0.005319148936170213,
+      "all_three_equal_n_at3": 140,
+      "unique_best_counts_at3": {
+        "128": 14,
+        "512": 0,
+        "1024": 0
+      },
+      "optimal_including_ties_counts_at3": {
+        "128": 154,
+        "512": 174,
+        "1024": 174
+      },
+      "best_set_counts_at3": {
+        "128": 14,
+        "128|512|1024": 140,
+        "512|1024": 34
+      },
+      "regret_sum_at3": 11.45,
+      "top_10_regret_share_at3": 0.8005822416302766,
+      "mean_regret_at5": 0.09193262411347518,
+      "median_regret_at5": 0.0,
+      "regret_positive_n_at5": 23,
+      "regret_positive_rate_at5": 0.12234042553191489,
+      "router_optimal_n_at5": 165,
+      "router_optimal_rate_at5": 0.8776595744680851,
+      "router_unique_best_n_at5": 0,
+      "router_unique_best_rate_at5": 0.0,
+      "all_three_equal_n_at5": 141,
+      "unique_best_counts_at5": {
+        "128": 20,
+        "512": 0,
+        "1024": 0
+      },
+      "optimal_including_ties_counts_at5": {
+        "128": 161,
+        "512": 168,
+        "1024": 168
+      },
+      "best_set_counts_at5": {
+        "128": 20,
+        "128|512|1024": 141,
+        "512|1024": 27
+      },
+      "regret_sum_at5": 17.28333333333333,
+      "top_10_regret_share_at5": 0.5785920925747349,
+      "router_choice_counts": {
+        "512": 169,
+        "1024": 8,
+        "128": 11
+      }
+    }
+  },
+  "task2_fusion": {
+    "k_rrf": 60,
+    "primary_dedup": "paper_id + SHA256(full normalized reconstructed source parent paragraph)",
+    "secondary_dedup": "exact node_id only",
+    "semantic_cross_granularity_dedup": false,
+    "tie_order": [
+      128,
+      512,
+      1024
+    ],
+    "source_question_n": 300,
+    "rows": [
+      {
+        "subset": "all",
+        "k": 3,
+        "questions": 300,
+        "evaluable": 237,
+        "router": 0.4210886745696872,
+        "fusion": 0.4169630299377135,
+        "fusion_exact_node": 0.2824894514767932,
+        "oracle": 0.4757300247806577,
+        "128": 0.38773859754872414,
+        "512": 0.429175875694863,
+        "1024": 0.4270661710535128
+      },
+      {
+        "subset": "all",
+        "k": 5,
+        "questions": 300,
+        "evaluable": 237,
+        "router": 0.4934850311432589,
+        "fusion": 0.50333031946956,
+        "fusion_exact_node": 0.4093630701225637,
+        "oracle": 0.5716847498493067,
+        "128": 0.5024479271314715,
+        "512": 0.50333031946956,
+        "1024": 0.5012206148282098
+      },
+      {
+        "subset": "text_retrievable",
+        "k": 3,
+        "questions": 251,
+        "evaluable": 188,
+        "router": 0.47255150287065184,
+        "fusion": 0.46336119554204663,
+        "fusion_exact_node": 0.32273936170212764,
+        "oracle": 0.5334557581898007,
+        "128": 0.4370694022289768,
+        "512": 0.4787571766295171,
+        "1024": 0.4787571766295171
+      },
+      {
+        "subset": "text_retrievable",
+        "k": 5,
+        "questions": 251,
+        "evaluable": 188,
+        "router": 0.55459726443769,
+        "fusion": 0.5643490374873354,
+        "fusion_exact_node": 0.46060663627152987,
+        "oracle": 0.6465298885511652,
+        "128": 0.568023893954745,
+        "512": 0.5643490374873354,
+        "1024": 0.5643490374873354
+      }
+    ]
+  },
+  "task3_scifact": {
+    "candidate_n": 450,
+    "conflict_union_n": 164,
+    "flag_counts_overlapping": {
+      "BOOLEAN_REASON_CONFLICT": 20,
+      "BOOLEAN_FIELD_CONFLICT": 28,
+      "JUDGE_EVALUATOR_CONFLICT": 160,
+      "NO_CONFLICT": 286,
+      "PARTIAL_SUPPORT_AMBIGUITY_CANDIDATE": 4
+    },
+    "judge_score_zero_n": 166,
+    "judge_score_zero_supported_true_n": 145,
+    "trust_030_040_judge_zero_n": 145,
+    "trust_030_040_judge_zero_supported_true_n": 127,
+    "supported_true_n": 414,
+    "supported_true_evidence_sufficient_false_n": 28,
+    "raw_evaluator_parser_mismatches": 0,
+    "raw_judge_parser_mismatches": 0,
+    "id_or_context_alignment_errors": 0,
+    "uid_unique": true,
+    "source_protocol": "paired-v1",
+    "source_models": {
+      "generator": "glm-4.5-air",
+      "gate_judge": "deepseek-chat",
+      "independent_evaluator": "qwen-plus"
+    },
+    "source_dates": {
+      "2026-09-27": 450
+    },
+    "source_splits": {
+      "train": 249,
+      "dev": 201
+    },
+    "confirmed_parser_bug": false,
+    "confirmed_id_alignment_error": false,
+    "confirmed_version_mismatch": false,
+    "corrected_labels_generated": false,
+    "warning": "Reason pattern and partial-support flags are review signals, not corrected ground truth. Judge label is a threshold proxy."
+  },
+  "heldout_resume_evidence": {
+    "dataset": "QASPER",
+    "split": "disjoint 150-question held-out",
+    "candidate_n": 96,
+    "cheap_score_spearman_answer_f1": 0.41372939985299656,
+    "cheap_score_observed_aurc": 0.2915341468257951,
+    "legacy_trust_observed_aurc": 0.38403423517088764,
+    "cascade_accepted_n": 23,
+    "cascade_coverage": 0.15333333333333332,
+    "cascade_mean_answer_f1": 0.5046107312635283,
+    "cascade_verifier_calls": 13,
+    "cascade_estimated_verifier_input_tokens": 6811,
+    "always_verify_estimated_verifier_input_tokens": 56777,
+    "estimated_token_savings": 0.8800394525952411,
+    "source_note": "Token counts are character/4 offline estimates, not measured billing or latency."
+  },
+  "validation": {
+    "router_input_unique": true,
+    "fusion_input_unique": true,
+    "scifact_candidate_unique": true,
+    "fusion_at5_exactly_fixed512_all_evaluable": true,
+    "all_six_rrf_tie_orders_same_aggregate": true,
+    "raw_evaluator_parser_mismatch_n": 0,
+    "context_alignment_error_n": 0
+  },
+  "source_sha256": {
+    "revision\\artifacts\\oracle_granularity_20260927\\retrieval.jsonl": "2e0ed60ee43fd82bcf94b488495a6b7fa0ce82c2b354043b250d408bc72be6ec",
+    "revision\\artifacts\\supplement_20260927_full\\items.json": "be3f2e4a6107c450d04d07754d2e9bb5fe4e6b5c6e2adb19a020275424f5ff0f",
+    "revision\\artifacts\\supplement_20260927_full\\retrieval.jsonl": "2f44d1c2c1d3b920c2ab4fbb26a4b8e24e256b69944d8d9feb474b631d1350bb",
+    "revision\\artifacts\\supplement_20260927_full\\answers.jsonl": "870cf8b1d316f9062855b3ae6c866ef44681e1f416630fcd748d4fb839718b00",
+    "revision\\artifacts\\1_17_qasper_cheap_gate\\cheap_gate_ranking_comparison.csv": "8aee066be53712313d26373eb9272fb648c68845c8184642f4012339835c799e",
+    "revision\\artifacts\\1_18_qasper_cost_aware_cascade\\qasper_cost_aware_summary.csv": "f9c4ff8c87de84e76b32e8d4966e0ead38a8f4bcea99ab0f62981689d6a36430"
+  }
+}

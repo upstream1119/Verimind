@@ -9,3 +9,9 @@ pymupdf
 tqdm
 dashscope
 pandas
+datasets
+pyarrow
+openai
+zhipuai
+rouge-score
+bert-score

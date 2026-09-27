@@ -1,0 +1,9 @@
+﻿metric,count,rate
+gate_v2_answer,75,0.78125
+gate_v2_reject,5,0.052083333333333336
+gate_v2_warning,16,0.16666666666666666
+deepseek_unsupported,17,0.17708333333333334
+qwen_unsupported,6,0.0625
+glm_unsupported,4,0.041666666666666664
+current_gate_reject,13,0.13541666666666666
+evaluated_answers,96,1.0

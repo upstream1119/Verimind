@@ -1,0 +1,24 @@
+QASPER No-Gating random 50-case author blind audit
+==================================================
+
+Open only qasper_no_gating_author_audit_50_blind.csv.
+Do not open the key file until all 50 labels are complete.
+
+Allowed author_label values:
+- supported: every material claim is supported by the context
+- unsupported: at least one material claim lacks support, conflicts
+  with the context, or is attributed to the wrong method or study
+- uncertain: the question or evidence is genuinely ambiguous
+
+Use only the retrieved context. Do not use outside knowledge.
+Do not penalize an answer merely for being incomplete.
+Check numerical metrics, method attribution, comparison relations,
+and whether Related Work is incorrectly described as the paper's
+own method.
+
+Fill author_label and author_notes without renaming columns or
+reordering rows. Save as UTF-8 CSV.
+
+Sampling boundary:
+The 50 cases are randomly selected from accepted No-Gating answers.
+No automated judge label was used for sampling.

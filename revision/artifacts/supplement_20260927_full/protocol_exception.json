@@ -1,0 +1,9 @@
+{
+  "uid": "scifact:e2bef1ded41f8664fc02e556fabb4cbd8eb768d513adc5778b756528bbd468f6",
+  "change": "independent evaluator completion cap only",
+  "original_max_tokens": 300,
+  "retry_max_tokens": 1024,
+  "model_prompt_temperature_unchanged": true,
+  "evidence": "retry_diagnostics.jsonl",
+  "reason": "JSON response truncated before closing brace; no default scores accepted"
+}

@@ -1,0 +1,11 @@
+QASPER public-benchmark result summary
+======================================
+
+VeriMind_Full accepted 44.3% of all questions and 52.1% of answerable questions.
+Its passed-hallucination rate among accepted answers was 0.75% (95% Wilson CI 0.13%-4.14%).
+The corresponding rates were 14.97% for Vanilla RAG and 9.09% for HyDE.
+Removing the trust gate increased passed hallucinations to 12.75%, while answer coverage increased from 44.3% to 49.7%.
+The paired passed-risk difference was significant against Vanilla RAG (exact McNemar p=9.53674e-07) and HyDE (p=0.000488281).
+
+Interpretation boundary:
+These values are observed under the QASPER validation subset, the stated generator-judge pair, and the current threshold. They do not constitute a universal zero-hallucination claim.

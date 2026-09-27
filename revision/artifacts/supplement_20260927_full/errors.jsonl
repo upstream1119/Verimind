@@ -1,0 +1,4 @@
+{"uid": "scifact:e2bef1ded41f8664fc02e556fabb4cbd8eb768d513adc5778b756528bbd468f6", "type": "ValueError", "message": "Judge response contains no JSON object"}
+{"uid": "scifact:5cd8866bf21c9b64207bbff03a0a9ff83650a9beae35b7f740cfc464126629f0", "type": "ValueError", "message": "Judge response contains no JSON object"}
+{"uid": "scifact:1f32b1d13e5ca109381a4e909f928364f66896ee9827f94ee54dfe40a4ff2e72", "type": "RuntimeError", "message": "qwen call failed: SSLError: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/aigc/text-generation/generation (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))"}
+{"uid": "scifact:e2bef1ded41f8664fc02e556fabb4cbd8eb768d513adc5778b756528bbd468f6", "type": "ValueError", "message": "Judge response contains no JSON object"}

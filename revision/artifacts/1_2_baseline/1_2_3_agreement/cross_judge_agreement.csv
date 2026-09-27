@@ -1,0 +1,6 @@
+﻿metric,judge_pair,kappa,n_samples,total_items,missing_items,coverage,label_rule,input_csv
+triplet_coverage,qwen-glm-deepseek,,3000,3000,0,1.0,hallucination_rate >= 0.5 -> 1,revision\artifacts\1_2_baseline\1_2_2_cross_judge\cross_judge_results.csv
+cohen_kappa,qwen-glm,0.559403,3000,3000,0,1.0,hallucination_rate >= 0.5 -> 1,revision\artifacts\1_2_baseline\1_2_2_cross_judge\cross_judge_results.csv
+cohen_kappa,qwen-deepseek,0.546824,3000,3000,0,1.0,hallucination_rate >= 0.5 -> 1,revision\artifacts\1_2_baseline\1_2_2_cross_judge\cross_judge_results.csv
+cohen_kappa,glm-deepseek,0.700133,3000,3000,0,1.0,hallucination_rate >= 0.5 -> 1,revision\artifacts\1_2_baseline\1_2_2_cross_judge\cross_judge_results.csv
+fleiss_kappa,qwen-glm-deepseek,0.601333,3000,3000,0,1.0,hallucination_rate >= 0.5 -> 1,revision\artifacts\1_2_baseline\1_2_2_cross_judge\cross_judge_results.csv

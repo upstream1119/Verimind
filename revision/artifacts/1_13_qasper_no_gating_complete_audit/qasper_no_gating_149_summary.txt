@@ -1,0 +1,23 @@
+QASPER complete No-Gating author-audit summary
+===============================================
+
+Finite audited pool: 149 accepted No-Gating answers.
+Author labels: supported=141, unsupported=5, uncertain=3.
+Current gate threshold replay: trust_score < 5.0.
+
+No-Gating unsupported rate: 5/146 (3.42%; 95% Wilson CI 1.47%-7.77%).
+Gate sensitivity for unsupported answers: 1/5 (20.00%; 95% Wilson CI 3.62%-62.45%).
+Gate false-rejection rate: 16/141 (11.35%; 95% Wilson CI 7.11%-17.64%).
+Gate precision for unsupported answers: 1/17 (5.88%; 95% Wilson CI 1.05%-26.98%).
+Passed unsupported rate: 4/129 (3.10%; 95% Wilson CI 1.21%-7.70%).
+Conservative No-Gating risk: 8/149 (5.37%; 95% Wilson CI 2.75%-10.24%).
+Conservative passed risk: 6/131 (4.58%; 95% Wilson CI 2.12%-9.63%).
+
+Binary confusion on certain labels: TP=1, FP=16, FN=4, TN=125.
+Fisher exact rejection-enrichment test: odds ratio=1.9531, two-sided p=0.4664.
+Exact McNemar unsupported-exposure test: two-sided p=1.0000.
+
+Interpretation boundary:
+The complete 149-case audit is a finite author-conducted blind audit of accepted No-Gating answers, not an independent expert annotation study.
+This audited pool is now a development and error-analysis set. Any Gate V2 calibrated on these labels requires evaluation on a separate untouched test set.
+The current gate does not show a statistically significant reduction in author-audited unsupported-answer exposure.

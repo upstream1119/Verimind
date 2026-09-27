@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<text x="490.0" y="28" text-anchor="middle" font-size="22" font-family="Arial">Threshold Sensitivity (VeriMind)</text>
+<line x1="80" y1="540" x2="940" y2="540" stroke="black" stroke-width="1.5"/>
+<line x1="80" y1="50" x2="80" y2="540" stroke="black" stroke-width="1.5"/>
+<line x1="80.00" y1="540" x2="80.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="80.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">0.0</text>
+<line x1="166.00" y1="540" x2="166.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="166.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">1.0</text>
+<line x1="252.00" y1="540" x2="252.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="252.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">2.0</text>
+<line x1="338.00" y1="540" x2="338.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="338.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">3.0</text>
+<line x1="424.00" y1="540" x2="424.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="424.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">4.0</text>
+<line x1="510.00" y1="540" x2="510.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="510.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">5.0</text>
+<line x1="596.00" y1="540" x2="596.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="596.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">6.0</text>
+<line x1="682.00" y1="540" x2="682.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="682.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">7.0</text>
+<line x1="768.00" y1="540" x2="768.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="768.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">8.0</text>
+<line x1="854.00" y1="540" x2="854.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="854.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">9.0</text>
+<line x1="940.00" y1="540" x2="940.00" y2="546" stroke="#666" stroke-width="1"/>
+<text x="940.00" y="564" text-anchor="middle" font-size="11" font-family="Arial">10.0</text>
+<line x1="74" y1="540.00" x2="80" y2="540.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="540.00" x2="940" y2="540.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="544.00" text-anchor="end" font-size="11" font-family="Arial">0.0</text>
+<line x1="74" y1="491.00" x2="80" y2="491.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="491.00" x2="940" y2="491.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="495.00" text-anchor="end" font-size="11" font-family="Arial">0.1</text>
+<line x1="74" y1="442.00" x2="80" y2="442.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="442.00" x2="940" y2="442.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="446.00" text-anchor="end" font-size="11" font-family="Arial">0.2</text>
+<line x1="74" y1="393.00" x2="80" y2="393.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="393.00" x2="940" y2="393.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="397.00" text-anchor="end" font-size="11" font-family="Arial">0.3</text>
+<line x1="74" y1="344.00" x2="80" y2="344.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="344.00" x2="940" y2="344.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="348.00" text-anchor="end" font-size="11" font-family="Arial">0.4</text>
+<line x1="74" y1="295.00" x2="80" y2="295.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="295.00" x2="940" y2="295.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="299.00" text-anchor="end" font-size="11" font-family="Arial">0.5</text>
+<line x1="74" y1="246.00" x2="80" y2="246.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="246.00" x2="940" y2="246.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="250.00" text-anchor="end" font-size="11" font-family="Arial">0.6</text>
+<line x1="74" y1="197.00" x2="80" y2="197.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="197.00" x2="940" y2="197.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="201.00" text-anchor="end" font-size="11" font-family="Arial">0.7</text>
+<line x1="74" y1="148.00" x2="80" y2="148.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="148.00" x2="940" y2="148.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="152.00" text-anchor="end" font-size="11" font-family="Arial">0.8</text>
+<line x1="74" y1="99.00" x2="80" y2="99.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="99.00" x2="940" y2="99.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="103.00" text-anchor="end" font-size="11" font-family="Arial">0.9</text>
+<line x1="74" y1="50.00" x2="80" y2="50.00" stroke="#666" stroke-width="1"/>
+<line x1="80" y1="50.00" x2="940" y2="50.00" stroke="#EEE" stroke-width="1"/>
+<text x="70" y="54.00" text-anchor="end" font-size="11" font-family="Arial">1.0</text>
+<text x="510.00" y="596" text-anchor="middle" font-size="14" font-family="Arial">Trust Threshold</text>
+<text x="24" y="295.00" transform="rotate(-90 24 295.00)" text-anchor="middle" font-size="14" font-family="Arial">Metric Value (0-1)</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2.5" points="80.00,525.30 123.00,525.30 166.00,525.30 209.00,530.20 252.00,531.83 295.00,533.47 338.00,536.73 381.00,538.37 424.00,540.00 467.00,540.00 510.00,540.00 553.00,540.00 596.00,540.00 639.00,540.00 682.00,540.00 725.00,540.00 768.00,540.00 811.00,540.00 854.00,540.00 897.00,540.00 940.00,540.00"/>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.5" points="80.00,469.01 123.00,469.01 166.00,469.01 209.00,471.46 252.00,471.63 295.00,471.63 338.00,473.66 381.00,473.78 424.00,474.36 467.00,474.36 510.00,474.36 553.00,474.36 596.00,474.36 639.00,474.36 682.00,474.36 725.00,475.99 768.00,482.62 811.00,502.58 854.00,515.18 897.00,533.11 940.00,539.27"/>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.5" points="80.00,50.00 123.00,50.00 166.00,50.00 209.00,54.90 252.00,56.53 295.00,58.17 338.00,63.07 381.00,64.70 424.00,66.33 467.00,66.33 510.00,66.33 553.00,66.33 596.00,66.33 639.00,66.33 682.00,66.33 725.00,97.37 768.00,192.10 811.00,375.03 854.00,473.03 897.00,525.30 940.00,538.37"/>
+<line x1="100" y1="66" x2="124" y2="66" stroke="#d62728" stroke-width="3"/>
+<text x="130" y="70" font-size="12" font-family="Arial">hallucination_rate_mean</text>
+<line x1="100" y1="88" x2="124" y2="88" stroke="#1f77b4" stroke-width="3"/>
+<text x="130" y="92" font-size="12" font-family="Arial">f1_score_mean</text>
+<line x1="100" y1="110" x2="124" y2="110" stroke="#2ca02c" stroke-width="3"/>
+<text x="130" y="114" font-size="12" font-family="Arial">accept_rate</text>
+</svg>

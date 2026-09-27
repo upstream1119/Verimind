@@ -10,13 +10,15 @@ from llama_index.llms.dashscope import DashScope
 # =========================
 
 DASHSCOPE_API_KEY = os.environ.get("DASHSCOPE_API_KEY")
+if not DASHSCOPE_API_KEY:
+    raise RuntimeError("DASHSCOPE_API_KEY is required")
 
 MD_DIR = "./knowledge_mds"
 OUTPUT_FILE = "json/verimind_bench_v3.json"
 
 llm = DashScope(
     model_name="qwen-plus",
-    api_key="sk-01bcaa48e91445c2bdeeed0aaeff8855",
+    api_key=DASHSCOPE_API_KEY,
     max_tokens=2500
 )
 

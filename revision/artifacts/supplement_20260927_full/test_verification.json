@@ -1,0 +1,21 @@
+{
+  "new_behavior_tests": {
+    "command": "python -B -m unittest revision.experiments.test_supplement_20260927 revision.experiments.test_latency_20260927",
+    "tests": 16,
+    "result": "passed"
+  },
+  "existing_regression_tests": {
+    "command": "python -B -m unittest revision.analysis.test_analyze_qasper_selective_risk revision.analysis.test_analyze_qasper_cheap_gate revision.analysis.test_analyze_qasper_cost_aware_cascade revision.qasper.test_gate_v2",
+    "tests": 26,
+    "result": "passed"
+  },
+  "tested_source_sha256": {
+    "revision\\experiments\\supplement_20260927.py": "64a72fc44e524dcc3cf4b10d2caa192a507e180703ab43ca9f18612801df2434",
+    "revision\\experiments\\latency_20260927.py": "5061ef8d22f189500c647a0dcb704a4bbb3ab98b8c0807a5eadc83763e6ab0ff"
+  },
+  "latency_smoke": {
+    "inputs": 2,
+    "timed_runs": 6,
+    "complete": true
+  }
+}

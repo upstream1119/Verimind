@@ -1,0 +1,24 @@
+QASPER Gate V2 held-out selection
+==================================
+
+Seed: qasper-gate-v2-heldout-v1
+Selected questions: 150
+Selected papers: 104
+Candidate questions: 445
+Indexed unused questions: 445
+Original benchmark questions excluded: 300
+
+Interpretation boundary:
+This is an answerable held-out question set selected from papers already present in the existing QASPER index. It is intended for frozen Gate V2 validation, not for further calibration.
+
+First 10 selected question IDs:
+001: 12d7055baf5bffb6e9e95e977c000ef2e77a4362
+002: f0848e7a339da0828278f6803ed7990366c975f0
+003: 49c32a2a64eb41381e5f12ccea4150cac9f3303d
+004: d9412dda3279729e95fcb35cbed09e61577a896e
+005: 1cb100182508cf55b3509283c0e2bbcd527d625e
+006: 38e4aaeabf06a63a067b272f8950116733a7895c
+007: fe1dcd6ef1f8618bbceee418f07cafe63a8efe08
+008: 71ba1b09bb03f5977d790d91702481cc406b3767
+009: c01784b995f6594fdb23d7b62f20a35ae73eaa77
+010: aa6d956c2860f58fc9baea74c353c9d985b05605

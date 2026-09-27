@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "expected_unique_inputs": 814,
+  "retrieval_rows": 814,
+  "expected_answer_rows": 1628,
+  "answer_rows": 1628,
+  "policy_rows": 4070,
+  "generated_at_utc": "2026-09-27T01:13:44.183088+00:00"
+}

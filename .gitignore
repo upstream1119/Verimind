@@ -5,6 +5,11 @@
 __pycache__/
 *.pyc
 .agent/
+.agents/
+.claude/
+.codex/
+.codex_tmp/
+tmp/
 
 # --- 大型文件与二进制数据 ---
 *.mp4
@@ -27,3 +32,24 @@ qwenai\ _api
 .DS_Store
 Thumbs.db
 *.log
+*.pid
+
+# --- Revision workspace: generated, duplicated, or locally downloaded ---
+revision/**/__pycache__/
+revision/backup/
+revision/logs/
+revision/paper_jiis/
+revision/qasper/raw/
+revision/qasper/chroma_db_*/
+revision/scifact/raw/
+revision/scifact/chroma_db_*/
+revision/reproducibility/
+revision/artifacts/_user_csv_archive/
+revision/artifacts/legacy/
+revision/artifacts/*smoke*/
+revision/artifacts/**/*smoke*
+revision/artifacts/**/*probe*
+revision/qasper/qasper_corpus.jsonl
+revision/submission/*/internal/
+revision/submission/*/upload/*.zip
+revision/submission/*/upload/*cover_letter*.pdf

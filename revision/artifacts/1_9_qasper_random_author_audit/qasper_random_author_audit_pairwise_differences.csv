@@ -1,0 +1,4 @@
+﻿comparison,risk_difference,newcombe_ci_low,newcombe_ci_high,interval_excludes_zero
+Vanilla_RAG minus HyDE,0.01959183673469388,-0.0958990320167149,0.13099179924101598,False
+Vanilla_RAG minus VeriMind_Full,-0.019999999999999997,-0.15113478104794345,0.1139887824149162,False
+HyDE minus VeriMind_Full,-0.03959183673469388,-0.15856185417023932,0.086323088312911,False

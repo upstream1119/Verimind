@@ -1,0 +1,10 @@
+﻿item_id,judge,original_status,original_error_message,resolution,repair_codes,normalized_label
+1003,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1007,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1023,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1039,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1067,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1068,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1132,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1134,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported
+1141,qwen,parse_error,"ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",offline_repair,attribution_from_evidence_owner,supported

@@ -1,0 +1,42 @@
+[
+  {
+    "subset": "all",
+    "k": 3,
+    "questions": 300,
+    "evaluable": 237,
+    "detail": 0.38773859754872414,
+    "concept": 0.4291758756948631,
+    "context": 0.4270661710535129,
+    "oracle": 0.4757300247806578
+  },
+  {
+    "subset": "all",
+    "k": 5,
+    "questions": 300,
+    "evaluable": 237,
+    "detail": 0.5024479271314717,
+    "concept": 0.50333031946956,
+    "context": 0.5012206148282098,
+    "oracle": 0.5716847498493067
+  },
+  {
+    "subset": "text_retrievable",
+    "k": 3,
+    "questions": 251,
+    "evaluable": 188,
+    "detail": 0.43706940222897667,
+    "concept": 0.47875717662951717,
+    "context": 0.47875717662951717,
+    "oracle": 0.5334557581898007
+  },
+  {
+    "subset": "text_retrievable",
+    "k": 5,
+    "questions": 251,
+    "evaluable": 188,
+    "detail": 0.5680238939547452,
+    "concept": 0.5643490374873353,
+    "context": 0.5643490374873353,
+    "oracle": 0.6465298885511651
+  }
+]

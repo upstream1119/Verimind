@@ -1,0 +1,13 @@
+{
+  "candidate_n": 144,
+  "route_counts": {
+    "DETAIL": 10,
+    "CONCEPT": 127,
+    "CONTEXT": 7
+  },
+  "three_granularity_oracle_available": false,
+  "queried_routes_per_question": {
+    "1": 262,
+    "2": 38
+  }
+}

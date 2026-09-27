@@ -1,0 +1,21 @@
+{
+  "index_counts": {
+    "qasper/DETAIL": 14177,
+    "qasper/CONCEPT": 8949,
+    "qasper/CONTEXT": 8933,
+    "scifact/DETAIL": 26013,
+    "scifact/CONCEPT": 5804,
+    "scifact/CONTEXT": 5198
+  },
+  "packages": {
+    "chromadb": "1.3.5",
+    "openai": "1.109.1",
+    "zhipuai": "2.1.5.20250825",
+    "dashscope": "1.22.2"
+  },
+  "source_hashes": {
+    "revision\\qasper\\qasper_bench.json": "14bc0a9731a83671766bcc3d89a4841700236b625a2055e59b4d5d537a5b110f",
+    "revision\\artifacts\\1_1_scifact\\dataset\\scifact_bench.json": "313067b7bde0adf95e28b24ff9b97ddd939121b6244871b1fd2560a8f8971d08",
+    "revision\\scifact\\raw\\data.tar.gz": "11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be"
+  }
+}

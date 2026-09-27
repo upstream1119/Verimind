@@ -1,0 +1,8 @@
+Cross-Judge Agreement Summary (2026-04-14 22:00:24)
+Input: revision/artifacts/1_2_baseline/1_2_2_cross_judge/cross_judge_results.csv
+Triplet coverage: 3000/3000 = 1.0000
+Missing triplets: 0
+Cohen's kappa [qwen-glm]: 0.559403
+Cohen's kappa [qwen-deepseek]: 0.546824
+Cohen's kappa [glm-deepseek]: 0.700133
+Fleiss' kappa [qwen-glm-deepseek]: 0.601333

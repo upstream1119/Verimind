@@ -1,0 +1,27 @@
+QASPER Gate V2 held-out aggregation
+===================================
+
+Evaluated answered held-out items: 96
+Policy version: gate_v2_majority_reject_single_warning_v1
+
+Decision counts:
+gate_v2_decision
+ANSWER     75
+REJECT      5
+WARNING    16
+
+Judge label counts:
+deepseek: deepseek_label
+supported      79
+unsupported    17
+qwen: qwen_label
+supported      89
+uncertain       1
+unsupported     6
+glm: glm_label
+supported      92
+unsupported     4
+
+Disagreement rows: 20
+Interpretation boundary:
+These are frozen Gate V2 decisions on held-out generated answers. They are not final safety-performance metrics until author blind labels are collected for the same items.

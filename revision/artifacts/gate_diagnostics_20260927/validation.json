@@ -1,0 +1,9 @@
+{
+  "source": "D:\\Desktop\\peng\\study\\project\\Verimind\\revision\\artifacts\\supplement_20260927_full",
+  "method": "offline frozen multi answers; no API calls",
+  "rows": 814,
+  "debug_rows": 50,
+  "metrics": 12,
+  "threshold_rows": 18,
+  "tests": "AUROC/AP fixtures, boundary decisions, sweep monotonicity passed"
+}

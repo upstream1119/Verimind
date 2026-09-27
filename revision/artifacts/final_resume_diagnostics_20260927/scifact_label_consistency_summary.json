@@ -1,0 +1,39 @@
+{
+  "candidate_n": 450,
+  "conflict_union_n": 164,
+  "flag_counts_overlapping": {
+    "BOOLEAN_REASON_CONFLICT": 20,
+    "BOOLEAN_FIELD_CONFLICT": 28,
+    "JUDGE_EVALUATOR_CONFLICT": 160,
+    "NO_CONFLICT": 286,
+    "PARTIAL_SUPPORT_AMBIGUITY_CANDIDATE": 4
+  },
+  "judge_score_zero_n": 166,
+  "judge_score_zero_supported_true_n": 145,
+  "trust_030_040_judge_zero_n": 145,
+  "trust_030_040_judge_zero_supported_true_n": 127,
+  "supported_true_n": 414,
+  "supported_true_evidence_sufficient_false_n": 28,
+  "raw_evaluator_parser_mismatches": 0,
+  "raw_judge_parser_mismatches": 0,
+  "id_or_context_alignment_errors": 0,
+  "uid_unique": true,
+  "source_protocol": "paired-v1",
+  "source_models": {
+    "generator": "glm-4.5-air",
+    "gate_judge": "deepseek-chat",
+    "independent_evaluator": "qwen-plus"
+  },
+  "source_dates": {
+    "2026-09-27": 450
+  },
+  "source_splits": {
+    "train": 249,
+    "dev": 201
+  },
+  "confirmed_parser_bug": false,
+  "confirmed_id_alignment_error": false,
+  "confirmed_version_mismatch": false,
+  "corrected_labels_generated": false,
+  "warning": "Reason pattern and partial-support flags are review signals, not corrected ground truth. Judge label is a threshold proxy."
+}

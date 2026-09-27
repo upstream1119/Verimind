@@ -1,0 +1,15 @@
+Cohen's h vs VeriMind_Full (hallucination_rate)
+Input: revision/artifacts/2_1_bertscore/experiment_results_sci_v3_with_bertscore.csv
+Anchor strategy: VeriMind_Full
+Anchor hallucination_rate mean: 0.000000 (n=300)
+
+Top effects by |h|:
+- Long-Context_LLM: h=1.772154, |h|=1.772154 (large), delta=0.600000 (VeriMind lower hallucination)
+- VeriMind_No_Gating: h=1.342142, |h|=1.342142 (large), delta=0.386667 (VeriMind lower hallucination)
+- Vanilla_RAG: h=1.328430, |h|=1.328430 (large), delta=0.380000 (VeriMind lower hallucination)
+- HyDE: h=1.273085, |h|=1.273085 (large), delta=0.353333 (VeriMind lower hallucination)
+- Self-RAG: h=0.402716, |h|=0.402716 (small), delta=0.040000 (VeriMind lower hallucination)
+- CRAG_Local: h=0.385351, |h|=0.385351 (small), delta=0.036667 (VeriMind lower hallucination)
+- CoT_RAG: h=0.367208, |h|=0.367208 (small), delta=0.033333 (VeriMind lower hallucination)
+- Ablation_no_structure: h=0.000000, |h|=0.000000 (negligible), delta=0.000000 (equal)
+- VeriMind_No_Routing: h=0.000000, |h|=0.000000 (negligible), delta=0.000000 (equal)

@@ -1,0 +1,12 @@
+{
+  "source_answer_rows": 1628,
+  "source_retrieval_rows": 814,
+  "candidate_qasper": 144,
+  "candidate_scifact_nei": 450,
+  "qasper_removed_questions": 49,
+  "qasper_removed_chart_evidence_units": 63,
+  "text_subset_questions": 251,
+  "text_subset_candidates": 125,
+  "scifact_candidate_trust_030_040": 145,
+  "tests": "tie-aware AURC fixture and source integrity passed"
+}

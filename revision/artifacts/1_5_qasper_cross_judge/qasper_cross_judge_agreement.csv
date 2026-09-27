@@ -1,0 +1,5 @@
+﻿metric,judges,n,agreement,kappa
+pairwise_cohen_kappa,deepseek_vs_qwen,802,0.940149625935162,0.4481018465420335
+pairwise_cohen_kappa,deepseek_vs_glm,802,0.9389027431421446,0.6303869377927426
+pairwise_cohen_kappa,qwen_vs_glm,802,0.9139650872817955,0.41030668570576034
+fleiss_kappa,deepseek_qwen_glm,802,0.8965087281795511,0.5041330933018863

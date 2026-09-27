@@ -1,0 +1,11 @@
+﻿metric,numerator,denominator,estimate,ci_low,ci_high,statistic,p_value,notes
+no_gating_unsupported_rate,5,146,0.03424657534246575,0.014714906477450593,0.07765997473043827,,,Unsupported among all certain accepted No-Gating answers.
+gate_sensitivity_for_unsupported,1,5,0.2,0.03622316096978745,0.6244717358814613,,,Unsupported answers rejected by the current gate.
+gate_false_rejection_rate,16,141,0.11347517730496454,0.07106523194689557,0.17638853824067482,,,Supported answers rejected by the current gate.
+gate_precision_for_unsupported,1,17,0.058823529411764705,0.01046013064516424,0.269825452035628,,,Unsupported among all certain gate rejections.
+passed_unsupported_rate,4,129,0.031007751937984496,0.012122842184807997,0.077017908905212,,,Unsupported among certain answers passed by the gate.
+unsupported_exposure_after_gate,4,146,0.0273972602739726,0.010704549974353546,0.06832290301600426,,,Passed unsupported answers per all certain No-Gating answers.
+conservative_no_gating_risk,8,149,0.053691275167785234,0.027453913454500024,0.10236414655010606,,,Uncertain labels are counted as unsupported.
+conservative_passed_risk,6,131,0.04580152671755725,0.021157596293058425,0.09632543564960615,,,Uncertain passed labels are counted as unsupported.
+fisher_rejection_enrichment,,,,,,1.953125,0.4664486451296113,Two-sided Fisher exact test of unsupported enrichment among gate rejections.
+mcnemar_unsupported_exposure,,,,,,1,1.0,Exact two-sided McNemar test; the gate prevented 1 unsupported exposures and introduced none.

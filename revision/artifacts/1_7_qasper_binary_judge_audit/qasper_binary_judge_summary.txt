@@ -1,0 +1,24 @@
+QASPER strict binary-judge audit summary
+========================================
+
+Total sampled cases: 50
+Certain author labels: 49
+Uncertain author labels: 1
+Cases with at least one judge disagreement: 7
+
+deepseek:
+  agreement=0.8980; cohen_kappa=0.2320
+  TP=1; FP=2; FN=3; TN=43
+qwen:
+  agreement=0.8980; cohen_kappa=-0.0338
+  TP=0; FP=1; FN=4; TN=44
+glm:
+  agreement=0.8980; cohen_kappa=-0.0338
+  TP=0; FP=1; FN=4; TN=44
+majority_vote:
+  agreement=0.8980; cohen_kappa=-0.0338
+  TP=0; FP=1; FN=4; TN=44
+
+Interpretation boundary:
+The author conducted the blind review. The sample was challenge-enriched using legacy judge labels and must not be used to estimate the population hallucination rate.
+Agreement values diagnose the strict binary judging protocol; they do not establish independent expert validation.

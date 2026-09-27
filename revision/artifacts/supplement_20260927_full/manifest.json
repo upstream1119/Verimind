@@ -1,0 +1,25 @@
+{
+  "protocol": "paired-v1",
+  "seed": 20260927,
+  "generator": "glm-4.5-air",
+  "gate_judge": "deepseek-chat",
+  "independent_evaluator": "qwen-plus",
+  "embedding": "text-embedding-v3",
+  "temperature": 0.01,
+  "top_k_generation": 3,
+  "top_k_retrieval": 5,
+  "gate_threshold": 5,
+  "no_judge_threshold": 5,
+  "latency": "paired measured stage sums; excludes independent evaluation; shared contexts reuse generation and gate timings",
+  "qasper_relevance": "annotated evidence paragraph matched exactly after whitespace normalization to reconstructed source paragraph; any child chunk counts as parent hit",
+  "scifact_relevance": "all original gold evidence document IDs per claim; top-k chunks, deduplicated document recall",
+  "started_utc": "2026-09-27T00:58:25.611929+00:00",
+  "command": [
+    "D:\\Desktop\\peng\\study\\project\\Verimind\\revision\\experiments\\supplement_20260927.py",
+    "--output",
+    "revision/artifacts/supplement_20260927_full",
+    "--workers",
+    "6"
+  ],
+  "script_sha256": "64a72fc44e524dcc3cf4b10d2caa192a507e180703ab43ca9f18612801df2434"
+}

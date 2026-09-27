@@ -1,0 +1,66 @@
+{
+  "k_rrf": 60,
+  "primary_dedup": "paper_id + SHA256(full normalized reconstructed source parent paragraph)",
+  "secondary_dedup": "exact node_id only",
+  "semantic_cross_granularity_dedup": false,
+  "tie_order": [
+    128,
+    512,
+    1024
+  ],
+  "source_question_n": 300,
+  "rows": [
+    {
+      "subset": "all",
+      "k": 3,
+      "questions": 300,
+      "evaluable": 237,
+      "router": 0.4210886745696872,
+      "fusion": 0.4169630299377135,
+      "fusion_exact_node": 0.2824894514767932,
+      "oracle": 0.4757300247806577,
+      "128": 0.38773859754872414,
+      "512": 0.429175875694863,
+      "1024": 0.4270661710535128
+    },
+    {
+      "subset": "all",
+      "k": 5,
+      "questions": 300,
+      "evaluable": 237,
+      "router": 0.4934850311432589,
+      "fusion": 0.50333031946956,
+      "fusion_exact_node": 0.4093630701225637,
+      "oracle": 0.5716847498493067,
+      "128": 0.5024479271314715,
+      "512": 0.50333031946956,
+      "1024": 0.5012206148282098
+    },
+    {
+      "subset": "text_retrievable",
+      "k": 3,
+      "questions": 251,
+      "evaluable": 188,
+      "router": 0.47255150287065184,
+      "fusion": 0.46336119554204663,
+      "fusion_exact_node": 0.32273936170212764,
+      "oracle": 0.5334557581898007,
+      "128": 0.4370694022289768,
+      "512": 0.4787571766295171,
+      "1024": 0.4787571766295171
+    },
+    {
+      "subset": "text_retrievable",
+      "k": 5,
+      "questions": 251,
+      "evaluable": 188,
+      "router": 0.55459726443769,
+      "fusion": 0.5643490374873354,
+      "fusion_exact_node": 0.46060663627152987,
+      "oracle": 0.6465298885511652,
+      "128": 0.568023893954745,
+      "512": 0.5643490374873354,
+      "1024": 0.5643490374873354
+    }
+  ]
+}

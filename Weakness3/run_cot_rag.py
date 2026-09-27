@@ -5,9 +5,11 @@ from dashscope import Generation
 from tqdm import tqdm
 import time
 import os
+from dotenv import load_dotenv
 
 # ================= 配置区 =================
-dashscope.api_key = "sk-01bcaa48e91445c2bdeeed0aaeff8855"  # ⚠️ 填入你的阿里云 API Key
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env"))
+dashscope.api_key = os.environ.get("DASHSCOPE_API_KEY", "")
 INPUT_JSON  = "../json/verimind_bench_v3.json"
 OUTPUT_CSV  = "../csv/w3_cot_rag_results.csv"
 SLEEP_SEC   = 0.5   # 每题间隔，避免触发 QPS 限制

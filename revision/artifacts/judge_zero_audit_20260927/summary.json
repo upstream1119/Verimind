@@ -1,0 +1,13 @@
+{
+  "population": 145,
+  "reviewed": 30,
+  "selection": "SHA256(sample_id), first 30",
+  "categories": {
+    "judge_wrong": 17,
+    "partial_or_ambiguous": 5,
+    "evaluation_wrong": 7,
+    "both_agree_unsupported": 1
+  },
+  "evaluator_supported_true": 29,
+  "scope": "Provisional model-performed content review; not independent human expert annotation"
+}

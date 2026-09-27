@@ -1,0 +1,10 @@
+﻿anchor_strategy,baseline_strategy,n_anchor,n_baseline,hallucination_anchor,hallucination_baseline,delta_baseline_minus_anchor,cohen_h_signed,cohen_h_abs,magnitude,direction
+VeriMind_Full,Long-Context_LLM,300,300,0.000000,0.600000,0.600000,1.772154,1.772154,large,VeriMind lower hallucination
+VeriMind_Full,VeriMind_No_Gating,300,300,0.000000,0.386667,0.386667,1.342142,1.342142,large,VeriMind lower hallucination
+VeriMind_Full,Vanilla_RAG,300,300,0.000000,0.380000,0.380000,1.328430,1.328430,large,VeriMind lower hallucination
+VeriMind_Full,HyDE,300,300,0.000000,0.353333,0.353333,1.273085,1.273085,large,VeriMind lower hallucination
+VeriMind_Full,Self-RAG,300,300,0.000000,0.040000,0.040000,0.402716,0.402716,small,VeriMind lower hallucination
+VeriMind_Full,CRAG_Local,300,300,0.000000,0.036667,0.036667,0.385351,0.385351,small,VeriMind lower hallucination
+VeriMind_Full,CoT_RAG,300,300,0.000000,0.033333,0.033333,0.367208,0.367208,small,VeriMind lower hallucination
+VeriMind_Full,Ablation_no_structure,300,300,0.000000,0.000000,0.000000,0.000000,0.000000,negligible,equal
+VeriMind_Full,VeriMind_No_Routing,300,300,0.000000,0.000000,0.000000,0.000000,0.000000,negligible,equal

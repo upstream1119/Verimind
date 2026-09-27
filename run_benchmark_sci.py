@@ -13,8 +13,9 @@ from llama_index.core.indices.query.query_transform import HyDEQueryTransform
 from llama_index.core.query_engine import TransformQueryEngine
 
 # --- 1. 环境与模型配置 ---
-MY_QWEN_KEY = "sk-01bcaa48e91445c2bdeeed0aaeff8855"
-
+MY_QWEN_KEY = os.environ.get("DASHSCOPE_API_KEY", "")
+if not MY_QWEN_KEY:
+    raise RuntimeError("DASHSCOPE_API_KEY is required")
 Settings.llm = DashScope(
     model_name="qwen-plus",
     api_key=MY_QWEN_KEY,

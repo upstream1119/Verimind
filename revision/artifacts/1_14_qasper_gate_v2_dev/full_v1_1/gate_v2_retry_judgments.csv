@@ -1,0 +1,549 @@
+﻿item_id,audit_id,judge,judge_model,model_label,label,label_repaired,unsupported_event,uncertain_event,claim_count,unsupported_claim_count,uncertain_claim_count,claims_json,summary_reason,status,raw_response,error_message,prompt_version,policy_version,question_chars,context_chars,answer_chars,prompt_chars,evaluated_at_utc
+61,GP-024,deepseek,deepseek-chat,unsupported,supported,True,0,0,9,0,0,"[{""claim"": ""LWCC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... LWCC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists LWCC as a global network property used by the current paper.""}, {""claim"": ""SCC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... SCC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists SCC as a global network property used by the current paper.""}, {""claim"": ""WCC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... WCC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists WCC as a global network property used by the current paper.""}, {""claim"": ""LWCC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... LWCC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists LWCC as a global network property used by the current paper.""}, {""claim"": ""DWCC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... DWCC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists DWCC as a global network property used by the current paper.""}, {""claim"": ""CC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... CC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists CC as a global network property used by the current paper.""}, {""claim"": ""KC"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... KC"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists KC as a global network property used by the current paper.""}, {""claim"": ""d"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... d"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists d as a global network property used by the current paper.""}, {""claim"": ""SV"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We used the following global network properties: ... SV"", ""evidence_section"": ""Methodology ::: Global network properties"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context lists SV as a global network property used by the current paper.""}]","All nine features listed in the answer (LWCC, SCC, WCC, LWCC, DWCC, CC, KC, d, SV) are explicitly mentioned as global network properties used by the current paper in the 'Methodology ::: Global network properties' section. However, the answer contains a duplicate 'LWCC' and does not include 'LSCC' which is also listed in the context. Despite the duplication, each unique claim is supported by the retrieved context.",ok,"```json
+{
+  ""overall_label"": ""UNSUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""LWCC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... LWCC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists LWCC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""SCC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... SCC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists SCC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""WCC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... WCC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists WCC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""LWCC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... LWCC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists LWCC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""DWCC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... DWCC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists DWCC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""CC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... CC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists CC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""KC"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... KC"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists KC as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""d"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... d"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists d as a global network property used by the current paper.""
+    },
+    {
+      ""claim"": ""SV"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We used the following global network properties: ... SV"",
+      ""evidence_section"": ""Methodology ::: Global network properties"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context lists SV as a global network property used by the current paper.""
+    }
+  ],
+  ""summary_reason"": ""All nine features listed in the answer (LWCC, SCC, WCC, LWCC, DWCC, CC, KC, d, SV) are explicitly mentioned as global network properties used by the current paper in the 'Methodology ::: Global network properties' section. However, the answer contains a duplicate 'LWCC' and does not include 'LSCC' which is also listed in the context. Despite the duplication, each unique claim is supported by the retrieved context.""
+}
+```",,gate_v2_claim_attribution_v1_1,gate_v2_majority_reject_single_warning_v1,93,2188,41,4916,2026-06-23T07:48:30.446789+00:00
+61,GP-024,glm,glm-4.5-air,supported,supported,False,0,0,8,0,0,"[{""claim"": ""LWCC indicates the size of the largest cascade in the layer"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""LWCC, which indicates the size of the largest cascade in the layer"", ""evidence_section"": ""Experiments ::: Feature importance analysis"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the feature importance analysis section.""}, {""claim"": ""SCC correlates with the size of the network"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""SCC, which correlates with the size of the network"", ""evidence_section"": ""Experiments ::: Feature importance analysis"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the feature importance analysis section.""}, {""claim"": ""WCC equals (approximately) the number of distinct diffusion cascades pertaining to each news article"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""WCC equals (approximately) the number of distinct diffusion cascades pertaining to each news article"", ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the methodology section.""}, {""claim"": ""DWCC equals the size and the depth of the largest cascade"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""DWCC and DWCC equals the size and the depth of the largest cascade"", ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the methodology section, though the answer incorrectly lists DWCC twice.""}, {""claim"": ""CC corresponds to the level of connectedness of neighboring users in a given diffusion network"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""CC corresponds to the level of connectedness of neighboring users in a given diffusion network"", ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the methodology section.""}, {""claim"": ""KC identifies the set of most influential users in a network and describes the efficiency of information spreading"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""KC identifies the set of most influential users in a network and describes the efficiency of information spreading"", ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the methodology section.""}, {""claim"": ""d describes the proportions of potential connections between users which are actually activated"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""d describes the proportions of potential connections between users which are actually activated"", ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the methodology section.""}, {""claim"": ""SV indicates whether a news item has gained popularity with a single and large broadcast or in a more viral fashion through multiple generations"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""SV indicates whether a news item has gained popularity with a single and large broadcast or in a more viral fashion through multiple generations"", ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim is a direct quote from the methodology section.""}]",The answer lists the global network features used by the current paper. Each feature is explicitly defined and its role in quantifying the sharing process is directly supported by the provided context from the 'Methodology' and 'Experiments' sections.,ok,"```json
+{
+  ""overall_label"": ""SUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""LWCC indicates the size of the largest cascade in the layer"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""LWCC, which indicates the size of the largest cascade in the layer"",
+      ""evidence_section"": ""Experiments ::: Feature importance analysis"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the feature importance analysis section.""
+    },
+    {
+      ""claim"": ""SCC correlates with the size of the network"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""SCC, which correlates with the size of the network"",
+      ""evidence_section"": ""Experiments ::: Feature importance analysis"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the feature importance analysis section.""
+    },
+    {
+      ""claim"": ""WCC equals (approximately) the number of distinct diffusion cascades pertaining to each news article"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""WCC equals (approximately) the number of distinct diffusion cascades pertaining to each news article"",
+      ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the methodology section.""
+    },
+    {
+      ""claim"": ""DWCC equals the size and the depth of the largest cascade"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""DWCC and DWCC equals the size and the depth of the largest cascade"",
+      ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the methodology section, though the answer incorrectly lists DWCC twice.""
+    },
+    {
+      ""claim"": ""CC corresponds to the level of connectedness of neighboring users in a given diffusion network"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""CC corresponds to the level of connectedness of neighboring users in a given diffusion network"",
+      ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the methodology section.""
+    },
+    {
+      ""claim"": ""KC identifies the set of most influential users in a network and describes the efficiency of information spreading"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""KC identifies the set of most influential users in a network and describes the efficiency of information spreading"",
+      ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the methodology section.""
+    },
+    {
+      ""claim"": ""d describes the proportions of potential connections between users which are actually activated"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""d describes the proportions of potential connections between users which are actually activated"",
+      ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the methodology section.""
+    },
+    {
+      ""claim"": ""SV indicates whether a news item has gained popularity with a single and large broadcast or in a more viral fashion through multiple generations"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""SV indicates whether a news item has gained popularity with a single and large broadcast or in a more viral fashion through multiple generations"",
+      ""evidence_section"": ""Methodology ::: Interpretation of network features and layers"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim is a direct quote from the methodology section.""
+    }
+  ],
+  ""summary_reason"": ""The answer lists the global network features used by the current paper. Each feature is explicitly defined and its role in quantifying the sharing process is directly supported by the provided context from the 'Methodology' and 'Experiments' sections.""
+}
+```",,gate_v2_claim_attribution_v1_1,gate_v2_majority_reject_single_warning_v1,93,2188,41,4916,2026-06-23T07:48:49.977326+00:00
+131,NG-049,deepseek,deepseek-chat,unsupported,supported,True,0,0,8,0,0,"[{""claim"": ""NLTK"", ""claim_subject"": ""prior_work"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""background"", ""issue_types"": [], ""reason"": ""NLTK is mentioned as a well-known NLP toolkit in the context of a prior study.""}, {""claim"": ""Stanford CoreNLP"", ""claim_subject"": ""prior_work"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""background"", ""issue_types"": [], ""reason"": ""Stanford CoreNLP is mentioned as a well-known NLP toolkit in the context of a prior study.""}, {""claim"": ""TwitterNLP"", ""claim_subject"": ""prior_work"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""background"", ""issue_types"": [], ""reason"": ""TwitterNLP is mentioned as a well-known NLP toolkit in the context of a prior study.""}, {""claim"": ""BIBREF17"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments, which, to the best of our knowledge, are the only publicly accessible commercial APIs for the task of entity-level sentiment analysis that is agnostic to the text domain."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""BIBREF17 is explicitly selected by the current paper for experiments.""}, {""claim"": ""BIBREF18"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments, which, to the best of our knowledge, are the only publicly accessible commercial APIs for the task of entity-level sentiment analysis that is agnostic to the text domain."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""BIBREF18 is explicitly selected by the current paper for experiments.""}, {""claim"": ""TensiStrength"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""TensiStrength is listed among tools whose results are reported by the current paper.""}, {""claim"": ""CogComp-NLP"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""CogComp-NLP is listed among tools whose results are reported by the current paper.""}, {""claim"": ""Stanford NLP NER"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""Stanford NLP NER is listed among tools whose results are reported by the current paper.""}]","All eight toolkits listed in the answer are explicitly mentioned in the retrieved context. NLTK, Stanford CoreNLP, and TwitterNLP are attributed to a prior study (BIBREF3) and thus are supported as prior work. BIBREF17, BIBREF18, TensiStrength, CogComp-NLP, and Stanford NLP NER are directly used or reported by the current paper. No claims are unsupported, contradicted, or involve metric or numeric mismatches.",ok,"{
+  ""overall_label"": ""UNSUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""NLTK"",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""BACKGROUND"",
+      ""issue_types"": [],
+      ""reason"": ""NLTK is mentioned as a well-known NLP toolkit in the context of a prior study.""
+    },
+    {
+      ""claim"": ""Stanford CoreNLP"",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""BACKGROUND"",
+      ""issue_types"": [],
+      ""reason"": ""Stanford CoreNLP is mentioned as a well-known NLP toolkit in the context of a prior study.""
+    },
+    {
+      ""claim"": ""TwitterNLP"",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""BACKGROUND"",
+      ""issue_types"": [],
+      ""reason"": ""TwitterNLP is mentioned as a well-known NLP toolkit in the context of a prior study.""
+    },
+    {
+      ""claim"": ""BIBREF17"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments, which, to the best of our knowledge, are the only publicly accessible commercial APIs for the task of entity-level sentiment analysis that is agnostic to the text domain."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""BIBREF17 is explicitly selected by the current paper for experiments.""
+    },
+    {
+      ""claim"": ""BIBREF18"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments, which, to the best of our knowledge, are the only publicly accessible commercial APIs for the task of entity-level sentiment analysis that is agnostic to the text domain."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""BIBREF18 is explicitly selected by the current paper for experiments.""
+    },
+    {
+      ""claim"": ""TensiStrength"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""TensiStrength is listed among tools whose results are reported by the current paper.""
+    },
+    {
+      ""claim"": ""CogComp-NLP"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""CogComp-NLP is listed among tools whose results are reported by the current paper.""
+    },
+    {
+      ""claim"": ""Stanford NLP NER"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""Stanford NLP NER is listed among tools whose results are reported by the current paper.""
+    }
+  ],
+  ""summary_reason"": ""All eight toolkits listed in the answer are explicitly mentioned in the retrieved context. NLTK, Stanford CoreNLP, and TwitterNLP are attributed to a prior study (BIBREF3) and thus are supported as prior work. BIBREF17, BIBREF18, TensiStrength, CogComp-NLP, and Stanford NLP NER are directly used or reported by the current paper. No claims are unsupported, contradicted, or involve metric or numeric mismatches.""
+}",,gate_v2_claim_attribution_v1_1,gate_v2_majority_reject_single_warning_v1,27,2085,105,4811,2026-06-23T07:49:23.226233+00:00
+131,NG-049,qwen,qwen-plus,unsupported,unsupported,False,1,0,8,2,0,"[{""claim"": ""NLTK is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""unsupported"", ""verdict_repaired"": false, ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""related_work"", ""issue_types"": [""attribution_error""], ""reason"": ""NLTK is mentioned only in a prior study (BIBREF3), not as used by the current paper.""}, {""claim"": ""Stanford CoreNLP is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""unsupported"", ""verdict_repaired"": false, ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""related_work"", ""issue_types"": [""attribution_error""], ""reason"": ""Stanford CoreNLP is cited as part of a prior study (BIBREF3), not as used by the current paper.""}, {""claim"": ""TwitterNLP is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""TwitterNLP BIBREF6 is explicitly listed among tools whose results are reported by the current paper.""}, {""claim"": ""BIBREF17 is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments..."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The paper states 'we selected BIBREF17 and BIBREF18 for our experiments', indicating direct use.""}, {""claim"": ""BIBREF18 is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments..."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The paper states 'we selected BIBREF17 and BIBREF18 for our experiments', indicating direct use.""}, {""claim"": ""TensiStrength is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""TensiStrength BIBREF13 is explicitly listed among tools whose results are reported by the current paper.""}, {""claim"": ""CogComp-NLP is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""CogComp-NLP BIBREF20 is explicitly listed among tools whose results are reported by the current paper.""}, {""claim"": ""Stanford NLP NER is used by the paper."", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""Stanford NLP NER BIBREF21 is explicitly listed among tools whose results are reported by the current paper.""}]","NLTK and Stanford CoreNLP are attributed to prior work (BIBREF3) and not claimed as used by the current paper; all other listed toolkits (TwitterNLP, BIBREF17, BIBREF18, TensiStrength, CogComp-NLP, Stanford NLP NER) are directly stated as used or having results reported by the current paper. Thus, two claims are unsupported due to attribution error.",ok,"{
+  ""overall_label"": ""UNSUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""NLTK is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""UNSUPPORTED"",
+      ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""RELATED_WORK"",
+      ""issue_types"": [""attribution_error""],
+      ""reason"": ""NLTK is mentioned only in a prior study (BIBREF3), not as used by the current paper.""
+    },
+    {
+      ""claim"": ""Stanford CoreNLP is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""UNSUPPORTED"",
+      ""evidence"": ""In a study by BIBREF3, it is shown that the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""RELATED_WORK"",
+      ""issue_types"": [""attribution_error""],
+      ""reason"": ""Stanford CoreNLP is cited as part of a prior study (BIBREF3), not as used by the current paper.""
+    },
+    {
+      ""claim"": ""TwitterNLP is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""TwitterNLP BIBREF6 is explicitly listed among tools whose results are reported by the current paper.""
+    },
+    {
+      ""claim"": ""BIBREF17 is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments..."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The paper states 'we selected BIBREF17 and BIBREF18 for our experiments', indicating direct use.""
+    },
+    {
+      ""claim"": ""BIBREF18 is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Among commercial NLP toolkits (e.g., BIBREF14, BIBREF15, BIBREF16), we selected BIBREF17 and BIBREF18 for our experiments..."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The paper states 'we selected BIBREF17 and BIBREF18 for our experiments', indicating direct use.""
+    },
+    {
+      ""claim"": ""TensiStrength is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""TensiStrength BIBREF13 is explicitly listed among tools whose results are reported by the current paper.""
+    },
+    {
+      ""claim"": ""CogComp-NLP is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""CogComp-NLP BIBREF20 is explicitly listed among tools whose results are reported by the current paper.""
+    },
+    {
+      ""claim"": ""Stanford NLP NER is used by the paper."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""We also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21."",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""Stanford NLP NER BIBREF21 is explicitly listed among tools whose results are reported by the current paper.""
+    }
+  ],
+  ""summary_reason"": ""NLTK and Stanford CoreNLP are attributed to prior work (BIBREF3) and not claimed as used by the current paper; all other listed toolkits (TwitterNLP, BIBREF17, BIBREF18, TensiStrength, CogComp-NLP, Stanford NLP NER) are directly stated as used or having results reported by the current paper. Thus, two claims are unsupported due to attribution error.""
+}",,gate_v2_claim_attribution_v1_1,gate_v2_majority_reject_single_warning_v1,27,2085,105,4811,2026-06-23T07:49:47.409770+00:00
+131,NG-049,glm,glm-4.5-air,supported,unsupported,True,1,0,8,3,0,"[{""claim"": ""NLTK"", ""claim_subject"": ""current_paper"", ""verdict"": ""unsupported"", ""verdict_repaired"": true, ""evidence"": ""the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""related_work"", ""issue_types"": [""attribution_error""], ""reason"": ""The claim that NLTK is used is supported by the context, but the context attributes its use to a prior study (BIBREF3), not the current paper.""}, {""claim"": ""Stanford CoreNLP"", ""claim_subject"": ""current_paper"", ""verdict"": ""unsupported"", ""verdict_repaired"": true, ""evidence"": ""the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""related_work"", ""issue_types"": [""attribution_error""], ""reason"": ""The claim that Stanford CoreNLP is used is supported by the context, but the context attributes its use to a prior study (BIBREF3), not the current paper.""}, {""claim"": ""TwitterNLP"", ""claim_subject"": ""current_paper"", ""verdict"": ""unsupported"", ""verdict_repaired"": true, ""evidence"": ""the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""prior_work"", ""attribution"": ""related_work"", ""issue_types"": [""attribution_error""], ""reason"": ""The claim that TwitterNLP is used is supported by the context, but the context attributes its use to a prior study (BIBREF3), not the current paper.""}, {""claim"": ""BIBREF17"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""we selected BIBREF17 and BIBREF18 for our experiments"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim that BIBREF17 is used is directly supported by the context, which states the authors selected it for their experiments.""}, {""claim"": ""BIBREF18"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""we selected BIBREF17 and BIBREF18 for our experiments"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim that BIBREF18 is used is directly supported by the context, which states the authors selected it for their experiments.""}, {""claim"": ""TensiStrength"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""we also report results of TensiStrength BIBREF13"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim that TensiStrength is used is directly supported by the context, which states the authors report results for it.""}, {""claim"": ""CogComp-NLP"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""we also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim that CogComp-NLP is used is directly supported by the context, which states the authors report results for it.""}, {""claim"": ""Stanford NLP NER"", ""claim_subject"": ""current_paper"", ""verdict"": ""supported"", ""verdict_repaired"": false, ""evidence"": ""we also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21"", ""evidence_section"": ""NLP Toolkits"", ""evidence_owner"": ""current_paper"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim that Stanford NLP NER is used is directly supported by the context, which states the authors report results for it.""}]","The answer lists all toolkits mentioned in the context as being used by the authors. The context explicitly states that the authors selected BIBREF17 and BIBREF18 for their experiments and report results for TensiStrength, CogComp-NLP, and Stanford NLP NER. While NLTK, Stanford CoreNLP, and TwitterNLP are mentioned, they are attributed to a prior study, not the current paper's direct use. However, the answer does not distinguish between these two types of usage, and the context does not contradict their inclusion in the list of tools considered.",ok,"```json
+{
+  ""overall_label"": ""SUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""NLTK"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""RELATED_WORK"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that NLTK is used is supported by the context, but the context attributes its use to a prior study (BIBREF3), not the current paper.""
+    },
+    {
+      ""claim"": ""Stanford CoreNLP"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""RELATED_WORK"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that Stanford CoreNLP is used is supported by the context, but the context attributes its use to a prior study (BIBREF3), not the current paper.""
+    },
+    {
+      ""claim"": ""TwitterNLP"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""the well-known NLP toolkits NLTK BIBREF4, Stanford CoreNLP BIBREF5, and TwitterNLP BIBREF6 have tokenization, PoS tagging and NER modules in their pipelines"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""RELATED_WORK"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that TwitterNLP is used is supported by the context, but the context attributes its use to a prior study (BIBREF3), not the current paper.""
+    },
+    {
+      ""claim"": ""BIBREF17"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""we selected BIBREF17 and BIBREF18 for our experiments"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that BIBREF17 is used is directly supported by the context, which states the authors selected it for their experiments.""
+    },
+    {
+      ""claim"": ""BIBREF18"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""we selected BIBREF17 and BIBREF18 for our experiments"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that BIBREF18 is used is directly supported by the context, which states the authors selected it for their experiments.""
+    },
+    {
+      ""claim"": ""TensiStrength"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""we also report results of TensiStrength BIBREF13"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that TensiStrength is used is directly supported by the context, which states the authors report results for it.""
+    },
+    {
+      ""claim"": ""CogComp-NLP"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""we also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that CogComp-NLP is used is directly supported by the context, which states the authors report results for it.""
+    },
+    {
+      ""claim"": ""Stanford NLP NER"",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""we also report results of TensiStrength BIBREF13, TwitterNLP BIBREF6, BIBREF19, CogComp-NLP BIBREF20, and Stanford NLP NER BIBREF21"",
+      ""evidence_section"": ""NLP Toolkits"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that Stanford NLP NER is used is directly supported by the context, which states the authors report results for it.""
+    }
+  ],
+  ""summary_reason"": ""The answer lists all toolkits mentioned in the context as being used by the authors. The context explicitly states that the authors selected BIBREF17 and BIBREF18 for their experiments and report results for TensiStrength, CogComp-NLP, and Stanford NLP NER. While NLTK, Stanford CoreNLP, and TwitterNLP are mentioned, they are attributed to a prior study, not the current paper's direct use. However, the answer does not distinguish between these two types of usage, and the context does not contradict their inclusion in the list of tools considered.""
+}
+```",,gate_v2_claim_attribution_v1_1,gate_v2_majority_reject_single_warning_v1,27,2085,105,4811,2026-06-23T07:50:20.995443+00:00
+201,NGR-013,qwen,qwen-plus,,,,,,,,,,,parse_error,"{
+  ""overall_label"": ""SUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""The model captures biases from the data collection and annotation rules of the datasets."",
+      ""claim_subject"": ""CURRENT_PAPER"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""By examining more samples and with respect to recently studies BIBREF2, BIBREF24, BIBREF19, it is clear that many errors are due to biases from data collection BIBREF19 and rules of annotation BIBREF24 and not the classifier itself."",
+      ""evidence_section"": ""Experiments and Results ::: Error Analysis"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""Experiments and Results"",
+      ""issue_types"": [],
+      ""reason"": ""The paper explicitly states that errors are due to biases from data collection and annotation rules — and attributes this insight to their examination (i.e., the model's behavior enables detection of those biases).""
+    },
+    {
+      ""claim"": ""The Waseem dataset was created using a small ad-hoc set of keywords."",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Since Waseem et al.BIBREF5 created a small ad-hoc set of keywords [...] to sample tweets for training, they included some biases in the collected data."",
+      ""evidence_section"": ""Experiments and Results ::: Error Analysis"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""Experiments and Results"",
+      ""issue_types"": [""attribution_error""],
+      ""reason"": ""The claim correctly attributes the keyword-based creation of the Waseem dataset to Waseem et al. (BIBREF5), i.e., PRIOR_WORK — but the answer says 'the model captures biases [...] of the datasets' and then describes how the datasets were constructed. The construction method is not captured by the model; it is background knowledge reported by the current paper about prior work. However, the claim in the answer is phrased as descriptive context for *which biases* the model captures — and the paper supports that these biases (from data collection/annotation) are what the model’s error patterns reflect. So while the *origin* of the bias is PRIOR_WORK, the *capture* refers to the model revealing or reflecting those biases — which the paper affirms: 'our model can discriminate tweets [...] one explanation [...] pre-trained general knowledge' and 'examining the results shows the ability of our model to detect some biases in the process of collecting or annotating datasets'. Thus the factual description of how Waseem built the dataset is used by CURRENT_PAPER to explain the bias the model captures — and is directly supported.""
+    },
+    {
+      ""claim"": ""The Davidson dataset used a large crowdsourced dictionary of keywords (Hatebase lexicon) to sample tweets for training."",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Davidson et al.BIBREF9 used a large crowdsourced dictionary of keywords (Hatebase lexicon) to sample tweets for training, they included some biases in the collected data."",
+      ""evidence_section"": ""Experiments and Results ::: Error Analysis"",
+      ""evidence_owner"": ""PRIOR_WORK"",
+      ""attribution"": ""Experiments and Results"",
+      ""issue_types"": [""attribution_error""],
+      ""reason"": ""The paper explicitly states Davidson et al. (BIBREF9) used Hatebase — a fact correctly reported. Though owned by PRIOR_WORK, it is presented by CURRENT_PAPER as part of the bias source their model reflects; the answer’s phrasing ('the model captures biases [...]') does not falsely attribute dataset construction to CURRENT_PAPER, but rather identifies the nature of the biases captured — which the paper supports via this description.""
+    },
+    {
+      ""claim"": ""For the Davidson dataset, biases include oversampling tweets with specific language (e.g., African American Vernacular English) and geographic restrictions (e.g., United States)."",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Especially for Davidson-dataset, some tweets with specific language (written within the African American Vernacular English) and geographic restriction (United States of America) are oversampled such as tweets containing disparage words “nigga\"", “faggot\"", “coon\"", or “queer\"", result in high rates of misclassification."",
+      ""evidence_section"": ""Experiments and Results ::: Error Analysis"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""Experiments and Results"",
+      ""issue_types"": [],
+      ""reason"": ""The paper directly states oversampling of AAVE and US-geolocated tweets for Davidson-dataset — and links this to misclassification patterns. This is reported by CURRENT_PAPER as an observed bias reflected in model errors.""
+    },
+    {
+      ""claim"": ""Annotators tended to label disrespectful words as hate or offensive without considering social context."",
+      ""claim_subject"": ""PRIOR_WORK"",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""annotators tended to annotate many samples containing disrespectful words as hate or offensive without any presumption about the social context of tweeters such as the speaker’s identity or dialect, whereas they were just offensive or even neither tweets."",
+      ""evidence_section"": ""Experiments and Results ::: Error Analysis"",
+      ""evidence_owner"": ""CURRENT_PAPER"",
+      ""attribution"": ""Experiments and Results"",
+      ""issue_types"": [],
+      ""reason"": ""The paper explicitly states this annotator behavior as a source of bias — and frames it as part of the annotation rules (BIBREF24) that contributed to errors. The claim is a direct paraphrase.""
+    }
+  ],
+  ""summary_reason"": ""All atomic claims in the answer are directly supported by exact or reasonably paraphrased statements in the retrieved context, all located in the 'Experiments and Results ::: Error Analysis' section. The paper explicitly attributes model errors to biases from data collection (Waseem, Davidson) and annotation rules, identifies AAVE and US geographic oversampling in Davidson, and notes annotator tendencies to ignore social context — all of which the answer accurately reports as biases 'captured' by the model, consistent with the paper’s statement that 'examining the results shows the ability of our model to detect some biases in the process of collecting or annotating datasets.'""
+}","ValueError: claim 1 attribution must be one of ['BACKGROUND', 'CURRENT_PAPER', 'RELATED_WORK', 'UNRESOLVED']",gate_v2_claim_attribution_v1_1,gate_v2_majority_reject_single_warning_v1,37,4441,578,7650,2026-06-23T07:51:24.710094+00:00

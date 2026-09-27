@@ -1,0 +1,20 @@
+QASPER random author-audit summary
+==================================
+
+Vanilla_RAG: unsupported=2/50 (4.00%; 95% Wilson CI 1.10%-13.46%), uncertain=0
+  conservative sensitivity: 2/50 (4.00%; 95% Wilson CI 1.10%-13.46%)
+HyDE: unsupported=1/49 (2.04%; 95% Wilson CI 0.36%-10.69%), uncertain=1
+  conservative sensitivity: 2/50 (4.00%; 95% Wilson CI 1.10%-13.46%)
+VeriMind_Full: unsupported=3/50 (6.00%; 95% Wilson CI 2.06%-16.22%), uncertain=0
+  conservative sensitivity: 3/50 (6.00%; 95% Wilson CI 2.06%-16.22%)
+
+System-level risk differences:
+- Vanilla_RAG minus HyDE: 1.96% (Newcombe-style 95% CI -9.59% to 13.10%)
+- Vanilla_RAG minus VeriMind_Full: -2.00% (Newcombe-style 95% CI -15.11% to 11.40%)
+- HyDE minus VeriMind_Full: -3.96% (Newcombe-style 95% CI -15.86% to 8.63%)
+
+Interpretation boundary:
+These are author-conducted blind labels on independent random samples of accepted answers, not independent expert annotations.
+Uncertain cases are excluded from the primary denominator and counted as unsupported in the conservative sensitivity analysis.
+With 50 cases per system, confidence intervals may remain wide; conclusions should emphasize large differences and avoid false precision.
+Systems were sampled separately, so the same question may occur for more than one system. Pairwise intervals use a separate-binomial approximation and are descriptive rather than a definitive paired significance test.

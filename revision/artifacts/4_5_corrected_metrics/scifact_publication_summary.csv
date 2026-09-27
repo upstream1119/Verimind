@@ -1,0 +1,4 @@
+﻿strategy,n,accepted_n,answer_coverage,passed_hallucinations_n,passed_hallucination_rate,retrieval_hit_rate,rouge_l_overall,rouge_l_accepted
+Vanilla_RAG,500,274,0.548,198,0.7226277372262774,0.816,0.0324862,0.0495448905109489
+HyDE,500,491,0.982,291,0.5926680244399185,0.824,0.11513579999999998,0.11215010183299388
+VeriMind_Full,500,74,0.148,0,0.0,0.81,0.035866,0.17661216216216216

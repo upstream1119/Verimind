@@ -1,0 +1,102 @@
+﻿item_id,audit_id,judge,judge_model,model_label,label,label_repaired,unsupported_event,uncertain_event,claim_count,unsupported_claim_count,uncertain_claim_count,claims_json,summary_reason,status,raw_response,error_message,prompt_version,policy_version,question_chars,context_chars,answer_chars,prompt_chars,evaluated_at_utc
+210,GP-026,deepseek,deepseek-chat,unsupported,unsupported,False,1,0,1,1,0,"[{""claim"": ""No."", ""verdict"": ""unsupported"", ""evidence"": ""No supporting evidence"", ""evidence_section"": ""UNRESOLVED"", ""attribution"": ""unresolved"", ""issue_types"": [""evidence_missing""], ""reason"": ""The answer is a single word 'No.' which is a claim that the paper does not report results only on English data. However, the retrieved context does not explicitly state whether the paper reports results only on English data or not. The context mentions non-English datasets (Greek, German) in the 'Argumentation Mining' section, but these are described as prior or related work, not necessarily the current paper's results. The 'Annotation study 1' section describes English data annotation, and the 'Identification of argument components' section does not specify language. Without a clear statement about the scope of reported results, the claim cannot be verified.""}]","The answer 'No.' asserts that the paper does not report results only on English data. The retrieved context includes descriptions of non-English datasets (Greek, German) in the 'Argumentation Mining' section, but these are attributed to prior studies (e.g., Goudas et al., Peldszus & Stede, Kluge) and not necessarily to the current paper's own results. The current paper's annotation study (Section 'Annotation study 1') uses English data, and the 'Identification of argument components' section does not specify language. There is no explicit evidence in the context that the current paper reports results on non-English data, nor that it reports results only on English data. Therefore, the claim is unsupported due to missing evidence.",ok,"{
+  ""overall_label"": ""UNSUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""No."",
+      ""verdict"": ""UNSUPPORTED"",
+      ""evidence"": ""No supporting evidence"",
+      ""evidence_section"": ""UNRESOLVED"",
+      ""attribution"": ""UNRESOLVED"",
+      ""issue_types"": [""evidence_missing""],
+      ""reason"": ""The answer is a single word 'No.' which is a claim that the paper does not report results only on English data. However, the retrieved context does not explicitly state whether the paper reports results only on English data or not. The context mentions non-English datasets (Greek, German) in the 'Argumentation Mining' section, but these are described as prior or related work, not necessarily the current paper's results. The 'Annotation study 1' section describes English data annotation, and the 'Identification of argument components' section does not specify language. Without a clear statement about the scope of reported results, the claim cannot be verified.""
+    }
+  ],
+  ""summary_reason"": ""The answer 'No.' asserts that the paper does not report results only on English data. The retrieved context includes descriptions of non-English datasets (Greek, German) in the 'Argumentation Mining' section, but these are attributed to prior studies (e.g., Goudas et al., Peldszus & Stede, Kluge) and not necessarily to the current paper's own results. The current paper's annotation study (Section 'Annotation study 1') uses English data, and the 'Identification of argument components' section does not specify language. There is no explicit evidence in the context that the current paper reports results on non-English data, nor that it reports results only on English data. Therefore, the claim is unsupported due to missing evidence.""
+}",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,44,2821,3,4876,2026-06-23T06:09:19.995750+00:00
+210,GP-026,qwen,qwen-plus,supported,supported,False,0,0,1,0,0,"[{""claim"": ""The paper reports results on non-English data."", ""verdict"": ""supported"", ""evidence"": ""The research has also been active on non-English datasets. Goudas.et.al.2014 focused on user-generated Greek texts. ... Peldszus.Stede.2013, who evaluate agreement among 26 “naive\"" annotators ... on 23 German short texts ... Kluge.2014 built a corpus of argumentative German Web documents ... Houy.et.al.2013 targeted argumentation mining of German legal cases."", ""evidence_section"": ""Argumentation Mining"", ""attribution"": ""related_work"", ""issue_types"": [], ""reason"": ""The 'Argumentation Mining' section explicitly states research activity on non-English datasets (Greek, German) and cites multiple studies targeting Greek and German texts, confirming results are not reported only on English data.""}]","The retrieved context explicitly mentions multiple non-English datasets (Greek, German) and associated studies in the 'Argumentation Mining' section, directly contradicting the claim that results are reported only on English data. The 'No.' answer is therefore supported by the context.",ok,"{""overall_label"": ""SUPPORTED"", ""claims"": [{""claim"": ""The paper reports results on non-English data."", ""verdict"": ""SUPPORTED"", ""evidence"": ""The research has also been active on non-English datasets. Goudas.et.al.2014 focused on user-generated Greek texts. ... Peldszus.Stede.2013, who evaluate agreement among 26 “naive\"" annotators ... on 23 German short texts ... Kluge.2014 built a corpus of argumentative German Web documents ... Houy.et.al.2013 targeted argumentation mining of German legal cases."", ""evidence_section"": ""Argumentation Mining"", ""attribution"": ""RELATED_WORK"", ""issue_types"": [], ""reason"": ""The 'Argumentation Mining' section explicitly states research activity on non-English datasets (Greek, German) and cites multiple studies targeting Greek and German texts, confirming results are not reported only on English data.""}], ""summary_reason"": ""The retrieved context explicitly mentions multiple non-English datasets (Greek, German) and associated studies in the 'Argumentation Mining' section, directly contradicting the claim that results are reported only on English data. The 'No.' answer is therefore supported by the context.""}",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,44,2821,3,4876,2026-06-23T06:09:26.996142+00:00
+210,GP-026,glm,glm-4.5-air,supported,supported,False,0,0,1,0,0,"[{""claim"": ""No."", ""verdict"": ""supported"", ""evidence"": ""The research has also been active on non-English datasets. Goudas.et.al.2014 focused on user-generated Greek texts. ... Peldszus.Stede.2013, who evaluate agreement among 26 “naive\"" annotators ... Peldszus.2014 ... Kluge.2014 built a corpus of argumentative German Web documents ... Houy.et.al.2013 targeted argumentation mining of German legal cases."", ""evidence_section"": ""Argumentation Mining"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context explicitly states that the research has been active on non-English datasets, providing multiple examples of studies on Greek, German, and legal cases, which directly supports the claim that results are not only on English data.""}]","The claim 'No.' is directly supported by the evidence in the 'Argumentation Mining' section, which explicitly mentions multiple studies conducted on non-English datasets, including Greek, German, and legal cases.",ok,"```json
+{
+  ""overall_label"": ""SUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""No."",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""The research has also been active on non-English datasets. Goudas.et.al.2014 focused on user-generated Greek texts. ... Peldszus.Stede.2013, who evaluate agreement among 26 “naive\"" annotators ... Peldszus.2014 ... Kluge.2014 built a corpus of argumentative German Web documents ... Houy.et.al.2013 targeted argumentation mining of German legal cases."",
+      ""evidence_section"": ""Argumentation Mining"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context explicitly states that the research has been active on non-English datasets, providing multiple examples of studies on Greek, German, and legal cases, which directly supports the claim that results are not only on English data.""
+    }
+  ],
+  ""summary_reason"": ""The claim 'No.' is directly supported by the evidence in the 'Argumentation Mining' section, which explicitly mentions multiple studies conducted on non-English datasets, including Greek, German, and legal cases.""
+}
+```",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,44,2821,3,4876,2026-06-23T06:09:33.551451+00:00
+215,NGR-024,deepseek,deepseek-chat,supported,supported,False,0,0,1,0,0,"[{""claim"": ""English and German."", ""verdict"": ""supported"", ""evidence"": ""First, we consider the translation for an under-resourced pair of languages. ... Translating texts in English to German."", ""evidence_section"": ""Under-resourced Translation"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The context explicitly states that the under-resourced scenario involves translating English to German, which directly supports the claim that the languages tested are English and German.""}]","The single claim in the answer is directly supported by the retrieved context, which describes the under-resourced translation scenario as involving English and German.",ok,"```json
+{
+  ""overall_label"": ""SUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""English and German."",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""First, we consider the translation for an under-resourced pair of languages. ... Translating texts in English to German."",
+      ""evidence_section"": ""Under-resourced Translation"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The context explicitly states that the under-resourced scenario involves translating English to German, which directly supports the claim that the languages tested are English and German.""
+    }
+  ],
+  ""summary_reason"": ""The single claim in the answer is directly supported by the retrieved context, which describes the under-resourced translation scenario as involving English and German.""
+}
+```",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,65,4049,19,6141,2026-06-23T06:09:36.212322+00:00
+215,NGR-024,qwen,qwen-plus,supported,supported,False,0,0,1,0,0,"[{""claim"": ""They test on English and German for the under-resourced scenario."", ""verdict"": ""supported"", ""evidence"": ""Translating texts in English to German."", ""evidence_section"": ""Under-resourced Translation"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The Under-resourced Translation section explicitly states 'Translating texts in English to German' as the under-resourced pair, using a small portion of the English-German parallel corpus as a simulation.""}]","The only language pair explicitly named in the context for the under-resourced scenario is English-to-German, and the claim correctly identifies those two languages.",ok,"{""overall_label"": ""SUPPORTED"", ""claims"": [{""claim"": ""They test on English and German for the under-resourced scenario."", ""verdict"": ""SUPPORTED"", ""evidence"": ""Translating texts in English to German."", ""evidence_section"": ""Under-resourced Translation"", ""attribution"": ""CURRENT_PAPER"", ""issue_types"": [], ""reason"": ""The Under-resourced Translation section explicitly states 'Translating texts in English to German' as the under-resourced pair, using a small portion of the English-German parallel corpus as a simulation.""}], ""summary_reason"": ""The only language pair explicitly named in the context for the under-resourced scenario is English-to-German, and the claim correctly identifies those two languages.""}",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,65,4049,19,6141,2026-06-23T06:09:40.594383+00:00
+215,NGR-024,glm,glm-4.5-air,supported,supported,False,0,0,1,0,0,"[{""claim"": ""English and German."", ""verdict"": ""supported"", ""evidence"": ""Here a small portion of the large parallel corpus for English-German is used as a simulation for the scenario where we do not have much parallel data: Translating texts in English to German."", ""evidence_section"": ""Under-resourced Translation"", ""attribution"": ""current_paper"", ""issue_types"": [], ""reason"": ""The claim that English and German are the languages tested in the under-resourced scenario is directly supported by the context, which explicitly states that a small portion of the English-German parallel corpus is used to simulate this scenario.""}]","The generated answer is directly supported by the evidence in the 'Under-resourced Translation' section, which specifies English and German as the languages used for the under-resourced scenario.",ok,"```json
+{
+  ""overall_label"": ""SUPPORTED"",
+  ""claims"": [
+    {
+      ""claim"": ""English and German."",
+      ""verdict"": ""SUPPORTED"",
+      ""evidence"": ""Here a small portion of the large parallel corpus for English-German is used as a simulation for the scenario where we do not have much parallel data: Translating texts in English to German."",
+      ""evidence_section"": ""Under-resourced Translation"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [],
+      ""reason"": ""The claim that English and German are the languages tested in the under-resourced scenario is directly supported by the context, which explicitly states that a small portion of the English-German parallel corpus is used to simulate this scenario.""
+    }
+  ],
+  ""summary_reason"": ""The generated answer is directly supported by the evidence in the 'Under-resourced Translation' section, which specifies English and German as the languages used for the under-resourced scenario.""
+}
+```",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,65,4049,19,6141,2026-06-23T06:09:46.361228+00:00
+217,GP-051,deepseek,deepseek-chat,uncertain,uncertain,False,0,1,1,0,1,"[{""claim"": ""The size of the real-world civil case dataset is INLINEFORM0."", ""verdict"": ""uncertain"", ""evidence"": ""The context contains placeholders INLINEFORM0, INLINEFORM1, etc. that hide the actual numerical values."", ""evidence_section"": ""Dataset Construction for Evaluation"", ""attribution"": ""current_paper"", ""issue_types"": [""evidence_truncated""], ""reason"": ""The dataset size is represented by a placeholder (INLINEFORM0) in the retrieved context, so the actual number cannot be verified.""}]","The generated answer consists solely of a placeholder (INLINEFORM0) that corresponds to the dataset size in the retrieved context, but the context does not reveal the actual numerical value due to the placeholder. Therefore, the claim cannot be supported or refuted, resulting in an UNCERTAIN overall label.",ok,"{
+  ""overall_label"": ""UNCERTAIN"",
+  ""claims"": [
+    {
+      ""claim"": ""The size of the real-world civil case dataset is INLINEFORM0."",
+      ""verdict"": ""UNCERTAIN"",
+      ""evidence"": ""The context contains placeholders INLINEFORM0, INLINEFORM1, etc. that hide the actual numerical values."",
+      ""evidence_section"": ""Dataset Construction for Evaluation"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [""evidence_truncated""],
+      ""reason"": ""The dataset size is represented by a placeholder (INLINEFORM0) in the retrieved context, so the actual number cannot be verified.""
+    }
+  ],
+  ""summary_reason"": ""The generated answer consists solely of a placeholder (INLINEFORM0) that corresponds to the dataset size in the retrieved context, but the context does not reveal the actual numerical value due to the placeholder. Therefore, the claim cannot be supported or refuted, resulting in an UNCERTAIN overall label.""
+}",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,54,2465,11,4538,2026-06-23T06:09:48.917403+00:00
+217,GP-051,qwen,qwen-plus,uncertain,uncertain,False,0,1,1,0,1,"[{""claim"": ""The size of the real-world civil case dataset is INLINEFORM0."", ""verdict"": ""uncertain"", ""evidence"": ""We randomly collect INLINEFORM0 cases from China Judgments Online"", ""evidence_section"": ""Dataset Construction for Evaluation"", ""attribution"": ""current_paper"", ""issue_types"": [""evidence_truncated""], ""reason"": ""The value of INLINEFORM0 is a placeholder; the retrieved context does not reveal its numeric value, and no other section provides the resolved number. Therefore, verification is impossible.""}]","The answer repeats the placeholder INLINEFORM0, which is used in the context to denote the total number of collected cases, but the actual numeric value is not disclosed in the retrieved text. No section resolves the placeholder, making verification impossible.",ok,"{""overall_label"": ""UNCERTAIN"", ""claims"": [{""claim"": ""The size of the real-world civil case dataset is INLINEFORM0."", ""verdict"": ""UNCERTAIN"", ""evidence"": ""We randomly collect INLINEFORM0 cases from China Judgments Online"", ""evidence_section"": ""Dataset Construction for Evaluation"", ""attribution"": ""CURRENT_PAPER"", ""issue_types"": [""evidence_truncated""], ""reason"": ""The value of INLINEFORM0 is a placeholder; the retrieved context does not reveal its numeric value, and no other section provides the resolved number. Therefore, verification is impossible.""}], ""summary_reason"": ""The answer repeats the placeholder INLINEFORM0, which is used in the context to denote the total number of collected cases, but the actual numeric value is not disclosed in the retrieved text. No section resolves the placeholder, making verification impossible.""}",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,54,2465,11,4538,2026-06-23T06:09:53.742330+00:00
+217,GP-051,glm,glm-4.5-air,uncertain,uncertain,False,0,1,1,0,1,"[{""claim"": ""INLINEFORM0"", ""verdict"": ""uncertain"", ""evidence"": ""INLINEFORM0"", ""evidence_section"": ""Dataset Construction for Evaluation"", ""attribution"": ""current_paper"", ""issue_types"": [""evidence_truncated""], ""reason"": ""The claim is a placeholder (INLINEFORM0) that hides the actual numerical value of the dataset size. The context confirms that a dataset of INLINEFORM0 cases was collected, but the specific number is not provided.""}]","The answer is a placeholder (INLINEFORM0) that corresponds to a placeholder in the retrieved context. Since the actual numerical value is hidden, the claim cannot be verified and is marked UNCERTAIN.",ok,"```json
+{
+  ""overall_label"": ""UNCERTAIN"",
+  ""claims"": [
+    {
+      ""claim"": ""INLINEFORM0"",
+      ""verdict"": ""UNCERTAIN"",
+      ""evidence"": ""INLINEFORM0"",
+      ""evidence_section"": ""Dataset Construction for Evaluation"",
+      ""attribution"": ""CURRENT_PAPER"",
+      ""issue_types"": [""evidence_truncated""],
+      ""reason"": ""The claim is a placeholder (INLINEFORM0) that hides the actual numerical value of the dataset size. The context confirms that a dataset of INLINEFORM0 cases was collected, but the specific number is not provided.""
+    }
+  ],
+  ""summary_reason"": ""The answer is a placeholder (INLINEFORM0) that corresponds to a placeholder in the retrieved context. Since the actual numerical value is hidden, the claim cannot be verified and is marked UNCERTAIN.""
+}
+```",,gate_v2_claim_attribution_v1,gate_v2_majority_reject_single_warning_v1,54,2465,11,4538,2026-06-23T06:10:03.303646+00:00
